@@ -1,5 +1,5 @@
 .login-overlay{
-	background:url('/App_Plugins/Custom.Login.Page/bg.jpg') no-repeat center !important;
+	background:url('/media/1001/bg.jpg') no-repeat center !important;
 	background-size:100% 100% !important;
     text-shadow: 0 0 5px #000;
 }
@@ -11,7 +11,7 @@
     margin-right: auto;
     margin-bottom: auto;
 }
-input[type="text"],input[type="password"]{
+.login-overlay input[type="text"],input[type="password"]{
 	border: 3px solid transparent !important;
     background: #ccc !important;
     -webkit-transition: all 0.5s ease-in-out;
@@ -20,25 +20,25 @@ input[type="text"],input[type="password"]{
     opacity: 0.8;
     
 }
-input[type="text"]:focus,input[type="password"]:focus{
+.login-overlay input[type="text"]:focus,input[type="password"]:focus{
 	border: 3px solid #45A12B !important;
     opacity: 1;
     background: #fff !important;
     color:#090909;
 }
-::-webkit-input-placeholder {
+.login-overlay input[type="text"]::-webkit-input-placeholder,input[type="password"]::-webkit-input-placeholder {
    color:#fff !important;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.login-overlay input[type="text"]:-moz-placeholder,input[type="password"]:-moz-placeholder { /* Firefox 18- */
    color:#fff !important; 
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+.login-overlay input[type="text"]::-moz-placeholder,input[type="password"]::-moz-placeholder {  /* Firefox 19+ */
    color:#fff !important; 
 }
 
-:-ms-input-placeholder {  
+.login-overlay input[type="text"]:-ms-input-placeholder,input[type="password"]:-ms-input-placeholder {  
    color:#fff !important; 
 }
 @-webkit-keyframes uil-ring-anim {0% {
