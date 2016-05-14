@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Mini" description="Mini Icons Set by IC Design" created-date="2011-10-04" created-by="IC" url-reference="http://www.designdeck.co.uk/a/1239" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="ember" name="Ember" image="ember.png" />
+  <channel id="evernote" name="Evernote" image="evernote.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="forrst" name="Forrst" image="forrst.png" />
+  <channel id="github" name="Github" image="github.png" />
+  <channel id="last-fm" name="Last.fm" image="last-fm.png" />
+  <channel id="linkedin" name="LinkedIn" image="linkedin.png" />
+  <channel id="rss" name="RSS" image="rss.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="tumbler" name="Tumbler" image="tumbler.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="youtube" name="YouTube" image="youtube.png" />
+</theme>

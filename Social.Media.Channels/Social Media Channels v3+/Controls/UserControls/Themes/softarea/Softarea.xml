@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<theme xmlns="http://zueuz.com/Theme-Schema.xsd" id="Minimal" description="Minimal Social Media Icons (PSD) by ~softarea" created-by="Softarea" created-date="2012-08-21" url-reference="http://softarea.deviantart.com/art/Minimal-Social-Media-Icons-PSD-322505928">
+  <channel id='digg' name='Digg' image='digg.png'/>
+  <channel id='dribbble' name='Dribbble' image='dribbble.png'/>
+  <channel id='facebook' name='Facebook' image='Facebook.png'/>
+  <channel id='flickr' name='Flickr' image='flickr.png'/>
+  <channel id='googleplus' name='Google+' image='googleplus.png'/>
+  <channel id='linkedin' name='LinkedIn' image='linkedin.png'/>
+  <channel id='pinterest' name='Pinterest' image='pinterest.png'/>
+  <channel id='rss' name='RSS' image='rss.png'/>
+  <channel id='twitter' name='Twitter' image='twitter.png'/>
+  <channel id='vimeo' name='Vimeo' image='vimeo.png'/>
+  <channel id='wordpress' name='Wordpress' image='wordpress.png'/>
+  <channel id='youtube' name='YouTube' image='youtube.png'/>
+</theme>

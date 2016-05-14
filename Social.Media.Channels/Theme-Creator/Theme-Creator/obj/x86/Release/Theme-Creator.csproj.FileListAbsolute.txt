@@ -1,0 +1,7 @@
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Release\Theme XML Generator.exe
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Release\Theme XML Generator.pdb
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Release\Theme_Creator.MainForm.resources
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Release\Theme_Creator.Properties.Resources.resources
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Release\Theme-Creator.csproj.GenerateResource.Cache
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Release\Theme XML Generator.exe
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Release\Theme XML Generator.pdb

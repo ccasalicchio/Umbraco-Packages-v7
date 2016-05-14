@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="WebSocial" description="Web social icons by ~NarjisNaqvi" created-date="2009-03-30" created-by="NarjisNaqvi" url-reference="http://narjisnaqvi.deviantart.com/art/Web-social-icons-117562335" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="9rules2" name="9rules2" image="9rules2.png" />
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="bloggeralt" name="Blogger" image="blogger2.png" />
+  <channel id="comments" name="Co.mments" image="co.mments.png" />
+  <channel id="delicious" name="Delicious" image="delicious.png" />
+  <channel id="designfloat" name="Designfloat" image="designfloat.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="feed" name="Feed" image="feed.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="flickralt" name="Flickr" image="flickr2.png" />
+  <channel id="friendster" name="Friendster" image="friendster.png" />
+  <channel id="google" name="Google" image="google.png" />
+  <channel id="googlealt" name="Google" image="google2.png" />
+  <channel id="lastfm" name="Last.fm" image="last.fm.png" />
+  <channel id="lastfmalt" name="Last.fm" image="last.fm2.png" />
+  <channel id="linkedin" name="LinkedIn" image="linkedin.png" />
+  <channel id="livejournal" name="Live Journal" image="livejournal.png" />
+  <channel id="mail" name="Mail" image="mail.png" />
+  <channel id="mixx" name="Mixx" image="mixx.png" />
+  <channel id="myspace" name="MySpace" image="myspace.png" />
+  <channel id="netvibes" name="Netvibes" image="netvibes.png" />
+  <channel id="newsvine" name="Newsvine" image="newsvine.png" />
+  <channel id="newsvinealt" name="Newsvine" image="newsvine2.png" />
+  <channel id="picasa" name="Picasa" image="picasa.png" />
+  <channel id="pownce" name="Pownce" image="pownce.png" />
+  <channel id="reddit" name="Reddit" image="reddit.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="stumbleupon" name="StumbleUpon" image="stumbleupon.png" />
+  <channel id="technorati" name="Technorati" image="technorati.png" />
+  <channel id="technoratialt" name="Technorati" image="technorati2.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="twitteralt" name="Twitter" image="twitter2.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="wordpress" name="Wordpress" image="wordpress.png" />
+  <channel id="yahoo" name="Yahoo" image="yahoo.png" />
+  <channel id="yelp" name="Yelp" image="yelp.png" />
+  <channel id="youtube" name="YouTube" image="youtube.png" />
+</theme>

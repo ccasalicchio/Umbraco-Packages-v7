@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<theme xmlns="http://zueuz.com/Theme-Schema.xsd" id="Somicro" description="Somicro Icons Set by Veodesign" created-by="Veodesign" created-date="2011-09-07" url-reference="http://veodesign.com/2011/en/09/07/somicro-27-free-simple-social-media-icons/">
+  <channel id="addthis" name="AddThis" image="addthis.png"           />
+  <channel id="appnet" name="App Net" image="appnet.png"           />
+  <channel id="behance" name="Behance" image="behance.png"           />
+  <channel id="blogger" name="Blogger" image="blogger.png"              />
+  <channel id="deviantart" name="Deviantart" image="deviantart.png"           />
+  <channel id="digg" name="Digg" image="digg.png"                 />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png"             />
+  <channel id="email" name="Email" image="email.png"                />
+  <channel id="facebook" name="Facebook" image="facebook.png"             />
+  <channel id="flickr" name="Flickr" image="flickr.png"               />
+  <channel id="foursquare" name="FourSquare" image="foursquare.png"           />
+  <channel id="github" name="GitHub" image="github.png"               />
+  <channel id="googleplus" name="Google+" image="googleplus.png"              />
+  <channel id="googleplus-alt" name="Google+" image="gplus.png"                />
+  <channel id="indiegogo" name="Indiegogo" image="indiegogo.png"            />
+  <channel id="instagram" name="Instagram" image="instagram.png"            />
+  <channel id="kickstarter" name="Kickstarter" image="kickstarter.png"          />
+  <channel id="lastfm" name="Last.fm" image="lastfm.png"               />
+  <channel id="like" name="Like" image="like.png"                 />
+  <channel id="linkedin" name="LinkedIn" image="linkedin.png"             />
+  <channel id="livejournal" name="Live Journal" image="livejournal.png"          />
+  <channel id="messenger" name="Instant Message" image="messenger-generic.png"    />
+  <channel id="myspace" name="MySpace" image="myspace.png"              />
+  <channel id="myspace-alt" name="MySpace" image="myspace2.png"             />
+  <channel id="orkut" name="Orkut" image="orkut.png"                />
+  <channel id="paypal" name="Paypal" image="paypal.png"               />
+  <channel id="picasa" name="Picasa" image="picasa.png"               />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png"            />
+  <channel id="reddit" name="Reddit" image="reddit.png"               />
+  <channel id="rss" name="Rss" image="rss.png"                  />
+  <channel id="sharethis" name="ShareThis" image="sharethis.png"            />
+  <channel id="skype" name="Skype" image="skype.png"                />
+  <channel id="soundcloud" name="SoundCloud" image="soundcloud.png"           />
+  <channel id="spotify" name="Spotify" image="spotify.png"              />
+  <channel id="stackoverflow" name="Stack Overflow" image="stackoverflow.png"        />
+  <channel id="stumbleupon" name="StumbleUpon" image="stumbleupon.png"          />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png"               />
+  <channel id="twitter-alt" name="Twitter" image="twitter-old.png"          />
+  <channel id="twitter" name="Twitter" image="twitter.png"              />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png"                />
+  <channel id="wordpress" name="Wordpress" image="wordpress.png"            />
+  <channel id="yelp" name="Yelp" image="yelp.png"                 />
+  <channel id="youtube" name="YouTube"  image="youtube.png"             />
+</theme>

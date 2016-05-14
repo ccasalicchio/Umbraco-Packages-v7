@@ -1,0 +1,4 @@
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\CloudForge\Social Media Channels v2.1.14\Social Media Channels Engine\Engine\bin\Release\Engine.dll
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\CloudForge\Social Media Channels v2.1.14\Social Media Channels Engine\Engine\bin\Release\Engine.pdb
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\CloudForge\Social Media Channels v2.1.14\Social Media Channels Engine\Engine\obj\Release\Engine.dll
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\CloudForge\Social Media Channels v2.1.14\Social Media Channels Engine\Engine\obj\Release\Engine.pdb

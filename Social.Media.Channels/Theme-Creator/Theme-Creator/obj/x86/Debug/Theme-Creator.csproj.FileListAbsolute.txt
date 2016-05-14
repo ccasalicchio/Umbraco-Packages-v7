@@ -1,0 +1,23 @@
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.MainForm.resources
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.Properties.Resources.resources
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme-Creator.csproj.GenerateResource.Cache
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme-Creator.csprojResolveAssemblyReference.cache
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.exe
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.pdb
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.exe
+C:\Users\carlos.casalicchio\Dropbox\Development\Orchard Development\Modules\Social-Media-Channels\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.pdb
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.exe
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.pdb
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.exe
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.pdb
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.MainForm.resources
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.Properties.Resources.resources
+C:\Users\carlos.casalicchio\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme-Creator.csproj.GenerateResource.Cache
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.exe
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme XML Generator.pdb
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.exe
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\bin\Debug\Theme XML Generator.pdb
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme-Creator.csprojResolveAssemblyReference.cache
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.MainForm.resources
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme_Creator.Properties.Resources.resources
+C:\Users\CarlosAugusto\Dropbox\Development\Umbraco Development\Social Media Channels v4\Theme-Creator\Theme-Creator\obj\x86\Debug\Theme-Creator.csproj.GenerateResource.Cache

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Circle" description="Circle Icons Set by IC Design" created-date="2012-01-02" created-by="IC" url-reference="http://www.designdeck.co.uk/a/1245" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="forrst" name="Forrst" image="forrst.png" />
+  <channel id="googleplus" name="Google+" image="googleplus.png" />
+  <channel id="rss" name="RSS" image="rss.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="youtube" name="YouTube" image="youtube.png" />
+</theme>
