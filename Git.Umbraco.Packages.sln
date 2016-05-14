@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Custom.Login.Page", "Custom.Login.Page\", "{995E923F-53CD-4C45-AEC9-8FC4672B6FCE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_1098"
+		Debug.AspNetCompiler.PhysicalPath = "Custom.Login.Page\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1098\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_1098"
+		Release.AspNetCompiler.PhysicalPath = "Custom.Login.Page\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_1098\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1098"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Umbraco", "Umbraco\", "{932C135D-4F03-43EC-8941-B005820CAA7B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_5308"
+		Debug.AspNetCompiler.PhysicalPath = "Umbraco\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5308\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_5308"
+		Release.AspNetCompiler.PhysicalPath = "Umbraco\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_5308\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5308"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.Media.Channels", "Social.Media.Channels\Social.Media.Channels.csproj", "{93FCFFCA-863C-4E18-9C3E-80920D71B1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Social.Media.Share", "Social.Media.Share\Social.Media.Share.csproj", "{44AE62CF-3C3F-4E03-BC9E-A388C0FAD7B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{995E923F-53CD-4C45-AEC9-8FC4672B6FCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995E923F-53CD-4C45-AEC9-8FC4672B6FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995E923F-53CD-4C45-AEC9-8FC4672B6FCE}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{995E923F-53CD-4C45-AEC9-8FC4672B6FCE}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{932C135D-4F03-43EC-8941-B005820CAA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932C135D-4F03-43EC-8941-B005820CAA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932C135D-4F03-43EC-8941-B005820CAA7B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{932C135D-4F03-43EC-8941-B005820CAA7B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{93FCFFCA-863C-4E18-9C3E-80920D71B1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FCFFCA-863C-4E18-9C3E-80920D71B1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FCFFCA-863C-4E18-9C3E-80920D71B1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FCFFCA-863C-4E18-9C3E-80920D71B1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AE62CF-3C3F-4E03-BC9E-A388C0FAD7B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AE62CF-3C3F-4E03-BC9E-A388C0FAD7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AE62CF-3C3F-4E03-BC9E-A388C0FAD7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AE62CF-3C3F-4E03-BC9E-A388C0FAD7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
