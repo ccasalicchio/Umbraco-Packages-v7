@@ -1,0 +1,20 @@
+{
+	propertyEditors: [		
+		{
+			alias: "Social.Media.Channels",
+			name: "Social Media Channels",
+			hideLabel: false,
+			valueType: "JSON",
+			editor: {
+				view: "~/App_Plugins/People/propertyEditors/PersonPicker.html"
+			}
+		}
+	],
+
+	javascript: [
+		'~/App_Plugins/People/propertyEditors/PersonPicker.controller.js',
+	    '~/App_Plugins/People/backoffice/peopletree/edit.controller.js',
+	    '~/App_Plugins/People/umbraco/peopletree/dialogs.controller.js',
+	    '~/App_Plugins/People/person.resource.js'
+	]
+}

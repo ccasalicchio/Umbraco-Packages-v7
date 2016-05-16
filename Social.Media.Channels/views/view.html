@@ -1,0 +1,12 @@
+﻿<div ng-controller="Social.Media.Channels">
+    <table>
+        <tbody>
+            <tr ng-repeat="channel in model.value track by $id($index)">
+                <th>{{channel.Name}}</th>
+                <td>
+                    <input type="text" ng-model="row[$index]">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
