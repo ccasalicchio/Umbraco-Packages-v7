@@ -1,5 +1,11 @@
-# Umbraco Packages by Carlos Casalicchio
+# Social Media Channels for Umbraco
 
-Packages for Umbraco 7.4.3+
+Umbraco 7.4.3+
 
-- Custom Login Page
+- Creates a DataType for Social Media Channels
+	Displays a list of channels based on icon theme. various themes taken from the community. 
+- Creates a new Media Type for adding custom Themes
+- Adds a Media Node for Social Media Channels
+
+Feedback is appreciated
+[Carlos Casalicchio](mailto:carlos.casalicchio@gmail.com)
