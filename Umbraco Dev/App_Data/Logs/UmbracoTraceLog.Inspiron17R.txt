@@ -51,3 +51,22 @@ System.NullReferenceException: The property editor with alias Custom.Login.Page 
  2016-05-20 00:03:06,857 [P17108/D2/T16] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: carlos.casalicchio@gmail.com logged in from IP address ::1
  2016-05-20 00:03:07,111 [P17108/D2/T25] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
  2016-05-20 00:03:07,111 [P17108/D2/T25] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:07:34,121 [P17108/D2/T46] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:07:34,121 [P17108/D2/T46] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:10:32,799 [P17108/D2/T65] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:10:32,799 [P17108/D2/T65] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:11:16,621 [P17108/D2/T71] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:11:16,621 [P17108/D2/T71] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:11:55,364 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:11:55,364 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:12:18,079 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:12:18,079 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:13:14,160 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:13:14,160 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:13:59,361 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:13:59,361 [P17108/D2/T73] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:14:53,543 [P17108/D2/T70] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-05-20 00:14:53,543 [P17108/D2/T70] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-05-20 00:15:36,679 [P17108/D2/T62] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Test' with Id '1762' has been published.
+ 2016-05-20 00:15:41,857 [P17108/D2/T5] INFO  umbraco.content - Save Xml to file...
+ 2016-05-20 00:15:42,017 [P17108/D2/T73] INFO  umbraco.content - Saved Xml to file.

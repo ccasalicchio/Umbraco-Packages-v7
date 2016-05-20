@@ -1,7 +1,7 @@
 ﻿'use strict';
 angular.module("umbraco")
     .controller("Social.Media.Channels",
-    function ($scope, mediaResource) {
+    function ($scope, mediaResource, entityResource) {
         var engine = {
             themes: [],
             selectedIndex: null,
@@ -55,11 +55,15 @@ angular.module("umbraco")
             return channels;
         }
 
-        mediaResource.getChildren(1054)
-            .then(function (contentArray) {
-                angular.forEach(contentArray.items, function (value, key) {
-                    this.push(populateTheme(value, key));
-                }, engine.themes);
+        entityResource.search("Social Media Channels Themes", "Media")
+            .then(function (mediaArray) {
+                var mediaId = mediaArray[0].id;
+                mediaResource.getChildren(mediaId)
+                    .then(function (contentArray) {
+                        angular.forEach(contentArray.items, function (value, key) {
+                            this.push(populateTheme(value, key));
+                        }, engine.themes);
+                    });
             });
         $scope.sortableOptions = {
             axis: 'y',
