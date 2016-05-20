@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="pt_br" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="loginpage">
+    <key alias="title">Selecione a imagem de fundo do seu tema</key>
+    <key alias="defaultoption">----Escolha o tema----</key>
+    <key alias="advanced">Usuarios Avançados</key>
+    <key alias="stylesheeteditor">Editor CSS</key>
+    <key alias="customcolor">Cor</key>
+  </area>
+</language>

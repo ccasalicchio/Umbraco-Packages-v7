@@ -1,0 +1,22 @@
+{
+	"propertyEditors": [
+    {
+      "alias": "Custom.Login.Page",
+      "name": "Custom Login Page",
+      "hideLabel": false,
+      "icon": "icon-display",
+      "group": "People",
+      "editor": {
+        "view": "~/App_Plugins/Custom.Login.Page/views/view.html",
+        "valueType": "JSON"
+      }
+    }
+  ],
+    javascript: [
+    '~/App_Plugins/Custom.Login.Page/js/login.js',
+    '~/App_Plugins/Custom.Login.Page/js/controller.js'
+    ],
+    css: [
+    '~/App_Plugins/Custom.Login.Page/css/style.css'
+    ]
+}

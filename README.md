@@ -3,3 +3,4 @@
 Packages for Umbraco 7.4.3+
 
 - Custom Login Page
+- Social Media Channels

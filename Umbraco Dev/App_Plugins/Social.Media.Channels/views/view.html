@@ -1,12 +1,12 @@
 ﻿<div ng-controller="Social.Media.Channels" class="social-media-channels">
-    <h5><localize key="SocialMediaChannels_title">Choose</localize></h5>
+    <h5><localize key="socialchannels_title">Choose</localize></h5>
     <table>
         <tbody>
 
             <tr>
                 <td colspan="2">
                     <select ng-model="engine.selectedIndex" ng-change="engine.selectTheme(engine.selectedIndex)">
-                        <option value="" ng-selected="engine.selectedIndex===null" localize="label" label="@SocialMediaChannels_select">------</option>
+                        <option value="" ng-selected="engine.selectedIndex===null" localize="label" label="@socialchannels_defaultoption">------</option>
                         <option ng-repeat="theme in engine.themes track by $id($index)" value="{{$index}}" ng-selected="engine.selectedIndex===$index">
                             {{theme.ThemeName}}
                         </option>

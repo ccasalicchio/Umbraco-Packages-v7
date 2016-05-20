@@ -1,0 +1,22 @@
+﻿<div ng-controller="Custom.Login.Page" class="custom-login-page">
+        
+    <h5><localize key="loginpage_customcolor">Color</localize></h5>
+    <input type="color" name="favcolor" ng-model="engine.customization.color">&nbsp;(<span>{{engine.customization.color}}</span>)
+    
+    <h5><localize key="loginpage_title">Color</localize></h5>
+    
+    <ul>
+        <li ng-repeat="bg in engine.backgrounds track by $id($index)">
+            <label>
+                <input type="radio" name="background" value="{{$index}}" ng-click="engine.selectBackground($index)" ng-checked="engine.customization.background.url===bg.url"/>
+                <img ng-src="{{bg.url}}"/>
+            </label>
+        <li>
+    </ul>
+    
+    <h5><localize key="loginpage_advanced">Choose</localize></h5>
+    <h6><localize key="loginpage_stylesheeteditor">Choose</localize></h6>
+    <textarea ng-model="engine.customization.css" />
+    </tbody>
+    </table>
+</div>

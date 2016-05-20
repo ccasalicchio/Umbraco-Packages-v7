@@ -36,16 +36,16 @@ using  Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Social Media Channels Test</summary>
-	[PublishedContentModel("socialMediaChannelsTest")]
-	public partial class SocialMediaChannelsTest : PublishedContentModel
+	/// <summary>Test Page</summary>
+	[PublishedContentModel("testPage")]
+	public partial class TestPage : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "socialMediaChannelsTest";
+		public new const string ModelTypeAlias = "testPage";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public SocialMediaChannelsTest(IPublishedContent content)
+		public TestPage(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -56,18 +56,18 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SocialMediaChannelsTest, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TestPage, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// Social Media Theme: Theme
+		/// Social Media Channels
 		///</summary>
-		[ImplementPropertyType("socialMediaTheme")]
-		public Newtonsoft.Json.Linq.JToken SocialMediaTheme
+		[ImplementPropertyType("socialMediaChannels")]
+		public Newtonsoft.Json.Linq.JToken SocialMediaChannels
 		{
-			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("socialMediaTheme"); }
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("socialMediaChannels"); }
 		}
 	}
 

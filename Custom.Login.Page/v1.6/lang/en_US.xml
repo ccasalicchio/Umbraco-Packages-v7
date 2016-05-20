@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="loginpage">
+    <key alias="title">Choose your Theme Background</key>
+    <key alias="defaultoption">----Choose Theme----</key>
+    <key alias="advanced">Advanceds Users</key>
+    <key alias="stylesheeteditor">Stylesheet Editor (CSS)</key>
+    <key alias="customcolor">Color</key>
+  </area>
+</language>
