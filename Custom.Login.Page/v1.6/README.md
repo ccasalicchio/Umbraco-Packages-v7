@@ -1,4 +1,4 @@
-# Custom Login Page
+# Custom Login Page 1.6
 
 Plugin for Umbraco 7.4.3+
 
@@ -6,5 +6,7 @@ This is a tweak for the login page, changing the visual of the layout. It adds a
 
 It also adds a "loading" after clicking login, and it changes the background image for the screen.
 
-To customize it, you should open ~/App_Plugins/Custom.Login.Page/css/style.css and change the style to fit your needs.
+Has a Property Editor View with customizing options.
+
+Works while cached but spinner is not showing up (bug)
 
