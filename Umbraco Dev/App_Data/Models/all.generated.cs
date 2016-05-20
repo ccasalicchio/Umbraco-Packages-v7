@@ -62,6 +62,15 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Login Page
+		///</summary>
+		[ImplementPropertyType("loginPage")]
+		public object LoginPage
+		{
+			get { return this.GetPropertyValue("loginPage"); }
+		}
+
+		///<summary>
 		/// Social Media Channels
 		///</summary>
 		[ImplementPropertyType("socialMediaChannels")]

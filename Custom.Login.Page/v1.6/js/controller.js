@@ -25,7 +25,7 @@ angular.module("umbraco")
         }
         function renderCss() {
             var bg = ".login-overlay {background:url('{0}') no-repeat center !important;background-size: 100% 100% !important;}",
-                ring = ".uil-ring-css>div {box-shadow: 0 6px 0 0 {0} !important;position: absolute;display: block;width: 160px;height: 160px;top: 20px;left: 20px;border-radius: 80px;-ms-animation: uil-ring-anim 1s linear infinite;-moz-animation: uil-ring-anim 1s linear infinite;-webkit-animation: uil-ring-anim 1s linear infinite;-o-animation: uil-ring-anim 1s linear infinite;animation: uil-ring-anim 1s linear infinite}",
+                ring = ".uil-ring-css>div {box-shadow: 0 6px 0 0 {0} !important;opacity:0;}",
                 input = ".login-overlay input[type='text']:focus, input[type='password']:focus {border: 3px solid {0} !important;}",
                 tag = "<style>{0}</style>",
                 fullstr = "";
@@ -53,9 +53,8 @@ angular.module("umbraco")
                     this.push(populateBackground(value));
                 }, engine.backgrounds);
             });
-        angular.element('button[type="submit"]').on('click', function () {
-            angular.element(this).before("<div class='uil-ring-css' id='processing' style='transform:scale(0.6);'><div></div></div>");
-        });
+        angular.element('body').append("<div class='uil-ring-css' id='processing' style='transform:scale(0.6);'><div></div></div>")
+        .append("<script>setTimeout(function () {$('button[type=submit]').on('click', function () {if ($('.uil-ring-css').length > 0) {$('#processing').find('div').attr('opacity', 1);}});}, 800);");
         angular.element('head').append(renderCss());
         engine.selectBackground = selectBackground;
         $scope.model.value = engine.customization;
