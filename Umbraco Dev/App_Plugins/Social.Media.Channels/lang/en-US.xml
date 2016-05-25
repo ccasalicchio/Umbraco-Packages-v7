@@ -7,5 +7,7 @@
   <area alias="socialchannels">
     <key alias="title">Choose your Social Media Theme</key>
     <key alias="defaultoption">----Choose Theme----</key>
+    <key alias="showlabels">Show Labels</key>
+    <key alias="invertcolors">Invert Colors</key>
   </area>
 </language>

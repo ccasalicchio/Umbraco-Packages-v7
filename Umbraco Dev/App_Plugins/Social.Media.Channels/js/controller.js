@@ -5,23 +5,38 @@ angular.module("umbraco")
         var engine = {
             themes: [],
             selectedIndex: null,
-            selectedTheme: {},
-            selectTheme: null
+            selectedTheme: null,
+            selectTheme: null,
+            bg: ''
         }
         if ($scope.model.value) {
-            engine.selectedTheme = $scope.model.value;
-            engine.selectedIndex = $scope.model.value.index;
+            if ($scope.model.value !== "") {
+                engine.selectedTheme = $scope.model.value;
+                engine.selectedIndex = $scope.model.value.index;
+            }
+            else
+                engine.selectedTheme = null;
         }
         function selectTheme(index) {
-            engine.selectedTheme = engine.themes[index];
-            engine.selectedTheme.channels = populateChannels(engine.selectedTheme.Id)
-            $scope.model.value = engine.selectedTheme;
+            if (index === "") {
+
+                engine.selectedTheme = null;
+                $scope.model.value = engine.selectedTheme;
+
+            }
+
+            else {
+                engine.selectedTheme = engine.themes[index];
+                engine.selectedTheme.channels = populateChannels(engine.selectedTheme.Id);
+                $scope.model.value = engine.selectedTheme;
+                $scope.model.value.showLabels = false;
+            }
         }
         function populateTheme(value, key) {
             return {
                 index: key,
                 Id: value.id,
-                CreateDate: value.properties[0].value,
+                CreatedDate: value.properties[0].value,
                 Screenshot: value.properties[1].value.src,
                 Url: value.properties[2].value,
                 CreatedBy: value.properties[3].value,

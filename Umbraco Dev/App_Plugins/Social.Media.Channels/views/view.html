@@ -1,5 +1,5 @@
 ﻿<div ng-controller="Social.Media.Channels" class="social-media-channels">
-    <h5><localize key="socialchannels_title">Choose</localize></h5>
+    <h5><localize key="socialchannels_title">Choose Theme</localize></h5>
     <table>
         <tbody>
 
@@ -19,6 +19,24 @@
             </tr>
 
             <tr>
+                <td ng-show="engine.selectedTheme">
+                    <localize key="socialchannels_showlabels">Show Labels</localize>&nbsp;<input type="checkbox" ng-model="model.value.showLabels">
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td class="bg"><localize key="socialchannels_invertcolors">Invert</localize>&nbsp;
+                <label><input type="radio" name="bgcolor" value="#fff" ng-model="engine.bg" checked><div class="white"></div></label>
+                <label><input type="radio" name="bgcolor" value="#f2f2f2" ng-model="engine.bg" checked><div class="lightgrey"></div></label>
+                <label><input type="radio" name="bgcolor" value="#000" ng-model="engine.bg"><div class="black"></div></label>
+                </td>
+            </tr>
+
+            <tr>
                 <th ng-show="engine.selectedTheme">
                     <h4>{{engine.selectedTheme.ThemeName}}</h4>
                     <h5>{{engine.selectedTheme.CreatedBy}}</h5>
@@ -29,8 +47,8 @@
 
                 <td ng-show="engine.selectedTheme" class="channels">
                     <ul ui-sortable="sortableOptions" ng-model="engine.selectedTheme.channels">
-                        <li ng-repeat="channel in engine.selectedTheme.channels track by $id($index)" data-order="{{$index}}">
-                            <span><img ng-src="{{channel.img}}" title="{{channel.name}}"></span> &nbsp;
+                        <li ng-repeat="channel in engine.selectedTheme.channels">
+                            <span><img ng-src="{{channel.img}}" title="{{channel.name}}" style="background:{{engine.bg}}"></span> &nbsp;
                             <span><input type="text" placeholder="Link" ng-model="channel.url"></span>
                             <i class="icon icon-navigation handle"></i>
                         </li>
