@@ -1,0 +1,32 @@
+532	1031	Folder	icon-folder	icon-folder	NULL	False	True
+533	1032	Image	icon-picture	icon-picture	NULL	False	False
+534	1033	File	icon-document	icon-document	NULL	False	False
+531	1044	Member	icon-user	icon-user	NULL	False	False
+537	1410	Image1	icon-picture	icon-picture	NULL	False	True
+
+1	-49	Umbraco.TrueFalse	Integer
+2	-51	Umbraco.Integer	Integer
+3	-87	Umbraco.TinyMCEv3	Ntext
+4	-88	Umbraco.Textbox	Nvarchar
+5	-89	Umbraco.TextboxMultiple	Ntext
+6	-90	Umbraco.UploadField	Nvarchar
+7	-92	Umbraco.NoEdit	Nvarchar
+8	-36	Umbraco.DateTime	Date
+9	-37	Umbraco.ColorPickerAlias	Nvarchar
+11	-39	Umbraco.DropDownMultiple	Nvarchar
+12	-40	Umbraco.RadioButtonList	Nvarchar
+13	-41	Umbraco.Date	Date
+14	-42	Umbraco.DropDown	Integer
+15	-43	Umbraco.CheckBoxList	Nvarchar
+16	1034	Umbraco.ContentPickerAlias	Integer
+17	1035	Umbraco.MediaPicker	Integer
+18	1036	Umbraco.MemberPicker	Integer
+21	1040	Umbraco.RelatedLinks	Ntext
+22	1041	Umbraco.Tags	Ntext
+24	1043	Umbraco.ImageCropper	Ntext
+25	1045	Umbraco.MultipleMediaPicker	Nvarchar
+-26	-95	Umbraco.ListView	Nvarchar
+-27	-96	Umbraco.ListView	Nvarchar
+-28	-97	Umbraco.ListView	Nvarchar
+44	1479	Social.Media.Channels	Ntext
+41	1476	Umbraco.Textbox	Nvarchar

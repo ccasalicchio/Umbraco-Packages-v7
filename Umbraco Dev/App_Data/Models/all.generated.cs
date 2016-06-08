@@ -7,7 +7,7 @@ using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
-[assembly: PureLiveAssembly, System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly: PureLiveAssembly, System.Reflection.AssemblyVersion("0.0.0.3")]
 
 
 // FILE: models.generated.cs
@@ -36,16 +36,16 @@ using  Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Test Page</summary>
-	[PublishedContentModel("testPage")]
-	public partial class TestPage : PublishedContentModel
+	/// <summary>Social Media Channels Example</summary>
+	[PublishedContentModel("home")]
+	public partial class Home : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "testPage";
+		public new const string ModelTypeAlias = "home";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public TestPage(IPublishedContent content)
+		public Home(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -56,18 +56,18 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TestPage, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Home, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// Social Media Channels
+		/// Social Media Themes
 		///</summary>
-		[ImplementPropertyType("socialMediaChannels")]
-		public Newtonsoft.Json.Linq.JToken SocialMediaChannels
+		[ImplementPropertyType("socialMediaThemes")]
+		public Newtonsoft.Json.Linq.JToken SocialMediaThemes
 		{
-			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("socialMediaChannels"); }
+			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("socialMediaThemes"); }
 		}
 	}
 
@@ -231,15 +231,15 @@ namespace Umbraco.Web.PublishedContentModels
 	}
 
 	/// <summary>Social Media Theme</summary>
-	[PublishedContentModel("Image1")]
-	public partial class Image1 : PublishedContentModel
+	[PublishedContentModel("socialMediaThemeType")]
+	public partial class SocialMediaThemeType : PublishedContentModel
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "Image1";
+		public new const string ModelTypeAlias = "socialMediaThemeType";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Media;
 #pragma warning restore 0109
 
-		public Image1(IPublishedContent content)
+		public SocialMediaThemeType(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -250,7 +250,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Image1, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SocialMediaThemeType, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
@@ -292,7 +292,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Size
+		/// Image Size
 		///</summary>
 		[ImplementPropertyType("umbracoBytes")]
 		public string UmbracoBytes
@@ -301,7 +301,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Type
+		/// Image Extension
 		///</summary>
 		[ImplementPropertyType("umbracoExtension")]
 		public string UmbracoExtension
@@ -310,16 +310,16 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Upload image
+		/// Upload Image: Theme Thumbnail
 		///</summary>
 		[ImplementPropertyType("umbracoFile")]
-		public Umbraco.Web.Models.ImageCropDataSet UmbracoFile
+		public object UmbracoFile
 		{
-			get { return this.GetPropertyValue<Umbraco.Web.Models.ImageCropDataSet>("umbracoFile"); }
+			get { return this.GetPropertyValue("umbracoFile"); }
 		}
 
 		///<summary>
-		/// Height
+		/// Image Height
 		///</summary>
 		[ImplementPropertyType("umbracoHeight")]
 		public string UmbracoHeight
@@ -328,7 +328,7 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Width
+		/// Image Width
 		///</summary>
 		[ImplementPropertyType("umbracoWidth")]
 		public string UmbracoWidth

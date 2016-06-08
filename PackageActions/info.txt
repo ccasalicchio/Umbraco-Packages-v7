@@ -1,7 +1,6 @@
-https://our.umbraco.org/forum/umbraco-7/developing-umbraco-7-packages/71610-create-package-action-to-update-lang-files
-
-https://github.com/KevinJump/OpeningSoon/blob/master/OpeningSoonInstaller/OpeningSoonPackageActions.cs
-
-https://our.umbraco.org/forum/umbraco-7/developing-umbraco-7-packages/49854-Adding-Actions-to-the-Package-Action-tab
-
-https://github.com/umbraco/Umbraco-CMS/tree/dev-v7/src/umbraco.cms/businesslogic/Packager/PackageActions
+CREATING PACKAGE ACTIONS
+http://24days.in/umbraco/2013/v7-packages/
+https://our.umbraco.org/documentation/reference/management/models/mediatype
+https://our.umbraco.org/documentation/reference/Management/Services/ContentTypeService
+https://our.umbraco.org/documentation/reference/Management/Models/ContentType
+https://our.umbraco.org/documentation/Reference/Management/Services/DataTypeService

@@ -1,0 +1,5 @@
+@using SocialMediaChannels.Helpers;
+@{
+
+	MediaHelper.AddMediaType();
+}

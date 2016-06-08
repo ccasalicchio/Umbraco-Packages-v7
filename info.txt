@@ -1,5 +1,8 @@
+CREATING BACKOFFICE EXTENSIONS
 http://umbraco.github.io/Belle/#/api
 
 https://github.com/kgiszewski/LearnUmbraco7/blob/master/Chapter%2011%20-%20Working%20with%20AngularJs%20for%20Customizing%20the%20Backoffice/03%20-%20AngularJs%20Umbraco%20Services%20and%20Resources.md
 
 https://our.umbraco.org/documentation/Tutorials/Creating-a-Property-Editor/
+
+http://www.nibble.be/?p=330

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Iconic" description="Icons Set by Pink Moustache" created-date="2009-09-10" created-by="Pink Moustache" url-reference="http://www.pinkmoustache.net/new-free-social-icons-vector-set/" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="blink_list" name="Blink_list" image="blink_list.png" />
+  <channel id="delicious" name="Delicious" image="delicious.png" />
+  <channel id="design_bump" name="Design_bump" image="design_bump.png" />
+  <channel id="design_float" name="Design_float" image="design_float.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="furl" name="Furl" image="furl.png" />
+  <channel id="google" name="Google" image="google.png" />
+  <channel id="mixx" name="Mixx" image="mixx.png" />
+  <channel id="reddit" name="Reddit" image="reddit.png" />
+  <channel id="rss" name="RSS" image="rss.png" />
+  <channel id="technorati" name="Technorati" image="technorati.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="yahoo" name="Yahoo" image="yahoo.png" />
+  <channel id="you_tube" name="YouTube" image="you_tube.png" />
+</theme>

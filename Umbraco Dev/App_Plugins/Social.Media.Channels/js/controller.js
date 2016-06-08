@@ -32,19 +32,24 @@ angular.module("umbraco")
                 $scope.model.value.showLabels = false;
             }
         }
+        
         function populateTheme(value, key) {
             return {
                 index: key,
                 Id: value.id,
-                CreatedDate: value.properties[0].value,
-                Screenshot: value.properties[1].value.src,
-                Url: value.properties[2].value,
-                CreatedBy: value.properties[3].value,
-                ThemeName: value.properties[8].value,
+                CreatedDate: getPropertyByName("createdDate", value.properties),
+                Screenshot: getPropertyByName("umbracoFile", value.properties).src,
+                Url: getPropertyByName("themeUrl", value.properties),
+                CreatedBy: getPropertyByName("createdBy", value.properties),
+                ThemeName: getPropertyByName("themeName", value.properties),
                 channels: []
             };
         }
-
+        function getPropertyByName(prop, array) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i].alias === prop) return array[i].value;
+            }
+        }
         function populateChannels(theme) {
             var channels = [];
             mediaResource.getChildren(theme)

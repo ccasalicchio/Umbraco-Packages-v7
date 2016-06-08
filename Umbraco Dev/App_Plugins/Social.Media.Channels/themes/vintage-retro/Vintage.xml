@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Vintage" description="Retro Vintage Icons Set by Brainleaf Communication" created-date="2013-09-20" created-by="Brainleaf Communication" url-reference="http://brainleaf.eu/index.php/free-icons/62-free-retro-social-icons-by-brainleaf" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="deviantart" name="Deviantart" image="deviantart.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="drupal" name="Drupal" image="drupal.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="googleplus" name="Google+" image="googleplus.png" />
+  <channel id="instagram" name="Instagram" image="instagram.png" />
+  <channel id="linkedin" name="LinkedIn" image="linkedin.png" />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png" />
+  <channel id="rss" name="RSS" image="rss.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="wordpress" name="Wordpress" image="wordpress.png" />
+  <channel id="youtube" name="YouTube" image="youtube.png" />
+</theme>

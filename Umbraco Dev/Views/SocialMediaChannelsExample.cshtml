@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using SocialMediaChannels.Helpers;
+@{
+	Layout = null;
+	//MediaHelper.AddSocialMediaChannelMediaType();
+	//MediaHelper.AddSocialMediaChannelThemes();
+	//MediaHelper.AddSocialMediaChannelTheme("geekly");
+	ExamineManager.Instance.IndexProviderCollection["InternalIndexer"].RebuildIndex();
+}
+@Umbraco.RenderMacro("SocialMediaChannels")

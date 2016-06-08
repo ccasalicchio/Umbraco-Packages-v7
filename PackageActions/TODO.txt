@@ -1,0 +1,3 @@
+Add image upload property to media type OK
+add folder to media OK
+add themes with images OK

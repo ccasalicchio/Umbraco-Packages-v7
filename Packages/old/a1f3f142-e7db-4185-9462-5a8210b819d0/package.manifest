@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Social.Media.Channels",
+      "name": "Social Media Channels",
+      "hideLabel": false,
+      "icon": "icon-share",
+      "group": "Rich Content",
+      "editor": {
+        "view": "~/App_Plugins/Social.Media.Channels/views/view.html",
+        "valueType": "JSON"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Social.Media.Channels/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Social.Media.Channels/css/style.css"
+  ]
+}

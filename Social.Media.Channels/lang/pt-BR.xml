@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="pt_br" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="socialchannels">
+    <key alias="title">Escolha o tema dos canais sociais</key> 
+    <key alias="defaultoption">----Escolher Tema----</key>
+    <key alias="showlabels">Mostrar Etiquetas</key>
+    <key alias="invertcolors">Inverter Cores</key>
+  </area>
+</language>

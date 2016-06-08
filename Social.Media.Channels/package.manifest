@@ -3,7 +3,7 @@
     {
       "alias": "Social.Media.Channels",
       "name": "Social Media Channels",
-      "hideLabel": false,
+      "hideLabel": true,
       "icon": "icon-share",
       "group": "Rich Content",
       "editor": {

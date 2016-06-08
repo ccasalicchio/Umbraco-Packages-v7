@@ -1,0 +1,38 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+	@{
+		dynamic node = CurrentPage;
+		dynamic theme = node.socialMediaThemes;
+		if(theme!=null){
+
+			dynamic channels = theme.channels;
+			bool showLabels = bool.Parse(theme.showLabels.ToString());; 
+
+				<div class="social-media-channels">
+					<ul>
+					@if(channels!=null){
+
+						foreach (dynamic channel in channels)
+						{
+							if(channel.url!=""){
+
+								<li>
+									<a href="@channel.url" target="_blank" title="@channel.name">
+									<img src="@channel.img" alt="@channel.name"/>
+									</a>
+									@if(showLabels){
+										<label><a href="@channel.url" target="_blank" title="@channel.name">@channel.name</a></label>
+									}
+								</li>
+							}
+						}
+					}
+			else{
+				<li>No channels</li>	
+			}
+			</ul>
+				</div>
+		}
+		else{
+			<strong>No channels</strong>
+		}
+	}

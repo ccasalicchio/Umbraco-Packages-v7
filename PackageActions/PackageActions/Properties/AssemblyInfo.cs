@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("PackageActions")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Umbraco Package Actions by Carlos Casalicchio")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PackageActions")]
+[assembly: AssemblyCompany("Carlos Casalicchio")]
+[assembly: AssemblyProduct("Umbraco Package Actions")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
