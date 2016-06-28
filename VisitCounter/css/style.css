@@ -1,0 +1,9 @@
+﻿.visitCounter h5{
+    font-size:1.3em;
+    text-shadow: -1px -1px 1px #ccc;
+    color:#000;
+    transition:all 0.6s ease-in-out;
+}
+.visitCounter h5:hover{
+    text-shadow: 0 0 5px #000;
+}
