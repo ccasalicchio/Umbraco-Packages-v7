@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "On.Off.Button",
+      "name": "On-Off Button",
+      "hideLabel": true,
+      "icon": "icon-power",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/On.Off.Button/views/view.html",
+        "valueType": "INT"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/On.Off.Button/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/On.Off.Button/css/style.css"
+  ]
+}
