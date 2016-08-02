@@ -6,3 +6,4 @@ Packages for Umbraco 7.4.3+
 - Social Media Channels
 - Visit Counter
 - On-Off Button
+- YouTube Video

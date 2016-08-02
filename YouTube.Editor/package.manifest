@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "YouTube.Editor",
+      "name": "Editor YouTube",
+      "hideLabel": true,
+      "icon": "icon-movie",
+      "group": "Rich Content",
+      "editor": {
+        "view": "~/App_Plugins/YouTube.Editor/views/view.html",
+        "valueType": "JSON"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/YouTube.Editor/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/YouTube.Editor/css/style.css"
+  ]
+}
