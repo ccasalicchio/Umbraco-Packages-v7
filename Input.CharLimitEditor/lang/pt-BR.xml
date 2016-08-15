@@ -4,8 +4,10 @@
     <name>Carlos Casalicchio</name>
     <link>http://www.ccasalicchio.com</link>
   </creator>
-  <area alias="SocialMediaChannels">
-    <key alias="title">Escolha o tema dos canais sociais</key> 
-    <key alias="select">----Escolher Tema----</key>
+  <area alias="inputlimit">
+    <key alias="youhave">Você tem</key>
+    <key alias="charleft">caracteres sobrando</key>
+    <key alias="limitReachedOnly">Somente</key>
+    <key alias="limitReachedAllowed">caracteres permitidos!</key>
   </area>
 </language>

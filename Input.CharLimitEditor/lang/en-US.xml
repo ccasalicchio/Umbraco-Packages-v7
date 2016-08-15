@@ -4,8 +4,10 @@
     <name>Carlos Casalicchio</name>
     <link>http://www.ccasalicchio.com</link>
   </creator>
-  <area alias="Social.Media.Channels">
-    <key alias="title">Choose your Social Media Theme</key>
-    <key alias="select">----Choose Theme----</key>
+  <area alias="inputlimit">
+    <key alias="youhave">You have</key>
+    <key alias="charleft">characters left</key>
+    <key alias="limitReachedOnly">Only</key>
+    <key alias="limitReachedAllowed">allowed characters!</key>
   </area>
 </language>

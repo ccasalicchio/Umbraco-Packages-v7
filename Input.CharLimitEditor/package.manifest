@@ -1,0 +1,36 @@
+{
+    propertyEditors: [
+        {
+		alias: "Input.CharLimitEditor",
+		name: "Input Char limit",
+		"hideLabel": false,
+      	"icon": "icon-stop-hand",
+      	"group": "Common",
+		editor: {
+		view: "~/App_Plugins/Input.CharLimitEditor/views/view.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Number of Characters",
+					description: "Enter the max number of characters allowed",
+					key: "limit",
+					view: "requiredfield",
+					validation: [
+						{
+							type: "Required" 
+						}						
+					]
+				}
+			]
+		}
+        }
+    ]
+    ,
+    javascript: [
+        '~/App_Plugins/Input.CharLimitEditor/js/controller.js'
+    ],
+    css: [
+    "~/App_Plugins/Input.CharLimitEditor/css/style.css"
+  ]
+}

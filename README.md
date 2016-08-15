@@ -7,3 +7,5 @@ Packages for Umbraco 7.4.3+
 - Visit Counter
 - On-Off Button
 - YouTube Video
+- Default Value
+- Char Limit
