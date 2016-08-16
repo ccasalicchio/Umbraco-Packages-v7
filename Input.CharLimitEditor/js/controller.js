@@ -1,20 +1,29 @@
 angular.module("umbraco")
 .controller("Input.CharLimitEditorController",
 	function ($scope) {
+		var limit = parseInt($scope.model.config.limit);
+		var thumbUp = "thumb-up", alert = "alert", warning = "stop-hand";
+		$scope.counter = limit - $scope.model.value.length;
+		$scope.limit = limit;
+		$scope.countLeft = true;
+		$scope.maxReached = false;
+		$scope.icon = thumbUp;
+		$scope.css = thumbUp;
+		
 		$scope.limitChars = function(){
-			var limit = parseInt($scope.model.config.limit);
-			var thumbUp = "thumb-up", alert = "alert", warning = "stop-hand";
 			$scope.counter = limit - $scope.model.value.length;
-			$scope.countLeft = true;
-			$scope.maxReached = false;
-			$scope.limit = limit;
+			CheckChars();
+		};
 
+		function CheckChars(){
 			if($scope.model.value.length === 0){
+				$scope.countLeft = true;
+				$scope.maxReached = false;
 				$scope.icon = thumbUp;
 				$scope.css = thumbUp;
 			}
 
-			if ($scope.model.value.length >= limit)
+			else if ($scope.model.value.length >= limit)
 			{
 				$scope.maxReached = true;
 				$scope.countLeft = false;
@@ -23,9 +32,16 @@ angular.module("umbraco")
 				$scope.model.value = $scope.model.value.substr(0, limit );
 			}
 			
-			else if($scope.model.value.length === 0 ){
+			else if($scope.model.value.length < (limit/2)){
 				$scope.icon = thumbUp;
 				$scope.css = thumbUp;
+				$scope.maxReached = false;
+				$scope.countLeft = true;
+			}
+
+			else if($scope.model.value.length > (limit/2)){
+				$scope.icon = alert;
+				$scope.css = alert;
 				$scope.maxReached = false;
 				$scope.countLeft = true;
 			}
@@ -37,5 +53,6 @@ angular.module("umbraco")
 				$scope.maxReached = false;
 				$scope.countLeft = true;
 			}
-		};
+		}
+		CheckChars();
 	});
