@@ -8,6 +8,6 @@
     <key alias="youhave">You have</key>
     <key alias="charleft">characters left</key>
     <key alias="limitReachedOnly">Only</key>
-    <key alias="limitReachedAllowed">allowed characters!</key>
+    <key alias="limitReachedAllowed">characters allowed!</key>
   </area>
 </language>
