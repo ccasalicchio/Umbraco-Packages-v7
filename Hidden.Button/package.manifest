@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Hidden.Button",
+      "name": "Hidden Button",
+      "hideLabel": true,
+      "icon": "icon-document-dashed-line",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/Hidden.Button/views/view.html",
+        "valueType": "INT"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Hidden.Button/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Hidden.Button/css/style.css"
+  ]
+}

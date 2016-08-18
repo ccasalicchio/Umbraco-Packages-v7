@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="hiddenswitch">
+    <key alias="notHidden">Page Visible</key>
+    <key alias="isHidden">Hidden Page!</key>
+    <key alias="clickToChange">Click to change visibility state</key>
+  </area>
+</language>

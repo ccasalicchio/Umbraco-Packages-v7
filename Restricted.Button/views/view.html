@@ -1,0 +1,15 @@
+﻿<div ng-controller="Restricted.Button">
+	<strong><localize key='restrictedswitch_clickToChange'>Click to change</localize></strong>
+	<div class="restricted">
+		<input type="checkbox" name="restrictedswitch" class="restrictedswitch-checkbox" id="idrestrictedswitch" ng-model="engine.checked" ng-change="engine.change()">
+		<label class="restricted-label {{engine.checked}}" for="idrestrictedswitch">
+			<i class="icon icon-{{engine.icon}}"></i> 
+			<span ng-show="engine.checked">
+				<localize key="restrictedswitch_isRestricted">Is Currently Restricted</localize>
+			</span>
+				<span ng-hide="engine.checked" class="notification">
+					<localize key="restrictedswitch_notRestricted">Not Currently Restricted</localize>
+				</span>
+			</label>
+		</div>
+	</div>

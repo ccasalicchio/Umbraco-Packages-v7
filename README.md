@@ -9,3 +9,5 @@ Packages for Umbraco 7.4.3+
 - YouTube Video
 - Default Value
 - Char Limit
+- Hide Page Button
+- Restrict Page Button

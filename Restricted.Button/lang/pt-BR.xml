@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="pt_br" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="restrictedswitch">
+    <key alias="notRestricted">Página irrestrita</key>
+    <key alias="isRestricted">Página restrita!</key>
+    <key alias="clickToChange">Clique para alterar estado</key>
+  </area>
+</language>
