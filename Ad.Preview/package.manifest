@@ -1,0 +1,22 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Ad.Preview",
+      "name": "Ad Preview",
+      isReadOnly: true, 
+      "hideLabel": true,
+      "icon": "icon-radio",
+      "editor": {
+        "view": "~/App_Plugins/Ad.Preview/views/view.html"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Ad.Preview/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Ad.Preview/css/style.css"
+  ]
+}

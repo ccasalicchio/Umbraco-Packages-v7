@@ -6,3 +6,12 @@ https://github.com/kgiszewski/LearnUmbraco7/blob/master/Chapter%2011%20-%20Worki
 https://our.umbraco.org/documentation/Tutorials/Creating-a-Property-Editor/
 
 http://www.nibble.be/?p=330
+
+https://nicbell.github.io/ucreate/icons.html
+
+http://umbraco.github.io/Belle/#/tutorials/manifest
+STRING : stores the value as an nvarchar in the database
+DATETIME: stores the value as datetime in the database
+TEXT: stores the value as ntext in the database
+INT stores the value as a bigint in the database
+JSON stored as ntext, but automatically serialized to dynamic object

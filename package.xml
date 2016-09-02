@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>LICENSE</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page</orgPath>
+      <orgName>LICENSE</orgName>
+    </file>
+    <file>
+      <guid>package.manifest</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+    <file>
+      <guid>README.md</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page</orgPath>
+      <orgName>README.md</orgName>
+    </file>
+    <file>
+      <guid>style.css</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page/css</orgPath>
+      <orgName>style.css</orgName>
+    </file>
+    <file>
+      <guid>patterns.jpg</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page/bg</orgPath>
+      <orgName>patterns.jpg</orgName>
+    </file>
+    <file>
+      <guid>login.js</guid>
+      <orgPath>/App_Plugins/Custom.Login.Page/js</orgPath>
+      <orgName>login.js</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Custom Login Page</name>
+      <version>1.5.1</version>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://github.com/ccasalicchio/UmbracoPackages/tree/master/Custom.Login.Page</url>
+      <requirements>
+        <major>7</major>
+        <minor>4</minor>
+        <patch>3</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Carlos Casalicchio</name>
+      <website>http://www.ccasalicchio.com</website>
+    </author>
+    <readme><![CDATA[# Custom Login Page
+
+Plugin for Umbraco 7.4.3+
+
+This is a tweak for the login page, changing the visual of the layout. It adds a custom css and javascript injections into the Login page.
+
+It also adds a "loading" after clicking login, and it changes the background image for the screen.
+
+To customize it, you should open ~/App_Plugins/Custom.Login.Page/css/style.css and change the style to fit your needs.
+]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
