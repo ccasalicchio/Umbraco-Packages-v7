@@ -9,6 +9,9 @@ Para dúvidas, contate carlos.casalicchio@gmail.com
 Use o formulário inserindo um novo macro em seu html
 <umbraco:Macro show_cpf="0|1" show_permit="0|1" Alias="ContactForm" runat="server"></umbraco:Macro>
 
+Insira o css (opcional)
+<link rel="stylesheet" type="text/css" href="/css/contactform.css" media="screen"/>
+
 Insira o css e ajuste os dados do email em App_Code/Contact_Form.cs
 
 	public Mailer()
