@@ -1,0 +1,119 @@
+.contactform_wrapper{
+	width:80%;
+	margin:0 auto;
+	padding:20px;
+	font-family: 'Arial',sans serif;
+}
+.contactform_wrapper h4{
+	font-size:2em;
+	line-height:2em;
+	border-bottom:1px solid #000;
+	width:100%;
+}
+.contactform_wrapper form{
+	width:100%;
+}
+.contactform_wrapper form .input-group{
+	clear:both;
+	float:none;
+	margin-bottom:5px;
+}
+.contactform_wrapper form .input-group label{
+	font-size:0.85em;
+	min-width: 125px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.contactform_wrapper form .input-group input[type='text'], .contactform_wrapper form .input-group select {
+	height:32px;
+	width: 100%;
+	padding: 5px 0 5px 10px;
+}
+.contactform_wrapper form .input-group select{
+
+}
+.contactform_wrapper form .input-group input[type='radio']{
+
+}
+.contactform_wrapper form .input-group input[type='radio']:checked{
+
+}
+.contactform_wrapper form .input-group textarea{
+	width:100%;
+	height:80px;
+}
+.contactform_wrapper form .input-group input[type='reset'],.contactform_wrapper form .input-group input[type='submit']{
+	height:50px;
+	width:200px;
+	float:left;
+	border:1px solid #ccc;
+	background: #000;
+	color: #fff;
+	transition: all 0.2s ease-in;
+	-webkit-transition:all 0.2s ease-in;
+}
+.contactform_wrapper form .input-group input[type='reset']:hover,.contactform_wrapper form .input-group input[type='submit']:hover{
+	background:#ccc;
+	color:#000;
+	border:1px solid #fff;
+}
+.contactform_wrapper form .input-group #category{
+	display:block;
+}
+.notification_error,.notification_ok{
+	width:100%;
+	padding:10px 20px;
+	font-size:2em;
+}
+.notification_error{
+	color:#fff;
+	background:red;
+}
+.notification_ok{
+	color:#fff;
+	background:green;
+}
+.loader{
+	display:none;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(0,0,0, 0.2);
+  border-right: 1.1em solid rgba(0,0,0, 0.2);
+  border-bottom: 1.1em solid rgba(0,0,0, 0.2);
+  border-left: 1.1em solid #000000;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

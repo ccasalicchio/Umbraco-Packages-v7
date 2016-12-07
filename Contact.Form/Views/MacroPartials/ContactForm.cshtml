@@ -1,0 +1,91 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@{
+var show_cpf = Model.MacroParameters["show_cpf"];
+var show_permit = Model.MacroParameters["show_permit"];
+string[] types = {"Usuário/Consumidor Final","Profissional da Saúde"};
+string chosen_type = string.Empty;
+	
+if(show_cpf=="1"){
+	chosen_type = types[0];
+}
+else {
+	chosen_type = types[1];
+}
+
+<!--Remove jQuery if already present-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+<!--/Remove jQuery if already present-->
+<script src="scripts/mask.js" type="text/javascript"></script>
+<script src="scripts/contactform.js" type="text/javascript"></script>
+<div class="contactform_wrapper">
+	<h4>Contato</h4>
+	<div class="contactform_content">
+		<div id="note"></div>
+		<div id="fields">
+			<form id="contactform_send" action="">
+				<div class="input-group">
+					<label for="name">Nome</label>
+					<input type="text" name="name" id="name" value="" placeholder='nome' title='Insira seu nome' required/>
+				</div>
+				<div class="input-group">
+					<label for="email">E-Mail</label>	
+					<input type="text" name="email" id="email" value="" placeholder='endereço de email' title='Insira seu email' required/>
+				</div>
+				<div class="input-group">
+					<label for="phone">Telefone</label>	
+					<input type="text" name="phone" id="phone" value="" placeholder="telefone" title="Insira seu telefone" />
+				</div>
+				<div class="input-group">
+					<label for="city">Cidade</label>	
+					<input type="text" name="city" id="city" value="" placeholder="cidade" title="Insira sua cidade" />
+				</div>
+				<div class="input-group">
+					<label for="state">Estado (UF)</label>	
+					<input type="text" name="state" id="state" value="" placeholder="estado (UF)" title="Insira seu Estados (UF)" />
+				</div>
+				<div class="input-group">
+					@if(show_cpf=="1"){
+					<label for="document_cpf">CPF</label>	
+					<input type="text" name="document_cpf" id="document_cpf" value="" placeholder="CPF" title="Insira seu CPF" required/>
+				}
+				@if(show_permit=="1"){
+				<label for="document_permit">Número do Conselho</label>	
+				<input type="text" name="document_permit" id="document_permit" value="" placeholder="Número do Conselho" title="Insira seu número do conselho" required/>
+				}
+                @if(show_cpf=="0"){
+                    <input type="hidden" name="document_cpf" value="n/a"/>
+                }
+                @if(show_permit=="0"){
+                    <input type="hidden" name="document_permit" value="n/a"/>
+                }
+		</div>
+		<div class="input-group">
+			<label>Assunto</label>
+			<input type="radio" name="subject" value="Informação"> Informação
+			<input type="radio" name="subject" value="Reclamação"> Reclamação
+			<input type="radio" name="subject" value="Evento Adverso"> Evento Adverso
+		</div>
+		<div class="input-group" id="category">
+			<label for="subSubject">Categoria</label>
+			<select name="subSubject" id="subSubject">
+				<option value="Produto">Produto</option>
+				<option value="Serviços">Serviço</option>
+				<option value="Outros">Outro</option>
+			</select>
+		</div>
+		<div class="input-group">
+			<input type="hidden" name="type" value="@chosen_type"/>
+			<textarea name="message" id="message" placeholder='Descripção' title='Escreva uma descrição para o contato' required></textarea>
+		</div>
+		<div class="clear"></div>
+		<div class="input-group">
+			<input type="reset" class="contact_btn" value='Limpar Formulário' title='Limpar dados' />
+			<input type="submit" class="contact_btn send_btn" value='Enviar' title='Enviar Mensagem' />
+			<div class="loader"></div>
+		</div>
+		<div class="clear"></div>
+	</form>
+</div>
+</div>
+</div>
+}
