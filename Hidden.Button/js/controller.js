@@ -38,5 +38,7 @@
     engine.change=function(){
         $scope.model.value = ParseToInt(engine.checked);
     };
+      //default unchecked
+    $scope.model.value = 0;
     $scope.engine = engine;
 });

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Contact_Form.cs</guid>
+      <orgPath>/App_Code</orgPath>
+      <orgName>Contact_Form.cs</orgName>
+    </file>
+    <file>
+      <guid>ContactForm.cshtml</guid>
+      <orgPath>/Views/MacroPartials</orgPath>
+      <orgName>ContactForm.cshtml</orgName>
+    </file>
+    <file>
+      <guid>ContactForm_Send.cshtml</guid>
+      <orgPath>/Views/MacroPartials</orgPath>
+      <orgName>ContactForm_Send.cshtml</orgName>
+    </file>
+    <file>
+      <guid>contactform.js</guid>
+      <orgPath>/Scripts</orgPath>
+      <orgName>contactform.js</orgName>
+    </file>
+    <file>
+      <guid>mask.js</guid>
+      <orgPath>/Scripts</orgPath>
+      <orgName>mask.js</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Formulário de Contato</name>
+      <version>1.5</version>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>https://github.com/ccasalicchio/UmbracoPackages/tree/master/Contact.Form</url>
+      <requirements>
+        <major>6</major>
+        <minor>2</minor>
+        <patch>4</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Carlos Casalicchio</name>
+      <website>http://www.ccasalicchio.com</website>
+    </author>
+    <readme><![CDATA[Formulário de Contato para Umbraco v6.2.4 (Assembly version: 1.0.5394.15649) e acima
+Criado especificamente para GSK
+http://www.gsk.com/
+
+Para dúvidas, contate carlos.casalicchio@gmail.com
+
+Use o formulário inserindo um novo macro em seu html
+<umbraco:Macro show_cpf="0|1" show_permit="0|1" Alias="ContactForm" runat="server"></umbraco:Macro>]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates>
+    <Template>
+      <Name>ContactForm_Send</Name>
+      <Alias>ContactForm_Send</Alias>
+      <Design><![CDATA[<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<umbraco:Macro Alias="ContactForm_Send" runat="server" />
+</asp:Content>]]></Design>
+    </Template>
+    <Template>
+      <Name>ContactForm_sender</Name>
+      <Alias>ContactForm_sender</Alias>
+      <Design><![CDATA[<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+<umbraco:Macro Alias="ContactForm_Send" runat="server"></umbraco:Macro>
+</asp:Content>]]></Design>
+    </Template>
+  </Templates>
+  <Stylesheets>
+    <Stylesheet>
+      <Name>contactform</Name>
+      <FileName>
+      </FileName>
+      <Content><![CDATA[.contactform_wrapper{
+	width:80%;
+	margin:0 auto;
+	padding:20px;
+	font-family: 'Arial',sans serif;
+}
+.contactform_wrapper h4{
+	font-size:2em;
+	line-height:2em;
+	border-bottom:1px solid #000;
+	width:100%;
+}
+.contactform_wrapper form{
+	width:100%;
+}
+.contactform_wrapper form .input-group{
+	clear:both;
+	float:none;
+	margin-bottom:5px;
+}
+.contactform_wrapper form .input-group label{
+	font-size:0.85em;
+	min-width: 125px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.contactform_wrapper form .input-group input[type='text'], .contactform_wrapper form .input-group select {
+	height:32px;
+	width: 100%;
+	padding: 5px 0 5px 10px;
+}
+.contactform_wrapper form .input-group select{
+
+}
+.contactform_wrapper form .input-group input[type='radio']{
+
+}
+.contactform_wrapper form .input-group input[type='radio']:checked{
+
+}
+.contactform_wrapper form .input-group textarea{
+	width:100%;
+	height:80px;
+}
+.contactform_wrapper form .input-group input[type='reset'],.contactform_wrapper form .input-group input[type='submit']{
+	height:50px;
+	width:200px;
+	float:left;
+	border:1px solid #ccc;
+	background: #000;
+	color: #fff;
+	transition: all 0.2s ease-in;
+	-webkit-transition:all 0.2s ease-in;
+}
+.contactform_wrapper form .input-group input[type='reset']:hover,.contactform_wrapper form .input-group input[type='submit']:hover{
+	background:#ccc;
+	color:#000;
+	border:1px solid #fff;
+}
+.contactform_wrapper form .input-group #category{
+	display:block;
+}
+.notification_error,.notification_ok{
+	width:100%;
+	padding:10px 20px;
+	font-size:2em;
+}
+.notification_error{
+	color:#fff;
+	background:red;
+}
+.notification_ok{
+	color:#fff;
+	background:green;
+}
+.loader{
+	display:none;
+}
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(0,0,0, 0.2);
+  border-right: 1.1em solid rgba(0,0,0, 0.2);
+  border-bottom: 1.1em solid rgba(0,0,0, 0.2);
+  border-left: 1.1em solid #000000;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+]]></Content>
+    </Stylesheet>
+  </Stylesheets>
+  <Macros>
+    <macro>
+      <name>Contact Form</name>
+      <alias>ContactForm</alias>
+      <scriptType>
+      </scriptType>
+      <scriptAssembly>
+      </scriptAssembly>
+      <xslt>
+      </xslt>
+      <useInEditor>True</useInEditor>
+      <refreshRate>0</refreshRate>
+      <scriptingFile>~/Views/MacroPartials/ContactForm.cshtml</scriptingFile>
+      <properties>
+        <property name="Usuário/Consumidor Final" alias="show_cpf" show="True" propertyType="bool" />
+        <property name="Profissional da Saúde" alias="show_permit" show="True" propertyType="bool" />
+      </properties>
+    </macro>
+    <macro>
+      <name>Contact Form_ Send</name>
+      <alias>ContactForm_Send</alias>
+      <scriptType>
+      </scriptType>
+      <scriptAssembly>
+      </scriptAssembly>
+      <xslt>
+      </xslt>
+      <useInEditor>False</useInEditor>
+      <refreshRate>0</refreshRate>
+      <scriptingFile>~/Views/MacroPartials/ContactForm_Send.cshtml</scriptingFile>
+      <properties />
+    </macro>
+  </Macros>
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
