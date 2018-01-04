@@ -1,0 +1,200 @@
+angular.module("umbraco").controller("SternsPools.Coupons",
+    function ($scope, $routeParams, $http) {
+
+        $scope.Ids          = [];
+        $scope.coupons      = null;
+        $scope.dialog       = null;
+        $scope.status       = null;
+        $scope.template     = { Expiration: null, Amount: null, Active: true };
+        $scope.loading      = false;
+        $scope.processing   = false;
+        $scope.reverseSort  = false;
+        $scope.selectAll    = false;
+        $scope.editMode     = false;
+        $scope.nodata       = false;
+        $scope.createNumber = 1;
+        $scope.orderByField = 'Id';
+        $scope.filter       = '';
+        $scope.isUsed       = '';
+
+        $scope.Selection = function () {
+            if (angular.element('#selectAll').is(':checked'))
+                $scope.Ids = $scope.coupons.map(function (item) { return item.Id; });
+            else $scope.Ids.length = 0;
+        }
+
+        $scope.Debug = function () {
+            console.clear();
+            console.log("===========DEBUG=========");
+            //console.log("coupons");
+            //console.log($scope.coupons);
+            console.log("Ids")
+            console.log($scope.Ids);
+            //console.log("dialog")
+            //console.log($scope.dialog);
+            //console.log("template");
+            //console.log($scope.template);
+            //console.log("loading:"      + $scope.loading);
+            //console.log("reverse sort:" + $scope.reverseSort);
+            //console.log("select all: "  + $scope.selectAll);
+            //console.log("edit mode:"    + $scope.editMode);
+            //console.log("no data:"      + $scope.nodata);
+            //console.log("create #:"     + $scope.createNumber);
+            //console.log("order by:"     + $scope.orderByField);
+            //console.log("filter:"       + $scope.filter);
+            //console.log("is used:"      + $scope.isUsed);
+        }
+
+        $scope.Reload = function () {
+            $scope.Load();
+        }
+
+        $scope.CancelForm = function () {
+            $scope.editMode = false;
+        }
+        $scope.Load = function () {
+            $scope.loading = true;
+
+            $http.get("/umbraco/surface/couponsurface/getallcoupons").then(function (response) {
+                $scope.coupons = response.data;
+
+                if ($scope.coupons.length == 0)
+                    $scope.nodata = true;
+                else $scope.nodata = false;
+
+                angular.forEach($scope.coupons, function (value, key) {
+                    value = $scope.ParseCouponJson(value);
+                });
+
+                $scope.loading = false;
+            },
+            function (data, status) {
+                console.error('Api Error', status, data);
+                $scope.loading = false;
+            });
+        }
+
+        $scope.Create = function () {
+            var howMany = angular.element(".number-input").val();
+            $http.get("/umbraco/surface/couponsurface/newcoupons?howMany=" + howMany).success(function (response) {
+                $scope.Load();
+                $scope.dialog = null;
+            })
+        }
+
+        $scope.Edit = function (coupon) {
+            if (coupon !== undefined) $scope.Ids[0] = coupon;
+            $scope.editMode = true;
+        }
+
+        $scope.Save = function (template) {
+            $scope.processing = true;
+            $http({
+                method: 'GET',
+                params: { "Ids": $scope.Ids, "Active": template.Active, "Expiration": template.Expiration, "Amount": template.Amount },
+                paramSerializer: '$httpParamSerializerJQLike',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                url: "/umbraco/surface/couponsurface/editcoupons"
+            }).then(function successCallback(response) {
+                $scope.status = null;
+                $scope.Load();
+                $scope.editMode = false;
+                $scope.processing = false;
+            },
+            function (data, status) {
+                console.error('Edit Error: ', status, data);
+                $scope.status = data.config.url + "\n\r" + data.data;
+                $scope.processing = false;
+            });
+        }
+
+        $scope.Delete = function (coupon) {
+            if (coupon !== undefined) $scope.Ids[0] = coupon;
+
+            $scope.dialog = {
+                Title: 'Delete Coupon?',
+                Ok: 'Yes',
+                Cancel: 'Cancel',
+                Confirm: function (ok) {
+                    if (ok) {
+                        $scope.processing = true;
+                        $http({
+                            method: 'GET',
+                            params: { "coupons": $scope.Ids },
+                            paramSerializer: '$httpParamSerializerJQLike',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded'
+                            },
+                            url: "/umbraco/surface/couponsurface/delete"
+                        }).then(function successCallback(response) {
+                            $scope.Load();
+                            $scope.status = null;
+                            $scope.dialog = null;
+                            $scope.processing = false;
+                        },
+                        function (data, status) {
+                            console.error('Delete Error: ', status, data);
+                            $scope.status = data.config.url + "\n\r" + data.data;
+                            $scope.processing = false;
+                        });
+                    }
+                    else $scope.dialog = null;
+                }
+            }
+        }
+        $scope.Activate = function (couponId) {
+            $scope.dialog = {
+                Title: 'Activate Coupon?',
+                Ok: 'Yes',
+                Cancel: 'Cancel',
+                Confirm: function (ok) {
+                    if (ok) {
+                        $http.get("/umbraco/surface/couponsurface/activate?couponId=" + couponId).then(function (response) {
+                            $scope.Load();
+                            $scope.dialog = null;
+                        })
+                    }
+                    else $scope.dialog = null;
+                }
+            }
+        }
+        $scope.Deactivate = function (couponId) {
+            $scope.dialog = {
+                Title: 'Deactivate Coupon?',
+                Ok: 'Yes',
+                Cancel: 'Cancel',
+                Confirm: function (ok) {
+                    if (ok) {
+                        $http.get("/umbraco/surface/couponsurface/deactivate?couponId=" + couponId).then(function (response) {
+                            $scope.Load();
+                            $scope.dialog = null;
+                        })
+                    }
+                    else $scope.dialog = null;
+
+                }
+            }
+        }
+
+
+        $scope.parseJson = function (response) {
+            var parsed = angular.fromJson(response);
+            return parsed;
+        }
+
+        $scope.parseDate = function (response) {
+            var parsed = new Date(parseInt(response.substr(6)));
+            return parsed;
+        }
+
+        $scope.ParseCouponJson = function (coupon) {
+            coupon.Created = $scope.parseDate(coupon.Created);
+            coupon.Expiration = $scope.parseDate(coupon.Expiration);
+
+            return coupon;
+        }
+        $scope.Load();
+        $scope.loading = true;
+    });
