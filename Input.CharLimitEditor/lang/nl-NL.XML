@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="nl_nl" intName="Dutch (NL)" localName="Nederlands (NL)" lcid="" culture="nl-NL">
+  <creator>
+    <name>Carlos Casalicchio</name>
+    <link>http://www.ccasalicchio.com</link>
+  </creator>
+  <area alias="inputlimit">
+    <key alias="youhave">Je hebt nog</key>
+    <key alias="charleft">karakters over</key>
+    <key alias="limitReachedOnly">Niet meer dan</key>
+    <key alias="limitReachedAllowed">karakters toegestaan!</key>
+  </area>
+</language>
