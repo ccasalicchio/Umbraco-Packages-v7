@@ -1,4 +1,4 @@
-# Page Visit Counter for Umbraco 7.4.3+
+# Page Visit Counter for Umbraco 7.3.1+
 
 Is a statistics counter for individual pages
 
