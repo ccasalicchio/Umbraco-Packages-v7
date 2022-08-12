@@ -1,0 +1,59 @@
+﻿<script>
+    function StudentListController($scope, $routeParams) {
+        $scope.loaded = false;
+        $scope.currentId = $routeParams.id;
+
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/umbraco/backoffice/api/SystemApi/GetLog",
+            data: JSON.stringify({ LogID: $routeParams.id }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            statusCode: {
+                200: function (data) {
+                    $scope.settings = data;
+                    $scope.loaded = true;
+                }
+            },
+            error: function () { }
+        });
+    }
+</script>
+<umb-panel ng-controller="StudentListController">
+    <umb-header>
+        <div class="umb-headline-editor-wrapper span12 ng-scope">
+            <h1 class="ng-binding">Log : {{currentId}}</</h1>
+        </div>
+    </umb-header>
+    <umb-tab-view>
+        <div class="umb-pane">
+            <table style="width: 100%;" border="1">
+                <tr style="font-weight: bold; background-color: lightgray;">
+                    <td>Type</td>
+                    <td>Time</td>
+                    <td>Code</td>
+                    <td>Message</td>
+                </tr>
+                <tr ng-repeat="item in settings" class="{{item.Type}}">
+                    <td valign="top">{{item.Type}}</td>
+                    <td valign="top">{{item.Time}}</td>
+                    <td valign="top">{{item.Code}}</td>
+                    <td valign="top">{{item.Message}}</td>
+                </tr>
+            </table>
+        </div>
+    </umb-tab-view>
+</umb-panel>
+<style>
+    .INFO {
+        color:  blue;
+    }
+    .ERROR {
+        color: red;
+    }
+    .WARN {
+        color: orange;
+    }
+
+</style>

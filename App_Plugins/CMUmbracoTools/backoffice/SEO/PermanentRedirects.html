@@ -1,0 +1,54 @@
+﻿<script>
+    function SettingsListController($scope, $routeParams) {
+        $scope.loaded = false;
+        $scope.currentId = $routeParams.id;
+
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: "/umbraco/backoffice/api/SEOApi/GetPermanentRedirects",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            statusCode: {
+                200: function (data) {
+                    $scope.settings = data;
+                    $scope.numberOfRecords = data.length;
+
+                    $scope.loaded = true;
+                }
+            },
+            error: function () { }
+        });
+    }
+</script>
+<umb-panel ng-controller="SettingsListController">
+    <umb-header>
+        <div class="umb-headline-editor-wrapper span12 ng-scope">
+            <h1 class="ng-binding">Permanent Redirect (301)</</h1>
+        </div>
+    </umb-header>
+    <umb-tab-view>
+        <div class="umb-pane">
+            <a href="/umbraco#/CMUmbracoTools/SEO/PermanentRedirectsEdit/-1" class="btn">Create Permanent Redirect</a>
+            <a href="/umbraco#/CMUmbracoTools/SEO/PermanentRedirectsOptions/Options" class="btn">Permanent Redirect Options</a>
+            <br /><br />
+            <table style="width: 100%;" ng-if="numberOfRecords > 0">
+                <tr style="font-weight: bold;">
+                    <td>Original URL</td>
+                    <td>Redirect URL</td>
+                    <td>Comments</td>
+                    <td></td>
+                </tr>
+                <tr ng-repeat="item in settings">
+                    <td>{{item.OriginalURL}}</td>
+                    <td>{{item.RedirectURL}}</td>
+                    <td>{{item.Notes}}</td>
+                    <td><a href="/umbraco#/CMUmbracoTools/SEO/PermanentRedirectsEdit/{{item.PermanentRedirectID}}" class="btn">Edit</a></td>
+                </tr>
+            </table>
+            <div ng-if="numberOfRecords == 0">
+                No permanent redirects found.
+            </div>
+        </div>
+    </umb-tab-view>
+</umb-panel>

@@ -1,0 +1,25 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Event.Report",
+      "name": "Event Registration Report",
+      "isParameterEditor": true,
+      "hideLabel": true,
+      "icon": "icon-dashboard",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/Event.Report/views/view.html",
+        "hideLabel": true,
+        "valueType": "JSON"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Event.Report/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Event.Report/css/style.css"
+  ]
+}

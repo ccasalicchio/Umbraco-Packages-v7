@@ -1,0 +1,14 @@
+﻿<div ng-controller="pmg.VideoPlayerCtrl"> 
+    <div class="row">
+      <div class="input-group">
+      <input  ng-model="videoUrl" type="text" class="form-control" pmg-paste='pasteTracker' pmg-events="{ paste : 'setVideo()' }" />
+      <span class="input-group-btn">
+      <button class="btn btn-default" ng-click="setVideo()" type="button">Set Video</button>
+      </span>
+    </div><!-- /input-group -->
+  
+        </div>
+         <div pmg-videoplayer="config" loaded="loaded"></div>
+   
+</div>
+

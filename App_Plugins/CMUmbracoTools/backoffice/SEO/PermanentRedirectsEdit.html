@@ -1,0 +1,123 @@
+﻿<script>
+    function SettingEditController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+
+        $scope.id = $routeParams.id;
+
+        if ($routeParams.id == -1) {
+            $scope.setting = {
+                PermanentRedirectID: -1,
+            };
+
+            $scope.loaded = true;
+        }
+        else {
+            var model = {};
+            model.SettingID = $routeParams.id;
+
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SEOApi/GetPermanentRedirectById",
+                data: JSON.stringify({ PermanentRedirectID : $routeParams.id }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+
+                        $scope.loaded = true;
+                    }
+                },
+                error: function () { }
+            });
+        }
+
+        $scope.save = function (setting) {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SEOApi/PermanentRedirectsSave",
+                data: JSON.stringify(setting),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+                        $scope.SettingForm.$dirty = false;
+                        navigationService.syncTree({ tree: 'SEO', path: [-1, -1], forceReload: true });
+                        notificationsService.success("Permanent redirect", "Permanent redirect has been saved");
+                    }
+                },
+                error: function () { }
+            });
+        };
+
+        $scope.delete = function () {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SEOApi/PermanentRedirectsDelete",
+                data: JSON.stringify({ PermanentRedirectID: $scope.setting.PermanentRedirectID }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        notificationsService.success("Permanent redirect", "The permanent redirect deleted.");
+                        navigationService.hideNavigation();
+                        navigationService.syncTree({ tree: 'SEO', path: [-1, -1], forceReload: true });
+                        $("#contentcolumn").html("");
+                    }
+                },
+                error: function () { }
+            });
+
+        }
+    }
+</script>
+<form name="SettingForm"
+      ng-controller="SettingEditController" ng-show="loaded"
+      ng-submit="save(setting)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span7" style="padding: 20px;">
+                Permanent Redirect : {{setting.OriginalURL}}
+            </div>
+
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode" current-node="currentNode" current-section="{{currentSection}}"></umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="Original URL" description="The URL which will be permanent redirected to another URL.">
+                        <input id="OriginalURL" type="text" class="umb-editor umb-textstring" ng-model="setting.OriginalURL" required />
+                    </umb-control-group>
+
+                    <umb-control-group label="Redirect URL" description="The URL which will be used to redirect.">
+                        <input id="RedirectURL" type="text" class="umb-editor umb-textstring" ng-model="setting.RedirectURL" required />
+                    </umb-control-group>
+
+                    <umb-control-group label="Notes" description="Notes about the permanent redirect.">
+                        <input id="Notes" type="text" class="umb-editor umb-textstring" ng-model="setting.Notes" required />
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                            <button type="button" class="btn btn-danger" ng-click="delete()" ng-if="id != -1">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </umb-panel>
+</form>

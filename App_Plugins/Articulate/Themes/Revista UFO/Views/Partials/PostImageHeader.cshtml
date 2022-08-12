@@ -1,0 +1,29 @@
+@using Articulate.Models
+@using Umbraco.Core.Cache
+@using Umbraco.Web.Models
+@using Umbraco.Web
+@using Umbraco.Core
+@using RevistaUFO
+@inherits UmbracoViewPage<PostModel>
+@{
+    var postBg = "none";
+
+    if (!Model.PostImageUrl.IsNullOrWhiteSpace())
+    {
+        var bgUrl = Model.GetCropUrl(propertyAlias: "postImage", width: 120, height: 120);
+        if (!bgUrl.IsNullOrWhiteSpace())
+        {
+            postBg = bgUrl;
+        }
+            <a href="@Model.Url"><h3>@Model.Name</h3></a>
+            <img src="@(postBg)" alt="@Model.Name" />
+    }
+    else
+    {
+        <a href="@Model.Url">
+            <h3 class="quote">
+                @Model.Name
+            </h3>
+        </a>
+    }
+}

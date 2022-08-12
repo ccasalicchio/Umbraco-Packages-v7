@@ -1,0 +1,94 @@
+﻿<script>
+    function SettingEditController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+
+        $.ajax({
+            type: "GET",
+            url: "/umbraco/backoffice/api/SEOApi/GetRobotsDotTxt",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            statusCode: {
+                200: function (data) {
+                    $scope.setting = data;
+                    $scope.loaded = true;
+                }
+            },
+            error: function () {
+                notificationsService.error("Error", "An error occured.");
+            }
+        });
+
+        $scope.save = function (setting) {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SEOApi/Save",
+                data: JSON.stringify(setting),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+                        $scope.SettingForm.$dirty = false;
+                        navigationService.syncTree({ tree: 'SEO', path: [-1, -1], forceReload: true });
+                        notificationsService.success("Success", "Robots.txt has been saved");
+                    }
+                },
+                error: function () {
+                    notificationsService.error("Error", "An error occured.");
+                }
+            });
+        };
+    }
+</script>
+<form name="SettingForm"
+      ng-controller="SettingEditController" ng-show="loaded"
+      ng-submit="save(setting)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span7" style="padding: 20px;">
+                Robots.txt
+            </div>
+
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode" current-node="currentNode" current-section="{{currentSection}}"></umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="Disallow" description="Folders which will be disallowed">
+                        <div ng-repeat="item in setting.Folders">
+                            <input type="checkbox" ng-model="item.Selected"> {{item.Name}}
+                        </div>
+
+                        <div class="alert alert-info" style="margin-top: 20px;">
+                            <strong>Info!</strong> Folders containing css and JavaScript files has to be allowed so that Google will use them in order to determine if the site is mobile friendly.
+                        </div>
+                    </umb-control-group>
+
+                    <umb-control-group label="Sitemap" description="The URL of the site's sitemap">
+                        <input id="ApplicationInput" type="url" class="umb-editor umb-textstring" ng-model="setting.SitemapURL" placeholder="http://www.domain.com/sitemap.xml" />
+                    </umb-control-group>
+
+                    <umb-control-group label="Robots.txt" description="The URL of the Robots.txt file" ng-if="setting.HasRobotsDotTxt">
+                        <a href="/robots.txt" target="_blank">~/robots.txt</a>
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </umb-panel>
+</form>

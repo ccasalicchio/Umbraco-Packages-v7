@@ -1,0 +1,201 @@
+﻿<script>
+    function SettingEditController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+
+        if ($routeParams.id == "Examine") {
+            $.ajax({
+                type: "GET",
+                url: "/umbraco/backoffice/api/ContentsApi/GetExamineCreateModel",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+
+                        $scope.loaded = true;
+                    }
+                },
+                error: function () { }
+            });
+
+            $scope.loaded = true;
+        }
+        else {
+            var model = {};
+            model.SettingID = $routeParams.id;
+
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/ContentsApi/GetExamine",
+                data: JSON.stringify({ IndexSetName: $routeParams.id }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        if (!data.RecordExists)
+                        {
+                            notificationsService.error("Error", "The selected Index Set does not exists");
+                        }
+                        else
+                        {
+                            $scope.setting = data;
+                        }
+                        $scope.loaded = true;
+                    }
+                },
+                error: function () { }
+            });
+        }
+
+        $scope.save = function (setting) {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/ContentsApi/SaveExamine",
+                data: JSON.stringify(setting),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        if (data.HasErrors)
+                        {
+                            notificationsService.error("Error", data.ErrorMessage);
+                            $scope.setting = data;
+                        }
+                        else
+                        {
+                            $scope.setting = data;
+                            $scope.SettingForm.$dirty = false;
+                            navigationService.syncTree({ tree: 'Contents', path: [-1, -1], forceReload: true });
+                            notificationsService.success("Examiner", setting.IndexSetName + " has been saved");
+                        }
+                    }
+                },
+                error: function () { }
+            });
+        };
+    }
+</script>
+<form name="SettingForm"
+      ng-controller="SettingEditController" ng-show="loaded"
+      ng-submit="save(setting)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span7" style="padding: 20px;">
+                Examine : {{setting.IndexSetName}}
+            </div>
+
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode" current-node="currentNode" current-section="{{currentSection}}"></umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="Index Set Name" description="The name which will be used in the configuration files">
+                        <input id="IndexSetName" type="text" class="umb-editor umb-textstring" ng-model="setting.IndexSetName" required ng-if="setting.RecordExists == false" />
+                        <span ng-if="setting.RecordExists == true">{{setting.IndexSetName}}</span>
+                    </umb-control-group>
+
+                    <umb-control-group label="Attribute Fields" description="The properties defined in Umbraco">
+                        <div ng-repeat="item in setting.DefaultProperties">
+                            <input type="checkbox" ng-model="item.Selected"> {{item.Name}}
+                        </div>
+                    </umb-control-group>
+
+                    <umb-control-group label="User Fields" description="User custom properties">
+                        <div ng-repeat="item in setting.DocumentTypeProperties">
+                            <input type="checkbox" ng-model="item.Selected"> {{item.Name}}
+                        </div>
+                    </umb-control-group>
+
+                    <umb-control-group label="Document Types" description="User created document types">
+                        <div ng-repeat="item in setting.DocumentTypes">
+                            <input type="checkbox" ng-model="item.Selected"> {{item.Name}}
+                        </div>
+                    </umb-control-group>
+
+                    <umb-control-group label="Support Unpublished" description="">
+                        <input id="NameInput" type="checkbox" ng-model="setting.SupportUnpublished" />
+                    </umb-control-group>
+
+                    <umb-control-group label="Support Protected" description="">
+                        <input id="SupportUnpublished" type="checkbox" ng-model="setting.SupportProtected" />
+                    </umb-control-group>
+
+                    <umb-control-group label="Interval" description="">
+                        <input id="Interval" type="number" class="umb-editor umb-textstring" ng-model="setting.Interval" required />
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                    <umb-control-group label="First Example" description="Simple example" ng-if="setting.RecordExists == true">
+                        <pre style="border: 2px solid black; padding: 5px; background-color: lightgray;">@{
+    if (!string.IsNullOrEmpty(Request.QueryString["search"]))
+    {
+        // Get the search terms
+        var SearchTerm = Request.QueryString["search"];
+        // Get our search provider
+        var Searcher = Examine.ExamineManager.Instance.SearchProviderCollection["CMUmbracoTools_{{setting.IndexSetName}}Indexer"];
+        // Search and get all the items which has score greater to 0.05 (Max is 1) and order the list by Score
+        var Results = Searcher.Search(SearchTerm, true).OrderByDescending(x => x.Score).TakeWhile(x => x.Score > 0.05f);
+        // Display the results
+        &lt;ul>
+            @foreach (var item in Results)
+            {
+                var node = Umbraco.TypedContent(item.Fields["id"]);
+                &lt;li>&lt;a href="@node.Url">@node.Name&lt;/a>&lt;/li>
+            }
+        &lt;/ul>
+    }
+}</pre>
+                    </umb-control-group>
+
+                    <umb-control-group label="Second Example" description="Define search fields and how important they are" ng-if="setting.RecordExists == true">
+                        <pre style="border: 2px solid black; padding: 5px; background-color: lightgray;">@using Examine.LuceneEngine.SearchCriteria
+@{
+    if (!string.IsNullOrEmpty(Request.QueryString["search"]))
+    {
+        // Get the search terms
+        var SearchTerm = Request.QueryString["search"].Trim();
+
+        // Get our search provider
+        var Searcher = Examine.ExamineManager.Instance.SearchProviderCollection["CMUmbracoTools_{{setting.IndexSetName}}Indexer"];
+
+        // Define the operator that we will use for searching the terms 
+        var Criteria = Searcher.CreateSearchCriteria(Examine.SearchCriteria.BooleanOperation.Or);
+
+        // Define the query by declaring which fields we want to look into and how important they are
+        var Query = Criteria.Field("nodeName", SearchTerm.Boost(3)).Or().Field("bodyText", SearchTerm.Fuzzy());
+
+        // Search and get all the items which has score greater to 0.05 (Max is 1) and order the list by Score
+        var Results = Searcher.Search(Query.Compile()).OrderByDescending(x => x.Score).TakeWhile(x => x.Score > 0.05f);
+
+        // Display the results
+        &lt;ul>
+            @foreach (var item in Results)
+            {
+                var node = Umbraco.TypedContent(item.Fields["id"]);
+                &lt;li>&lt;a href="@node.Url">@node.Name&lt;/a>&lt;/li>
+            }
+        &lt;/ul>
+    }
+}</pre>
+
+                    </umb-control-group>
+
+                </div>
+            </div>
+        </div>
+
+    </umb-panel>
+</form>

@@ -1,0 +1,115 @@
+﻿<script>
+    function SettingEditController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+
+        if ($routeParams.id == -1) {
+            $scope.setting = {};
+
+            $("#NameInput").show();
+            $("#NameText").hide();
+            $("#ApplicationInput").show();
+            $("#ApplicationText").hide();
+
+            $scope.loaded = true;
+        }
+        else {
+            var model = {};
+            model.SettingID = $routeParams.id;
+
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SettingsApi/GetSettingById",
+                data: JSON.stringify({ SettingID : $routeParams.id }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+
+                        $("#NameInput").hide();
+                        $("#NameText").html(data.Name);
+                        $("#ApplicationInput").hide();
+                        $("#ApplicationText").html(data.Application);
+
+                        $scope.loaded = true;
+                    }
+                },
+                error: function () { }
+            });
+        }
+
+        $scope.save = function (setting) {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SettingsApi/Save",
+                data: JSON.stringify(setting),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        if (data.SettingID == -1)
+                        {
+                            notificationsService.error("Error", "The setting already exists");
+                        }
+                        else
+                        {
+                            $scope.setting = data;
+                            $scope.SettingForm.$dirty = false;
+                            navigationService.syncTree({ tree: 'Settings', path: [-1, -1], forceReload: true });
+                            notificationsService.success("Success", setting.Name + " has been saved");
+                        }
+                    }
+                },
+                error: function () { }
+            });
+        };
+    }
+</script>
+<form name="SettingForm"
+      ng-controller="SettingEditController" ng-show="loaded"
+      ng-submit="save(setting)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span7" style="padding: 20px;">
+                Setting : {{setting.Name}}
+            </div>
+
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode" current-node="currentNode" current-section="{{currentSection}}"></umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="Application" description="The application which will contain the setting">
+                        <input id="ApplicationInput" type="text" class="umb-editor umb-textstring" ng-model="setting.Application" required />
+                        <div id="ApplicationText"></div>
+                    </umb-control-group>
+
+                    <umb-control-group label="Name" description="Setting's name'">
+                        <input id="NameInput" type="text" class="umb-editor umb-textstring" ng-model="setting.Name" required />
+                        <div id="NameText"></div>
+                    </umb-control-group>
+
+                    <umb-control-group label="Value" description="Setting's value'">
+                        <textarea class="umb-editor umb-textstring" rows="6" ng-model="setting.Value"></textarea>
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </umb-panel>
+</form>

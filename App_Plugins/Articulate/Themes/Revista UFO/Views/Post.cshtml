@@ -1,0 +1,155 @@
+﻿@using Articulate
+@using Articulate.Models
+@using Umbraco.Core
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<Articulate.Models.PostModel>
+@{
+    Layout = "Master.cshtml";
+    ViewBag.CssWrapperClass = "demo-blog--blogpost";
+}
+<!--Blog Post-->
+<section class="sub-page purple">
+    <div class="full-width-section">
+        <h1>@Model.BlogTitle</h1>
+        @Html.Partial("Parts/Breadcrumb")
+        <div class="two-columns">
+            <div class="one-fourth">
+                <aside>
+                    <div class="box purple search-aside">
+                        <h6>
+                            <a href="@Model.RootBlogNode.Url" title="@Umbraco.Field("#[Blog]BackToRoot")">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </a> @Umbraco.Field("#[Blog]Search")
+                        </h6>
+                        @Html.ThemedPartial(Model, "SearchBox")
+                        @if (!Request.QueryString["term"].IsNullOrWhiteSpace())
+                        {
+                            <h3>@Umbraco.Field("#[Blog]NoResults")</h3>
+                        }
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Categories")</h6>
+                        <ul class="keywords-list">
+                            <li><a href="site-lista-blocos.html">Categoria Um</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Dois</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Tres</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Quatro</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Cinco</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Seis</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Sete</a></li>
+                        </ul>
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Keywords")</h6>
+                        <p id="tagcloud">
+                            <a href="site-lista-blocos.html" rel="7">abduções</a>
+                            <a href="site-lista-blocos.html" rel="12">avistamentos</a>
+                            <a href="site-lista-blocos.html" rel="3">blog</a>
+                            <a href="site-lista-blocos.html" rel="1">exames</a>
+                            <a href="site-lista-blocos.html" rel="9">sondas</a>
+                            <a href="site-lista-blocos.html" rel="20">circulos</a>
+                            <a href="site-lista-blocos.html" rel="2">plantações</a>
+                            <a href="site-lista-blocos.html" rel="3">fórum</a>
+                            <a href="site-lista-blocos.html" rel="7">ufologia</a>
+                            <a href="site-lista-blocos.html" rel="7">profissional</a>
+                            <a href="site-lista-blocos.html" rel="4">conhecimento</a>
+                            <a href="site-lista-blocos.html" rel="8">osnis</a>
+                            <a href="site-lista-blocos.html" rel="13">ufo</a>
+                            <a href="site-lista-blocos.html" rel="12">sangue</a>
+                        </p>
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Author")</h6>
+                        <div class="about">
+                            @{
+                                dynamic author = Umbraco.Content(Model.Parent.FollowingSibling("Articulate").GetPropertyValue("Blog_Authors"));
+                                var profilePic = Umbraco.Media(author.authorImage);
+                            }
+                            <img src="@profilePic.Url" class="bordered" alt="@author.Name" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat tempus finibus. Duis gravida blandit egestas. Praesent interdum eros a ex convallis ullamcorper. Aliquam erat volutpat...
+                            </p>
+                            <ul class="follow">
+                                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-pinterest-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="three-fourths">
+                <h2>@Model.Name</h2>
+                @Html.ThemedPartial(Model, "PostImageHeader", Model)
+
+                <div class="content">
+                    @Model.Body
+                </div>
+
+                <div class="keywords-list">
+                    <ul>
+                        @Html.ListTags(Model,
+                        @<li><a href="@Url.ArticulateTagUrl(Model, @item)">@item</a></li>)
+                    </ul>
+                </div>
+                <div>
+                    <div class="categories-list">
+                        <ul>
+
+                            @Html.ListCategories(Model,
+                            @<li><a href="@Url.ArticulateCategoryUrl(Model, @item)">@item</a></li>, "")
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    @Html.ThemedPartial(Model, "AuthorInfo", Model)
+                    <div class="break"></div>
+                    <div>
+                        <a href="@Model.Url#disqus_thread" data-disqus-identifier="@Model.GetContentKey()"></a>
+                        <a href="@Model.Url#disqus_thread" data-disqus-identifier="@Model.GetContentKey()"><i class="material-icons" role="presentation">@Umbraco.Field("#[Blog]Comment")</i></a>
+                    </div>
+
+                </div>
+            </div>
+                @if (Model.EnableComments)
+                {
+                <div class="mdl-card__supporting-text mdl-color--grey-200">
+
+
+                    @Html.ThemedPartial(Model, "CommentsDisqus")
+                    @*@Html.ThemedPartial(Model, "CommentsGooglePlus")*@
+                    @*@Html.ThemedPartial(Model, "CommentsFacebook")*@
+
+                </div>
+
+            }
+            @{
+            var next = Model.Next();
+            var prev = Model.Previous();
+            
+            }
+            <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+                @if (next != null)
+                {
+                    <a href="@next.Url" >
+                        <button>
+                            <i class="material-icons">arrow_back</i>
+                        </button>
+                Newer
+                    </a>
+                }
+                <div class="section-spacer"></div>
+                @if (prev != null)
+                {
+                    <a href="@prev.Url">
+                Older
+                        <button >
+                            <i class="material-icons">arrow_forward</i>
+                        </button>
+                    </a>
+                }
+            </nav>
+        </div>
+</section>

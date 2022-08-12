@@ -1,0 +1,41 @@
+﻿<script>
+    function ContentDeleteController($scope, $routeParams, notificationsService, navigationService) {
+        $scope.delete = function (id) {
+            var model = {};
+            model.ContentName = id;
+
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/ContentsApi/DeleteByExamineIndexSetName",
+                data: JSON.stringify({ ExamineIndexSetName: id }),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        notificationsService.success("Success", "The Examine Index Set deleted");
+                        navigationService.hideNavigation();
+                        navigationService.syncTree({ tree: 'Contents', path: [-1, -1], forceReload: true });
+                        $("#contentcolumn").html("");
+                    }
+                },
+                error: function () { }
+            });
+        };
+        $scope.cancelDelete = function () {
+            navigationService.hideNavigation();
+        };
+    }
+</script>
+<div class="umb-pane" ng-controller="ContentDeleteController">
+    <p>
+        Are you sure you want to delete {{currentNode.name}} ? 
+    </p>
+    <div>
+        <div class="umb-pane btn-toolbar umb-btn-toolbar">
+            <div class="control-group umb-control-group">
+                <a href="" class="btn btn-link" ng-click="cancelDelete()"><localize key="general_cancel">Cancel</localize></a>
+                <a href="" class="btn btn-primary" ng-click="delete(currentNode.id)"><localize key="general_ok">OK</localize></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿.Xilium-groupLabelEditor {
+    background: #eee;
+    margin: 10px -20px 0;
+    padding: 6px 20px;
+}
+.Xilium-groupLabelEditor .title {
+    line-height: normal;
+}
+.Xilium-groupLabelEditor small {
+    color: #b3b3b3;
+    text-transform: none;
+}
+
+.Xilium-groupLabelEditor.level1, .Xilium-groupLabelEditor.level2 {
+    background: #bbb;
+}
+.Xilium-groupLabelEditor.level3 {
+    background: #eee;
+}
+.Xilium-groupLabelEditor.level4, .Xilium-groupLabelEditor.level5 {
+    background: #f8f8f8;
+}
+
+.Xilium-groupLabelEditor.level1 small, .Xilium-groupLabelEditor.level2 small {
+    color: #eee;
+}

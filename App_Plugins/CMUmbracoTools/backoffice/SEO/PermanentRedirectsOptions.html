@@ -1,0 +1,81 @@
+﻿<script>
+    function SettingEditController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+
+        $.ajax({
+            type: "GET",
+            url: "/umbraco/backoffice/api/SEOApi/GetPermanentRedirectOptions",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            statusCode: {
+                200: function (data) {
+                    $scope.setting = data;
+
+                    $scope.loaded = true;
+                }
+            },
+            error: function () { }
+        });
+
+        $scope.save = function (setting) {
+            $.ajax({
+                type: "POST",
+                url: "/umbraco/backoffice/api/SEOApi/PermanentRedirectsOptionsSave",
+                data: JSON.stringify(setting),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        $scope.setting = data;
+                        $scope.SettingForm.$dirty = false;
+                        navigationService.syncTree({ tree: 'SEO', path: [-1, -1], forceReload: true });
+                        notificationsService.success("Permanent redirect options", "Permanent redirect options has been saved");
+                    }
+                },
+                error: function () { }
+            });
+        };
+    }
+</script>
+<form name="SettingForm"
+      ng-controller="SettingEditController" ng-show="loaded"
+      ng-submit="save(setting)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span7" style="padding: 20px;">
+                Permanent Redirect Options
+            </div>
+
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode" current-node="currentNode" current-section="{{currentSection}}"></umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="URL Scheme permanent redirect" description="Define if you want to make permanent redirect using the URL Scheme">
+                        <select name="multipleSelect" id="multipleSelect" ng-model="setting.schemePermanentRedirect">
+                            <option value="none">None</option>
+                            <option value="httptohttps">http to https</option>
+                            <option value="httpstohttp">https to http</option>
+                        </select>
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </umb-panel>
+</form>

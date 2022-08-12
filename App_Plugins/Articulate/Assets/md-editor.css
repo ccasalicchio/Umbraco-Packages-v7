@@ -1,0 +1,105 @@
+﻿body {
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container .mdl-card {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container .mdl-card .mdl-textfield {
+    display: block;
+    width: 100%;
+}
+.container .mdl-card .mdl-textfield.fixed {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 15px;
+    width: inherit;
+}
+
+div.container {
+    position: fixed;
+    left: 15px;
+    top: 70px;
+    right: 15px;
+    bottom: 25px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.container .mdl-card .mdl-textfield.md-input {    
+    top: 60px;
+    bottom: 0px;
+}
+
+.container .mdl-progress {
+    width: auto;
+}
+
+.container .mdl-card .mdl-textfield.md-input {    
+        top: 60px;
+        bottom: 55px;
+        padding-bottom: 30px;
+    }
+
+.fill-height {
+    height: 100%;
+}
+
+textarea {
+    font-family: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-fab-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 200;
+}
+
+.btn-raised-right {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 200;
+}
+
+.btn-fab-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 200;
+}
+
+.btn-fab * {
+    margin: 5px;
+}
+
+.ng-dirty .ng-invalid {    
+    border-bottom: 2px dashed rgb(68,138,255) !important;    
+}
+
+.hidden-insert-file {
+    position: absolute;
+    top: -1000px;
+    visibility: hidden;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    div.container {
+        left: 5px;
+        top: 60px;
+        right: 5px;
+        bottom: 5px;        
+    }
+    
+}

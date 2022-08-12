@@ -1,0 +1,45 @@
+﻿<script>
+    function SettingsListController($scope, $routeParams) {
+        $scope.loaded = false;
+        $scope.currentId = $routeParams.id;
+
+        $.ajax({
+            type: "POST",
+            async: false,
+            url: "/umbraco/backoffice/api/SettingsApi/GetSettingsByApplication",
+            data: JSON.stringify({ ApplicationName: $routeParams.id }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            statusCode: {
+                200: function (data) {
+                    $scope.settings = data;
+                    $scope.loaded = true;
+                }
+            },
+            error: function () { }
+        });
+    }
+</script>
+<umb-panel ng-controller="SettingsListController">
+    <umb-header>
+        <div class="umb-headline-editor-wrapper span12 ng-scope">
+            <h1 class="ng-binding">Application : {{currentId}}</</h1>
+        </div>
+    </umb-header>
+    <umb-tab-view>
+        <div class="umb-pane">
+            <table style="width: 100%;">
+                <tr style="font-weight: bold;">
+                    <td>Setting</td>
+                    <td>Value</td>
+                    <td></td>
+                </tr>
+                <tr ng-repeat="item in settings">
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Value}}</td>
+                    <td><a href="/umbraco#/CMUmbracoTools/Settings/edit/{{item.SettingID}}" class="btn">Edit</a></td>
+                </tr>
+            </table>
+        </div>
+    </umb-tab-view>
+</umb-panel>

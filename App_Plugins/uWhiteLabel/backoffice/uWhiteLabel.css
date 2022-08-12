@@ -1,0 +1,17 @@
+﻿#uWhiteLabelDashboardContainer {
+    max-width: 1200px
+}
+#uWhiteLabelDashboardContainer iframe {
+    position: absolute;
+    display: block;
+    width: 99%;
+    height: 99%;
+    overflow: auto!important;
+}
+
+.icon-warning .icon {
+    color: red;
+}
+.icon-warning  .icon:after {
+    content: '!';
+}

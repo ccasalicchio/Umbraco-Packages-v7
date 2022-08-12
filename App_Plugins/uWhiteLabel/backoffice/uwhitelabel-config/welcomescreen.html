@@ -1,0 +1,118 @@
+﻿<div>
+    <form name="uWhiteLabelConfigForm" ng-submit="submit(model)" ng-controller="uWhiteLabel.Config.WelcomeScreenController as vm" val-form-manager>
+        <umb-panel>
+            <umb-header tabs="content.tabs">
+                <div class="umb-headline-editor-wrapper span12 ng-scope">
+                    <h1 class="ng-binding">Welcome Screen Settings</h1>
+                </div>
+            </umb-header>
+            <umb-tab-view>
+                <umb-tab id="tab1" rel="intro">
+                    <div class="umb-pane">
+                        <umb-pane>
+                            <p>The <em>Welcome Screen</em> is the first tab in the Content Section and appears for all users.</p>
+                            <div class="alert alert-warning" ng-hide="vm.isConfiged">Your Welcome Screen is not currently configured.</div>
+
+                        </umb-pane>
+                    </div>
+                </umb-tab>
+                <umb-tab id="tab2" rel="iframe">
+                    <div class="umb-pane">
+                        <p>Your <em>Welcome Screen</em> can display any URL in an iFrame, leave this blank to use other options.</p>
+                        <umb-pane>
+                            <umb-control-group label="iFrame Url">
+                                <input type="url" name="url" ng-model="vm.url" no-Dirty-Check />
+                            </umb-control-group>
+                            <div class="alert alert-warning" ng-show="uWhiteLabelConfigForm.url.$invalid">Must be a valid URL</div>
+                        </umb-pane>
+                        <div class="btn-toolbar umb-btn-toolbar pull-right">
+                            <div ng-show="vm.isUmbButton">
+                                <umb-button action="SaveIframe(vm.url)"
+                                            type="button"
+                                            button-style="success"
+                                            state="vm.saveButtonState"
+                                            shortcut="ctrl+s"
+                                            label="Save"
+                                            disabled="vm.saveButtonState === 'busy' || uWhiteLabelConfigForm.url.$invalid">
+                                </umb-button>
+                            </div>
+                            <div ng-hide="vm.isUmbButton">
+                                <uwl-button action="SaveIframe(vm.url)"
+                                            type="button"
+                                            button-style="success"
+                                            state="vm.saveButtonState"
+                                            shortcut="ctrl+s"
+                                            label="Save"
+                                            disabled="vm.saveButtonState === 'busy' || uWhiteLabelConfigForm.url.$invalid">
+                                </uwl-button>
+                            </div>
+
+                        </div>
+                    </div>
+                </umb-tab>
+
+                <umb-tab id="tab3" rel="html">
+
+                    <div class="umb-pane">
+
+                        <div class="umb-pane">
+                            <p>Your <em>Welcome Screen</em> can display basic HTML, style attributes will be ignored.</p>
+                            <div class="alert alert-warning" ng-show="uWhiteLabelConfigForm.url.$viewValue">IFrame must be blank before custom HTML is used</div>
+                            <umb-pane>
+                                <umb-control-group label="Your Custom Html">
+                                    <textarea name="html" ng-model="vm.html" style="width: 80%; height: 300px" no-Dirty-Check />
+                                </umb-control-group>
+                            </umb-pane>
+                            <div class="btn-toolbar umb-btn-toolbar">
+                                <div ng-show="vm.isUmbButton">
+                                    <umb-button action="GetDefaultHtml()"
+                                                type="button"
+                                                button-style="link"
+                                                state=""
+                                                shortcut=""
+                                                label="Reset to example HTML"
+                                                disabled="vm.resetHtmlButtonState === 'busy'">
+                                    </umb-button>
+                                </div>
+                                <div ng-hide="vm.isUmbButton">
+                                    <uwl-button action="GetDefaultHtml()"
+                                                type="button"
+                                                button-style="link"
+                                                state=""
+                                                shortcut=""
+                                                label="Reset to example HTML"
+                                                disabled="vm.resetHtmlButtonState === 'busy'"
+                                                ng-show="!vm.supportUmbButton">
+                                    </uwl-button>
+                                </div>
+                                <div class=" pull-right">
+                                    <div ng-show="vm.isUmbButton">
+                                        <umb-button action="SaveHtml(vm.html)"
+                                                    type="button"
+                                                    button-style="success"
+                                                    state="vm.saveHtmlButtonState"
+                                                    shortcut="ctrl+s"
+                                                    label="Save"
+                                                    disabled="vm.saveHtmlButtonState === 'busy'">
+                                        </umb-button>
+                                    </div>
+                                    <div ng-hide="vm.isUmbButton">
+                                        <uwl-button action="SaveHtml(vm.html)"
+                                                    type="button"
+                                                    button-style="success"
+                                                    state="vm.saveHtmlButtonState"
+                                                    shortcut="ctrl+s"
+                                                    label="Save"
+                                                    disabled="vm.saveHtmlButtonState === 'busy'">
+                                        </uwl-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </umb-tab>
+
+            </umb-tab-view>
+        </umb-panel>
+    </form>
+</div>

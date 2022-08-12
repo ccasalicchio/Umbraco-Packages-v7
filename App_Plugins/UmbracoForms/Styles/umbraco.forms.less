@@ -1,0 +1,315 @@
+// Grays
+// -------------------------
+@black:                 #000;
+@blackLight:			#1d1d1d;
+@grayDarker:            #222;
+@grayDark:              #343434;
+@gray:                  #555;
+@grayLight:             #d9d9d9;
+@grayMild:              #aeaeae;
+@grayLightish:          #ececec;
+@grayLighter:           #f8f8f8;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #2e8aea;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #DF7F48;
+@turquoise:				#04bfbf;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+// Forms colors
+@blueLight:             #F5F9FD;
+@blueLightHover:        #E8F1FB;
+
+
+// Global classes
+
+input.umb-forms__hacky-hidden-field {
+    opacity: 0;
+    cursor: default;
+}
+
+.umb-forms .umb-panel-header .umb-sub-views-nav {
+    margin-top: 25px;
+}
+
+.control-row.-margin-bottom {
+    margin-bottom: 10px;
+}
+
+.control-label.-block {
+    display: block;
+}
+
+.radio.-block {
+    display: block;
+}
+
+.radio.-no-indent {
+    padding-left: 0;
+}
+
+.usky-grid .help-text i.icon{
+    font-size: 16px;
+}
+
+.umb-forms-page{
+    position: relative;
+}
+
+.umb-forms-designer label.checkbox i.icon{
+    margin-left: -22px;
+}
+
+select.-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+//Inline editors
+.umb-forms-designer .inline-editor{
+    background: transparent;
+    border: 2px solid transparent;
+    resize: none;
+    overflow: hidden;
+    max-width: 400px;
+    clear: right;
+    display: block
+}
+
+.umb-forms-designer .inline-editor.prevalue{
+    display:inline;
+    margin: 0;
+}
+
+.umb-form-prevalue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.umb-form-prevalue small {
+    color: @gray;
+}
+
+.umb-forms-designer .inline-editor:hover,
+.umb-forms-designer .inline-editor:focus  {
+    border-bottom-color: @blue;
+}
+
+.umb-forms-designer .inline-editor::-webkit-input-placeholder {
+    color: #909090;
+}
+
+.umb-forms-designer .inline-editor.page-name{
+    font-size: 26px;
+    display: block !important;
+    height: 35px;
+    max-width: initial;
+    width: 100%;
+}
+
+.umb-forms-designer .inline-editor.field-tooltip{
+    color: #999;
+    padding: 1px;
+    height: 20px;
+    min-height: 20px;
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.umb-forms-designer .inline-editor.field-name{
+    height: 20px;
+    min-height: 20px;
+
+    padding: 1px;
+    margin-top: -5px;
+}
+
+.umb-forms-designer .inline-editor.fieldset-name{
+    font-size: 20px;
+    height: 20px;
+}
+
+.umb-forms-designer .umb-forms-editor-text .inline-editor{
+    display: block;
+    width: 100%;
+}
+
+.umb-forms-designer .umb-forms-editor-text{
+    width: 90%;
+}
+
+
+.umb-forms-designer .usky-control-inner{
+    min-height: 100px;
+}
+
+// Empty container placeholder
+.umb-forms-designer .umb-forms-placeholder{
+    text-align: center;
+    padding: 30px;
+}
+
+.umb-forms-designer .umb-forms-fields-container{
+    min-height: 1px;
+}
+
+
+//Tools
+.umb-forms-designer .row-tools{
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 200;
+}
+
+.umb-forms-designer .cell-tools:hover > div{
+    opacity: 1;
+}
+
+.umb-forms-designer .umb-forms-field-preview{
+    min-height: 90px;
+    margin-right: 40px;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.umb-forms-fields .cell-tools-edit{
+    position: absolute;
+    top: 80px;
+    right: 5px;
+}
+
+.umb-forms-fields .cell-tools-add{
+    margin-right: 45px;
+}
+.umb-forms-fields .cell-tools-add .iconBox{
+    visibility: hidden;
+}
+.umb-forms-fields .cell-tools-add:hover .iconBox{
+    visibility: visible;
+}
+
+
+.umb-forms-designer .umb-forms-pager{
+    display: block;
+    padding: 0;
+    margin: 20px 0 0 0;
+
+    a{
+        text-decoration: none;
+        color: @grayLight;
+    }
+
+    li{
+        display: inline-block;
+        height: 60px;
+        padding: 10px;
+        color: @grayLight;
+        overflow: hidden;
+    }
+
+    i{
+        font-size: 40px;
+        line-height: 45px;
+        display: block;
+        color: @grayLight;
+    }
+
+    li.current{
+        background: @grayLighter;
+    }
+}
+
+.umb-forms-buttons{
+    opacity: 0.9;
+    padding: 15px;
+}
+
+
+//Field previews
+.umb-forms-recaptcha{
+    background: url(../Images/Recaptcha.png) no-repeat top left;
+    height: 70px;
+}
+
+.umb-forms-hidden{
+    border: 1px dashed #efefef;
+    color: #efefef;
+    padding: 10px;
+    text-align: center;
+}
+
+.umb-forms-designer .checkbox {
+    padding-left: 0px;
+
+    font-size: 13px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    input {
+        margin: 0 5px 0 0;
+    }
+}
+
+.umb-forms-designer input[type="file"] {
+    display: flex;
+}
+
+.umb-forms__member {
+    display: flex;
+    align-items: flex-start;
+}
+
+.umb-forms__member p {
+    margin: 0;
+}
+
+.umb-forms__member-edit {
+    margin-top: -25px;
+    margin-left: auto;
+
+    color: @blue;
+
+    font-size: 13px;
+
+    &:hover {
+        color: @blueDark;
+    }
+
+}
+
+
+// Form search
+.form-search {
+    margin-right: 5px;
+}
+
+// Imports
+@import 'umb-forms-entries.less';
+@import 'umb-forms-dashboard.less';
+@import 'umb-forms-gridview.less';
+@import 'umb-forms-form.less';
+@import 'umb-forms-fonts.less';
+@import 'umb-forms-workflows.less';
+@import 'umb-forms-workflow.less';
+@import 'umb-forms-empty.less';
+@import 'umb-forms-buttons.less';
+@import 'umb-forms-conditions.less';
+@import 'umb-forms-mappings.less';
+@import 'umb-forms-savenode.less';

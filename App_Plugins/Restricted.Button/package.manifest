@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Restricted.Button",
+      "name": "Restricted Button",
+      "hideLabel": true,
+      "icon": "icon-lock",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/Restricted.Button/views/view.html",
+        "valueType": "INT"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Restricted.Button/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Restricted.Button/css/style.css"
+  ]
+}

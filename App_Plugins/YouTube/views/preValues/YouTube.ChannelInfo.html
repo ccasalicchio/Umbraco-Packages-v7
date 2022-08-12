@@ -1,0 +1,32 @@
+<!--
+ *! YouTube - v1.0.4 - 2016-04-21
+ * Copyright (c) 2016 Warren Buckley
+ * Licensed MIT
+ * -->
+
+<div ng-controller="YouTube.prevalue.channel.controller">
+	
+	<input type="text" name="username" id="username" ng-model="model.value.querriedUsername" placeholder="uHangout" required />
+	<button ng-click="queryChannel(model.value.querriedUsername)" class="btn" prevent-default ng-disabled="propertyForm.username.$error.required">Lookup Channel</button>
+
+    <div class="alert alert-error" ng-show="propertyForm.username.$error.required">
+        The channel/username is required
+    </div>
+
+    <div class="alert alert-error" ng-show="propertyForm.username.$error.notchecked">
+        The channel/username {{ model.value.querriedUsername }} has not been checked
+    </div>
+
+	<hr/>
+
+	<div ng-if="model.value.youtube" class="row-fluid">
+		<div class="span2">
+			<img ng-src="{{ model.value.youtube.thumbnails.default.url }}" />
+		</div>
+		<div class="span10">
+			<h4>{{ model.value.youtube.title }}</h4>
+			<small>ID: {{ model.value.youtube.channelId }}</small>
+			<p>{{ model.value.youtube.description }}</p>
+		</div>
+	</div>
+</div>

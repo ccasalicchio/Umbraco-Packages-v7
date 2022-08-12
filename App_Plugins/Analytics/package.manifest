@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Analytics",
+      "name": "Analytics Visit Counter",
+      "isReadOnly": true,
+      "icon": "icon-speed-gauge",
+      "editor": {
+        "view": "~/App_Plugins/Analytics/views/view.html",
+        "valueType": "INT",
+        "hideLabel": true
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Analytics/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Analytics/css/style.css"
+  ]
+}

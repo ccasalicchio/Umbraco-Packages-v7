@@ -1,0 +1,456 @@
+// umb form pages
+.umb-forms__pages {
+    margin-top: -30px;
+}
+
+.umb-forms__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.umb-forms__page {
+    background: whitesmoke;
+    padding: 20px 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.umb-forms__page-number {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 2px solid @grayLight;
+    margin-right: 5px;
+}
+
+// Umb forms header
+.umb-forms__page-header {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.umb-forms__page-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.umb-forms__page-footer .umb-forms-button {
+    opacity: .5;
+}
+
+.umb-forms__page-footer .umb-forms-button:hover {
+    opacity: 1;
+}
+
+
+.umb-forms__page-sort-handle,
+.umb-forms__fieldset-sort-handle,
+.umb-forms__field-sort-handle {
+    margin-right: 10px;
+}
+
+.umb-forms__fieldset-sort-handle {
+    color: #ffffff;
+}
+
+input.umb-forms__page-name {
+    border: none;
+    color: @black;
+    background-color: transparent;
+    font-weight: bold;
+
+    margin: 0 0 0 3px;
+    padding: 0;
+}
+
+input.umb-forms__page-name::-webkit-input-placeholder {
+    color: @gray;
+    font-family: "Open Sans", "Helvetica Neue" ,Helvetica ,Arial ,sans-serif;
+}
+
+.umb-forms__pagination {
+    opacity: .5;
+}
+
+
+// Forms Actions
+.umb-forms__actions {
+    color: @gray;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.umb-forms__actions a {
+    margin-right: 5px;
+    position: relative;
+    color: #555555;
+    font-size: 16px;
+
+    &:hover {
+        color: @black;
+        text-decoration: none;
+    }
+}
+
+.umb-forms__actions.-page a {
+    position: relative;
+}
+
+.umb-forms__actions.-fieldset a {
+    color: #ffffff;
+}
+
+// container (fieldset)
+.umb-forms__container {
+    background: white;
+    position: relative;
+}
+
+
+// Fieldsets and Fields
+.umb-forms__fieldset {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.umb-forms__fieldset-header {
+    display: flex;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid @blueDark;
+    background: @blue;
+}
+
+.umb-forms__fieldset-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.umb-forms__fieldset-name {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+}
+
+.umb-forms__fieldset-name::-webkit-input-placeholder {
+    color: #ffffff;
+    font-family: "Open Sans", "Helvetica Neue" ,Helvetica ,Arial ,sans-serif;
+    opacity: .7;
+}
+
+.umb-forms__fieldset-name::-moz-placeholder {
+    color: #ffffff;
+    font-family: "Open Sans", "Helvetica Neue" ,Helvetica ,Arial ,sans-serif;
+    opacity: .7;
+}
+
+
+.umb-forms__field {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid @grayLightish;
+
+}
+
+.umb-forms__page-placeholder,
+.umb-forms__fieldset-placeholder,
+.umb-forms__field-placeholder {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.umb-forms__field-condition {
+    padding-top: 3px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    background-color: rgba(0, 100, 205, 0.04);
+    font-size: 11px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.umb-forms__field-content {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.umb-forms__field:last-child {
+    margin-bottom: 0;
+    border-bottom-width: 2px;
+}
+
+.umb-forms__field-footer {
+    padding: 10px;
+}
+
+.umb-forms__field.-collapsed {
+    display: flex;
+    align-items: center;
+
+    .umb-forms__field-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .umb-forms__field-name {
+        display: inline-block;
+    }
+
+    .umb-forms__field-description,
+    .umb-forms__field-preview,
+    .umb-forms_field-actions,
+    .umb-forms__field-condition {
+        display: none;
+    }
+
+    .umb-forms__field-info,
+    input,
+    textarea,
+    .uneditable-input  {
+        width: 100%;
+    }
+
+    .umb-forms__field-mandatory {
+        transform: translate(-7px, -7px);
+    }
+}
+
+.umb-forms__field.-collapsed:last-child {
+    border-bottom: none;
+}
+
+.umb-forms__field-mandatory {
+    color: #F54033;
+    position: absolute;
+    transform: translate(-4px, -4px);
+}
+
+.umb-forms__field-name,
+.umb-forms__field-description {
+    border: none;
+    background: transparent;
+    resize: none;
+    margin: 0;
+}
+
+.umb-forms__field-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.umb-forms__field-description {
+    display: block;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+
+.umb-forms__field-info {
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.umb-forms__field-info.-inline {
+    display: flex;
+    flex-direction: row;
+
+    .umb-forms__field-mandatory {
+        margin-right: 3px;
+        margin-left: 0;
+    }
+}
+
+.umb-forms__field-wrapper {
+    flex: 1 1 auto;
+}
+
+.umb-forms__field-preview {
+    width: auto;
+    position: relative;
+    flex: 1;
+    padding: 15px 20px;
+    background-image: url("/umbraco/assets/img/checkered-background-20.png");
+    pointer-events: none;
+}
+
+
+// Columns
+.umb-forms__containers {
+    display: flex;
+    background: @grayLightish;
+}
+
+.umb-forms__container {
+    flex: 1 1 100%;
+    margin-left: 1px;
+    margin-right: 1px;
+    border: 2px solid @grayLightish;
+    display: flex;
+    flex-direction: column;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:only-child {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.umb-forms__fields {
+    flex: 1 1 auto;
+}
+
+.umb-forms__fields.-empty {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.umb-forms__fieldsets.-empty {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.umb-forms__fieldset-condition {
+    font-size: 11px;
+    color: #fff;
+
+    flex: 0 0 400px;
+
+    margin-left: 10px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+// Multiple columns
+.-element-column.umb-forms__field-preview input,
+.-element-column.umb-forms__field-preview textarea {
+    width: auto !important;
+}
+
+.-element-column .umb-forms__field-content {
+    flex-direction: column;
+}
+
+.-element-column .umb-forms__actions {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.-element-column .umb-forms__field-preview {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.-element-column .umb-forms__field-description {
+    width: 100%;
+}
+
+.-element-column .-collapsed .umb-forms__field-content {
+    flex-direction: row;
+}
+
+
+// Form Columns designer
+.umb-forms__columns-template__form {
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 2px solid @grayLightish;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    margin-bottom: 10px;
+}
+
+.umb-forms__columns-template__column {
+    flex: 1 1 100%;
+    background: @grayLight;
+    border: 2px solid white;
+
+    display: flex;
+}
+
+.umb-forms__columns-template__column:hover {
+    background: @blue;
+}
+
+.umb-forms__columns-template__column:only-child:hover {
+    background: @grayLight;
+}
+
+.umb-forms__columns-template__column:hover .umb-forms__columns-template__remove {
+    display: block;
+}
+
+.umb-forms__columns-template__remove {
+    display: none;
+    margin-left: auto;
+    color: white;
+
+    opacity: .7;
+
+    margin-right: 3px;
+}
+
+.umb-forms__columns-template__remove:hover {
+    opacity: 1;
+    color: white;
+    text-decoration: none;
+}

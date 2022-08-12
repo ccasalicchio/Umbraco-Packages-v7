@@ -1,0 +1,70 @@
+.umb-forms-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    height: 32px;
+    line-height: 32px;
+
+
+    max-width: 100%;
+    padding: 0 18px;
+
+    color: #484848;
+    background-color: #e0e0e0;
+
+    text-decoration: none !important;
+    user-select: none;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    border-radius: 3px;
+    border: 0 none;
+
+    transition: background-color 80ms ease, color 80ms ease;
+}
+
+
+.umb-forms-button:hover,
+.umb-forms-button:active {
+    color: #484848;
+    background-color: #d3d3d3;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.umb-forms-button:focus {
+    outline: none;
+}
+
+
+// Buttons in colors
+.umb-forms-button.-blue {
+    background: @blue;
+    color: #fff;
+}
+
+.umb-forms-button.-blue:hover,
+.umb-forms-button.-blue:active {
+    background: @blueDark;
+    color: #fff;
+}
+
+
+
+// Simple Button
+.umb-forms-button.-simple {
+    background: transparent;
+    padding: 0;
+}
+
+.umb-forms-button.-simple:hover,
+.umb-forms-button.-simple:active {
+    color: @blue;
+}

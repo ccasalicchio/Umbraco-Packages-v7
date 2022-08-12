@@ -1,0 +1,6 @@
+{
+	javascript: [
+	    '~/App_Plugins/TagManager/backoffice/TagManagerTree/edit.controller.js',
+	    '~/App_Plugins/TagManager/TagManager.resource.js'
+	]
+}

@@ -1,0 +1,10 @@
+﻿{
+"javascript": [
+	"~/App_Plugins/uWhiteLabel/backoffice/uWhiteLabel.resources.js",
+	"~/App_Plugins/uWhiteLabel/backoffice/uWhiteLabel.controller.js",
+	"~/App_Plugins/uWhiteLabel/backoffice/uwhitelabel-config/Config.controller.js"
+],
+"css": [
+	"~/App_Plugins/uWhiteLabel/backoffice/uWhiteLabel.css"
+]
+}

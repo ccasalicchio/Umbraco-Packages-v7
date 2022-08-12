@@ -1,0 +1,35 @@
+﻿// Istruzioni prese da: https://our.umbraco.org/documentation/tutorials/Creating-a-Property-Editor/
+{
+	// you can define multiple editors   
+    propertyEditors: [      
+        {
+            // this must be a unique alias
+            alias: "Xilium.GroupLabel",
+            // the name
+            name: "Xilium GroupLabel",
+            // the html file we will load for the editor
+            editor: {
+                view: "~/App_Plugins/Xilium.GroupLabel/groupLabel.html",
+				valueType: "string",
+				hideLabel: true
+            },
+			prevalues: {
+				// Istruzioni prese da: https://our.umbraco.org/documentation/Tutorials/Creating-a-Property-Editor/part-2
+				fields: [
+					{
+						label: "Level",
+						description: "",
+						key: "level",
+						view: "~/App_Plugins/Xilium.GroupLabel/prevalues/groupLabel.levelSelector.html"
+					}
+				]
+			}
+        }
+    ],
+	javascript: [
+		'~/App_Plugins/Xilium.GroupLabel/groupLabel.js'
+	],
+	css: [
+		'~/App_Plugins/Xilium.GroupLabel/groupLabel.css'
+	]
+}

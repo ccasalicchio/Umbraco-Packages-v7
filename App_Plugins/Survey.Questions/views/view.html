@@ -1,0 +1,22 @@
+﻿<div ng-controller="Survey.Questions" class="survey">
+
+    <umb-load-indicator ng-if="loading">
+    </umb-load-indicator>
+    <h1>Lista de Opções</h1>
+    <h5>Lista de Opções da Enquete/Pesquisa</h5>
+    <div class="options">
+        <div class="total-votes">Total de Votos: {{VoteCount}}</div>
+        <table class="table table-striped">
+            <tr><th>Ordem</th><th>Opção</th><th>Votos</th><th>% votos</th><th title="Marque como a resposta correta (optional)">Correta</th><th><a href="" class="button" ng-click="Add()" title="Adicionar Opção"><i class="fa fa-plus"></i></a></th></tr>
+            <tr ng-repeat="option in Options | orderBy:sorterFunc">
+                <td><input type="number" ng-model="option.Order" /></td>
+                <td><input type="text" ng-model="option.Value" /></td>
+                <td>{{option.Votes}}<input type="hidden" ng-model="option.Id" id="votes" min="0" max="5" /></td>
+                <td>{{option.Percentage}}%</td>
+                <td><input type="checkbox" ng-model="option.IsCorrectAnswer"  title="Esta é a correta"/></td>
+                <td><a href="" class="button" ng-click="Delete($index)" title="Remove Opção"><i class="fa fa-close"></i></a></td>
+            </tr>
+        </table>
+    </div>
+
+</div>

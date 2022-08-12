@@ -1,0 +1,32 @@
+﻿<div ng-controller="YouTube.Editor" class="youtubeeditor">
+
+    <h5><localize key="youtubeeditor_title">YouTube url</localize></h5>
+
+    <table>
+        <tbody>
+
+            <tr>
+                <td>
+                    <input type="text" ng-model="engine.videoId" ng-change="engine.update()" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <localize key="youtubeeditor_preview">Preview</localize>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{engine.videoId}}" frameborder="0" allowfullscreen></iframe>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,46 @@
+﻿<script>
+    function StudentListController($scope, $routeParams, notificationsService, navigationService, dialogService, entityResource) {
+        $scope.loaded = false;
+        $scope.currentId = $routeParams.id;
+
+        $scope.RestartApplicationPool = function () {
+            $.ajax({
+                type: "GET",
+                async: false,
+                url: "/umbraco/backoffice/api/SystemApi/RestartApplicationPool",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                statusCode: {
+                    200: function (data) {
+                        if (data)
+                            notificationsService.success("Success", "The application pool restarted successfully.");
+                        else
+                            notificationsService.error("Error", "The application pool restart was not successful.");
+
+                        $scope.settings = data;
+                    }
+                },
+                error: function () {
+                    notificationsService.error("Error", "The application pool restart was not successful.");
+                }
+            });
+        }
+        $scope.loaded = true;
+    }
+</script>
+<umb-panel ng-controller="StudentListController">
+    <umb-header>
+        <div class="umb-headline-editor-wrapper span12 ng-scope">
+            <h1 class="ng-binding">Restart Application Pool</</h1>
+        </div>
+    </umb-header>
+    <umb-tab-view>
+        <div class="umb-pane">
+            <input type="button" ng-click="RestartApplicationPool()" value="Restart Application Pool" />
+            <br /><br />
+            <div class="alert alert-warning">
+                <strong>Warning!</strong> Make sure that you know what is going to be the effect on the web site before you use this functionality.
+            </div>
+        </div>
+    </umb-tab-view>
+</umb-panel>

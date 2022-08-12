@@ -1,0 +1,24 @@
+﻿{   
+	//you can define multiple editors   
+	propertyEditors: [      
+        {
+        	/*this must be a unique alias*/ 
+        	alias: "pmg.VideoPlayer",
+        	/*the name*/
+        	name: "Video Player",
+        	/*the html file we will load for the editor*/
+        	editor: {
+        		view: "~/App_Plugins/PMGVideoPlayer/videoplayer.html",
+                valueType: "STRING"
+        	}
+       }
+	]
+    ,
+	//array of files we want to inject into the application on app_start
+	javascript: [
+        '~/App_Plugins/PMGVideoPlayer/videoplayer.controller.js'
+	],
+    css: [
+        '~/App_Plugins/PMGVideoPlayer/videoplayer.css'
+]
+}

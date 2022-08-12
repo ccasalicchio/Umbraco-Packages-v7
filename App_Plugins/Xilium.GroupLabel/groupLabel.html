@@ -1,0 +1,22 @@
+﻿<div class="Xilium-groupLabelEditor" ng-class="[ 'level' + model.config.level ]" off-ng-controller="Xilium.groupLabel.groupLabelController">
+	<h1 class="title" ng-if="model.config.level == 1">
+		{{model.label}}
+		<br /><small ng-bind-html-unsafe="model.description"></small>
+	</h1>
+	<h2 class="title" ng-if="model.config.level == 2">
+		{{model.label}}
+		<br /><small ng-bind-html-unsafe="model.description"></small>
+	</h2>
+	<h3 class="title" ng-if="model.config.level == 3">
+		{{model.label}}
+		<br /><small ng-bind-html-unsafe="model.description"></small>
+	</h3>
+	<h4 class="title" ng-if="model.config.level == 4">
+		{{model.label}}
+		<br /><small ng-bind-html-unsafe="model.description"></small>
+	</h4>
+	<h5 class="title" ng-if="model.config.level == 5">
+		{{model.label}}
+		<br /><small ng-bind-html-unsafe="model.description"></small>
+	</h5>
+</div>

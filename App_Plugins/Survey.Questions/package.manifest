@@ -1,0 +1,24 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "Survey.Questions",
+      "name": "Survey Voting Options",
+      "isParameterEditor": true,
+      "icon": "icon-dashboard",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/Survey.Questions/views/view.html",
+        "hideLabel": true,
+        "valueType": "JSON"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/Survey.Questions/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/Survey.Questions/css/style.css"
+  ]
+}

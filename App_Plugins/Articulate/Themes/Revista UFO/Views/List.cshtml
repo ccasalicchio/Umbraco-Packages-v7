@@ -1,0 +1,146 @@
+@using System.Text
+@using Articulate
+@using Articulate.Models
+@using Umbraco.Core
+@using Umbraco.Core.Cache
+@using Umbraco.Core.Security
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@using RevistaUFO
+@inherits UmbracoViewPage<Articulate.Models.ListModel>
+@{
+    Layout = "Master.cshtml";
+    ViewBag.CssWrapperClass = Model.DocumentTypeAlias == "ArticulateArchive" ? null : "demo-blog--blogpost";
+}
+
+<!--LISTA-->
+<section class="sub-page purple">
+    <div class="full-width-section">
+        <h1>@Model.BlogTitle</h1>
+        @Html.Partial("Parts/Breadcrumb")
+        <div class="two-columns">
+            <div class="one-fourth">
+                <aside>
+                    <div class="box purple search-aside">
+                        <h6>
+                            <a href="@Model.RootBlogNode.Url" title="@Umbraco.Field("#[Blog]BackToRoot")">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </a> @Umbraco.Field("#[Blog]Search")
+                        </h6>
+                        @Html.ThemedPartial(Model, "SearchBox")
+                        @if (!Request.QueryString["term"].IsNullOrWhiteSpace())
+                        {
+                            <h3>@Umbraco.Field("#[Blog]NoResults")</h3>
+                        }
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Categories")</h6>
+                        <ul class="keywords-list">
+                            <li><a href="site-lista-blocos.html">Categoria Um</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Dois</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Tres</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Quatro</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Cinco</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Seis</a></li>
+                            <li><a href="site-lista-blocos.html">Categoria Sete</a></li>
+                        </ul>
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Keywords")</h6>
+                        <p id="tagcloud">
+                            <a href="site-lista-blocos.html" rel="7">abduções</a>
+                            <a href="site-lista-blocos.html" rel="12">avistamentos</a>
+                            <a href="site-lista-blocos.html" rel="3">blog</a>
+                            <a href="site-lista-blocos.html" rel="1">exames</a>
+                            <a href="site-lista-blocos.html" rel="9">sondas</a>
+                            <a href="site-lista-blocos.html" rel="20">circulos</a>
+                            <a href="site-lista-blocos.html" rel="2">plantações</a>
+                            <a href="site-lista-blocos.html" rel="3">fórum</a>
+                            <a href="site-lista-blocos.html" rel="7">ufologia</a>
+                            <a href="site-lista-blocos.html" rel="7">profissional</a>
+                            <a href="site-lista-blocos.html" rel="4">conhecimento</a>
+                            <a href="site-lista-blocos.html" rel="8">osnis</a>
+                            <a href="site-lista-blocos.html" rel="13">ufo</a>
+                            <a href="site-lista-blocos.html" rel="12">sangue</a>
+                        </p>
+                    </div>
+                    <div class="box purple flex">
+                        <h6>@Umbraco.Field("#[Blog]Author")</h6>
+                        <div class="about">
+                            @{
+                                dynamic author = Umbraco.Content(Model.Parent.FollowingSibling("Articulate").GetPropertyValue("Blog_Authors"));
+                                var profilePic = Umbraco.Media(author.authorImage);
+                            }
+                            <img src="@profilePic.Url" class="bordered" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat tempus finibus. Duis gravida blandit egestas. Praesent interdum eros a ex convallis ullamcorper. Aliquam erat volutpat...
+                            </p>
+                            <ul class="follow">
+                                <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-pinterest-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-google-plus-square" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="three-fourths posts-list">
+                @if (!Model.Children.Any())
+                {
+                    @Html.ThemedPartial(Model, "SearchBox")
+                    if (!Request.QueryString["term"].IsNullOrWhiteSpace())
+                    {
+                    
+                        <h3>@Umbraco.Field("#[Blog]NoResults")</h3>
+    }
+}
+else
+{
+    var doneFirst = false;
+                    <h2>@Umbraco.Field("#[Blog]LatestPosts")</h2>
+                    @Html.ThemedPartial(Model, "TitleTile")
+                    <ul>
+                        @foreach (var post in Model.Children<PostModel>())
+                        {
+                            <li>
+                                @if (!doneFirst && Model.DocumentTypeAlias == "ArticulateArchive")
+                                {
+                                    doneFirst = true;
+                                
+                                    @PostInfo(post)
+                                }
+                                else
+                                {
+                                    @PostInfo(post)
+                                }
+                            </li>
+                        }
+
+                        @Html.ThemedPartial(Model, "Pager", Model.Pages)
+                    </ul>
+                }
+
+                @Html.ThemedPartial(Model, "Pager", Model.Pages)
+            </div>
+        </div>
+    </div>
+</section>
+
+@helper PostInfo(PostModel post, bool withExcerpt = true)
+{
+    var valueOrDefault = new ValueOrDefault();
+    @Html.ThemedPartial(Model, "PostImageHeader", post)
+    <h6>@Model.CreateDate.ToString(valueOrDefault.FullDateTimeFormat)</h6>
+    <p>
+        @if (withExcerpt)
+        {
+            @post.Excerpt
+                @post.Excerpt @valueOrDefault.Elipsys
+            }
+        }
+        <br />
+        @Html.ThemedPartial(Model, "AuthorInfo", post)
+    </p>
+}

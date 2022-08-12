@@ -1,0 +1,33 @@
+@using Articulate
+@using Umbraco.Core.Cache
+@using Umbraco.Core.Security
+@using Umbraco.Web.Models
+@model Articulate.Models.IMasterModel
+
+@{
+    Umbraco.Web.UmbracoHelper h = new Umbraco.Web.UmbracoHelper(Umbraco.Web.UmbracoContext.Current);
+}
+
+<a href="@Url.ArticulateCategoriesUrl(Model)" title="@h.Field("#[Blog]Archive")" class="btn btn-default">
+    <i class="fa fa-archive" aria-hidden="true"></i>
+</a>
+<a href="@Url.ArticulateTagsUrl(Model)" title="@h.Field("#[Blog]Tags")" class="btn btn-default">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+</a>
+<a href="@Url.ArticulateSearchUrl(Model)" title="@h.Field("#[Blog]Search_btn")" class="btn btn-default">
+    <i class="fa fa-search" aria-hidden="true"></i>
+</a>
+@*<button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">more_vert</i>
+        <span class="visuallyhidden">show menu</span>
+    </button>
+
+    <nav class="menu" role="nav">
+        <ul>
+            <li><a href="@Url.ArticulateCategoriesUrl(Model)">Archive</a></li>
+            <li><a href="@Url.ArticulateTagsUrl(Model)">Tags</a></li>
+            <li>
+                @Html.ThemedPartial(Model, "SearchBox")
+            </li>
+        </ul>
+    </nav>*@
