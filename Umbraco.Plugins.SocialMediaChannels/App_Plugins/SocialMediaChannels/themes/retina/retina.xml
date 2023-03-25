@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Retina" description="Circle Flat Icons Retina-ready" created-date="2013-05-14" created-by="LAND-OF-WEB" url-reference="http://www.land-of-web.com/freebies/icons/freebie-circle-flat-icons-retina-ready.html" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="da" name="Da" image="da.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="ember" name="Ember" image="ember.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="forrst" name="Forrst" image="forrst.png" />
+  <channel id="google+" name="Google+" image="googleplus.png" />
+  <channel id="insta" name="Insta" image="insta.png" />
+  <channel id="linkedin" name="Linkedin" image="linkedin.png" />
+  <channel id="myspace" name="Myspace" image="myspace.png" />
+  <channel id="orkut" name="Orkut" image="orkut.png" />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png" />
+  <channel id="rss" name="Rss" image="rss.png" />
+  <channel id="share this" name="Share this" image="share this.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="su" name="Su" image="su.png" />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="utube" name="Utube" image="utube.png" />
+  <channel id="viddlr" name="Viddlr" image="viddlr.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+</theme>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Rounded" description="Premium Flat Social Icon Set" created-date="2013-06-06" created-by="DESIGN DECK" url-reference="http://designdeck.co.uk/a/1288" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="dropbox" name="Dropbox" image="dropbox.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="last-fm" name="Last-fm" image="last-fm.png" />
+  <channel id="rss" name="Rss" image="rss.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="youtube" name="Youtube" image="youtube.png" />
+</theme>

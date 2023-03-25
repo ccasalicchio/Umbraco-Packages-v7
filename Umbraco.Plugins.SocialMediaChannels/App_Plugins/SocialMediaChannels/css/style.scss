@@ -1,0 +1,143 @@
+﻿
+.social-media-channels {
+    select {
+        width: 100%;
+    }
+
+    img {
+        &.screenshot {
+            width: 250px;
+            height: auto;
+        }
+    }
+
+    a {
+        word-break: break-all;
+    }
+
+    table {
+        width: 100%;
+        min-width: 100%;
+
+        tbody, tr {
+            width: 100%;
+        }
+    }
+
+    th {
+        width: 30%;
+        padding-right: 10px;
+        vertical-align: top;
+
+        .theme-details-wrapper {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 5px;
+            min-height: 200px;
+            height: 200px;
+            max-height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .theme-details {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            height: 100%;
+            max-height: 200px;
+            background-color: rgba(255,255,255, 0.6);
+        }
+    }
+
+    td {
+        &.screenshot {
+            width: 65%;
+        }
+
+        img {
+            min-width: 48px;
+            background-color: #fff;
+
+            &.inverted {
+                background-color: #000;
+            }
+        }
+
+        &.bg {
+            display: flex;
+            flex-wrap: wrap;
+
+            label {
+                border: 1px solid #000;
+                padding: 5px;
+                margin-right: 2px;
+
+                span {
+                    border: 2px solid transparent;
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+
+                    &.white {
+                        background: #fff;
+                    }
+
+                    &.lightgrey {
+                        background: #f2f2f2;
+                    }
+
+                    &.black {
+                        background: #000;
+                    }
+                }
+
+                input[type='radio'] {
+                    display: none;
+                }
+
+                & > input:checked + span {
+                    outline: 2px solid #35A5ED;
+                    border: 2px solid #35A5ED;
+                }
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 5px 10px;
+
+        .channel-label, img {
+            max-width: 64px;
+        }
+
+        .channel-input {
+            height: 64px;
+            vertical-align: sub;
+            display: inline-block;
+
+            input {
+                height: 32px;
+            }
+        }
+
+        i {
+            font-size: 2em;
+            cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur), default !important;
+
+            &:active {
+                color: #090909;
+            }
+        }
+    }
+}

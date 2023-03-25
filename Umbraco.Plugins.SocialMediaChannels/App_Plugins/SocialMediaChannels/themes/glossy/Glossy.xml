@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Glossy" description="Simple Squared Nerds Glossy" created-date="2013-07-18" created-by="SIMPLE SQUARED NERDS GLOSSY" url-reference="http://creativenerds.co.uk/freebies/a-nice-glossy-free-social-media-icon-set/" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="freiendfeed" name="Freiendfeed" image="freiendfeed.png" />
+  <channel id="Glossy" name="Glossy" image="Glossy.xml" />
+  <channel id="googleplus" name="Googleplus" image="googleplus.png" />
+  <channel id="pintrest" name="Pintrest" image="pintrest.png" />
+  <channel id="rss" name="Rss" image="rss.png" />
+  <channel id="stumbleupon" name="Stumbleupon" image="stumbleupon.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="youtube" name="Youtube" image="youtube.png" />
+</theme>

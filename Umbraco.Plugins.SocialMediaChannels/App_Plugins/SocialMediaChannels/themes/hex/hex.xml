@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Hex" description="Hex Icons Pack" created-date="2013-07-31" created-by="MARTZ90" url-reference="http://martz90.deviantart.com/art/Hex-Icons-Pack-389706981" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="500px" name="500px" image="500px.png" />
+  <channel id="9gag" name="9gag" image="9gag.png" />
+  <channel id="adobe air" name="Adobe air" image="adobe air.png" />
+  <channel id="adobe flash" name="Adobe flash" image="adobe flash.png" />
+  <channel id="adobe reader" name="Adobe reader" image="adobe reader.png" />
+  <channel id="adobe" name="Adobe" image="adobe.png" />
+  <channel id="after effects" name="After effects" image="after effects.png" />
+  <channel id="airbank" name="Airbank" image="airbank.png" />
+  <channel id="airdroid" name="Airdroid" image="airdroid.png" />
+  <channel id="android" name="Android" image="android.png" />
+  <channel id="antivirus" name="Antivirus" image="antivirus.png" />
+  <channel id="app draw" name="App draw" image="app draw.png" />
+  <channel id="appstore" name="Appstore" image="appstore.png" />
+  <channel id="avast" name="Avast" image="avast.png" />
+  <channel id="badoo" name="Badoo" image="badoo.png" />
+  <channel id="bbc news" name="Bbc news" image="bbc news.png" />
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="bookmark" name="Bookmark" image="bookmark.png" />
+  <channel id="Bridge" name="Bridge" image="Bridge.png" />
+  <channel id="browser" name="Browser" image="browser.png" />
+  <channel id="bs player" name="Bs player" image="bs player.png" />
+  <channel id="bus ticket" name="Bus ticket" image="bus ticket.png" />
+  <channel id="calculator" name="Calculator" image="calculator.png" />
+  <channel id="calendar" name="Calendar" image="calendar.png" />
+  <channel id="camera" name="Camera" image="camera.png" />
+  <channel id="car" name="Car" image="car.png" />
+  <channel id="chrome" name="Chrome" image="chrome.png" />
+  <channel id="chrome2" name="Chrome2" image="chrome2.png" />
+  <channel id="chrome3" name="Chrome3" image="chrome3.png" />
+  <channel id="cinemagram" name="Cinemagram" image="cinemagram.png" />
+  <channel id="creative market" name="Creative market" image="creative market.png" />
+  <channel id="css3" name="Css3" image="css3.png" />
+  <channel id="cydia" name="Cydia" image="cydia.png" />
+  <channel id="dating site" name="Dating site" image="dating site.png" />
+  <channel id="deals" name="Deals" image="deals.png" />
+  <channel id="deviantart" name="Deviantart" image="deviantart.png" />
+  <channel id="digg" name="Digg" image="digg.png" />
+  <channel id="dolphin browser" name="Dolphin browser" image="dolphin browser.png" />
+  <channel id="dribble" name="Dribble" image="dribble.png" />
+  <channel id="dropbox" name="Dropbox" image="dropbox.png" />
+  <channel id="duolingo" name="Duolingo" image="duolingo.png" />
+  <channel id="edge animate" name="Edge animate" image="edge animate.png" />
+  <channel id="edge code" name="Edge code" image="edge code.png" />
+  <channel id="edge inspect" name="Edge inspect" image="edge inspect.png" />
+  <channel id="edge reflow" name="Edge reflow" image="edge reflow.png" />
+  <channel id="email" name="Email" image="email.png" />
+  <channel id="email2" name="Email2" image="email2.png" />
+  <channel id="engadget" name="Engadget" image="engadget.png" />
+  <channel id="eurosport" name="Eurosport" image="eurosport.png" />
+  <channel id="evernote" name="Evernote" image="evernote.png" />
+  <channel id="eye in a sky" name="Eye in a sky" image="eye in a sky.png" />
+  <channel id="facebook like" name="Facebook like" image="facebook like.png" />
+  <channel id="facebook pages" name="Facebook pages" image="facebook pages.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="fancy" name="Fancy" image="fancy.png" />
+  <channel id="favourites" name="Favourites" image="favourites.png" />
+  <channel id="feedly" name="Feedly" image="feedly.png" />
+  <channel id="files" name="Files" image="files.png" />
+  <channel id="firefox" name="Firefox" image="firefox.png" />
+  <channel id="firefox2" name="Firefox2" image="firefox2.png" />
+  <channel id="fireworks" name="Fireworks" image="fireworks.png" />
+  <channel id="flash" name="Flash" image="flash.png" />
+  <channel id="flight" name="Flight" image="flight.png" />
+  <channel id="flipboard" name="Flipboard" image="flipboard.png" />
+  <channel id="foursquare" name="Foursquare" image="foursquare.png" />
+  <channel id="gallery 2" name="Gallery 2" image="gallery 2.png" />
+  <channel id="gallery" name="Gallery" image="gallery.png" />
+  <channel id="gamecenter" name="Gamecenter" image="gamecenter.png" />
+  <channel id="gamehub" name="Gamehub" image="gamehub.png" />
+  <channel id="gmail" name="Gmail" image="gmail.png" />
+  <channel id="go locker" name="Go locker" image="go locker.png" />
+  <channel id="google analytics" name="Google analytics" image="google analytics.png" />
+  <channel id="google currents" name="Google currents" image="google currents.png" />
+  <channel id="google drive" name="Google drive" image="google drive.png" />
+  <channel id="google earth 2" name="Google earth 2" image="google earth 2.png" />
+  <channel id="google earth" name="Google earth" image="google earth.png" />
+  <channel id="google play 2" name="Google play 2" image="google play 2.png" />
+  <channel id="google play 3" name="Google play 3" image="google play 3.png" />
+  <channel id="google play music" name="Google play music" image="google play music.png" />
+  <channel id="google play music2" name="Google play music2" image="google play music2.png" />
+  <channel id="google play" name="Google play" image="google play.png" />
+  <channel id="google plus" name="Google plus" image="google plus.png" />
+  <channel id="google translate" name="Google translate" image="google translate.png" />
+  <channel id="google wallet" name="Google wallet" image="google wallet.png" />
+  <channel id="google" name="Google" image="google.png" />
+  <channel id="guardian" name="Guardian" image="guardian.png" />
+  <channel id="hangouts" name="Hangouts" image="hangouts.png" />
+  <channel id="html5" name="Html5" image="html5.png" />
+  <channel id="hulu" name="Hulu" image="hulu.png" />
+  <channel id="icq" name="Icq" image="icq.png" />
+  <channel id="illustrator" name="Illustrator" image="illustrator.png" />
+  <channel id="imdb" name="Imdb" image="imdb.png" />
+  <channel id="imo" name="Imo" image="imo.png" />
+  <channel id="InDesign" name="InDesign" image="InDesign.png" />
+  <channel id="ingress" name="Ingress" image="ingress.png" />
+  <channel id="instagram" name="Instagram" image="instagram.png" />
+  <channel id="instagram2" name="Instagram2" image="instagram2.png" />
+  <channel id="internet explorer" name="Internet explorer" image="internet explorer.png" />
+  <channel id="kuler" name="Kuler" image="kuler.png" />
+  <channel id="kuler2" name="Kuler2" image="kuler2.png" />
+  <channel id="lastfm" name="Lastfm" image="lastfm.png" />
+  <channel id="line" name="Line" image="line.png" />
+  <channel id="linkedin" name="Linkedin" image="linkedin.png" />
+  <channel id="location" name="Location" image="location.png" />
+  <channel id="maps" name="Maps" image="maps.png" />
+  <channel id="maps2" name="Maps2" image="maps2.png" />
+  <channel id="maxthon" name="Maxthon" image="maxthon.png" />
+  <channel id="messages" name="Messages" image="messages.png" />
+  <channel id="messages2" name="Messages2" image="messages2.png" />
+  <channel id="messenger" name="Messenger" image="messenger.png" />
+  <channel id="ms" name="Ms" image="ms.png" />
+  <channel id="Muse" name="Muse" image="Muse.png" />
+  <channel id="music" name="Music" image="music.png" />
+  <channel id="myspace" name="Myspace" image="myspace.png" />
+  <channel id="navigation" name="Navigation" image="navigation.png" />
+  <channel id="nhl" name="Nhl" image="nhl.png" />
+  <channel id="office" name="Office" image="office.png" />
+  <channel id="opera" name="Opera" image="opera.png" />
+  <channel id="origin" name="Origin" image="origin.png" />
+  <channel id="outlook" name="Outlook" image="outlook.png" />
+  <channel id="pandora" name="Pandora" image="pandora.png" />
+  <channel id="path" name="Path" image="path.png" />
+  <channel id="phone" name="Phone" image="phone.png" />
+  <channel id="photoshop" name="Photoshop" image="photoshop.png" />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png" />
+  <channel id="pocket" name="Pocket" image="pocket.png" />
+  <channel id="power" name="Power" image="power.png" />
+  <channel id="poweramp" name="Poweramp" image="poweramp.png" />
+  <channel id="premiere" name="Premiere" image="premiere.png" />
+  <channel id="ps express" name="Ps express" image="ps express.png" />
+  <channel id="radio" name="Radio" image="radio.png" />
+  <channel id="redmond pie" name="Redmond pie" image="redmond pie.png" />
+  <channel id="rss" name="Rss" image="rss.png" />
+  <channel id="safari" name="Safari" image="safari.png" />
+  <channel id="safari2" name="Safari2" image="safari2.png" />
+  <channel id="settings" name="Settings" image="settings.png" />
+  <channel id="shazam" name="Shazam" image="shazam.png" />
+  <channel id="skydrive" name="Skydrive" image="skydrive.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="soundcloud" name="Soundcloud" image="soundcloud.png" />
+  <channel id="spotify" name="Spotify" image="spotify.png" />
+  <channel id="stats" name="Stats" image="stats.png" />
+  <channel id="steam" name="Steam" image="steam.png" />
+  <channel id="stumbleupon" name="Stumbleupon" image="stumbleupon.png" />
+  <channel id="tango" name="Tango" image="tango.png" />
+  <channel id="TED" name="TED" image="TED.png" />
+  <channel id="trash, bin" name="Trash, bin" image="trash, bin.png" />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png" />
+  <channel id="tunein" name="Tunein" image="tunein.png" />
+  <channel id="ubuntu" name="Ubuntu" image="ubuntu.png" />
+  <channel id="utorrent" name="Utorrent" image="utorrent.png" />
+  <channel id="viber" name="Viber" image="viber.png" />
+  <channel id="video" name="Video" image="video.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="VLC" name="VLC" image="VLC.png" />
+  <channel id="VLC2" name="VLC2" image="VLC2.png" />
+  <channel id="warning" name="Warning" image="warning.png" />
+  <channel id="weather" name="Weather" image="weather.png" />
+  <channel id="weather2" name="Weather2" image="weather2.png" />
+  <channel id="whatsapp" name="Whatsapp" image="whatsapp.png" />
+  <channel id="wifi" name="Wifi" image="wifi.png" />
+  <channel id="wifi2" name="Wifi2" image="wifi2.png" />
+  <channel id="wikipedia" name="Wikipedia" image="wikipedia.png" />
+  <channel id="winamp" name="Winamp" image="winamp.png" />
+  <channel id="windows" name="Windows" image="windows.png" />
+  <channel id="wordpress" name="Wordpress" image="wordpress.png" />
+  <channel id="xbmc" name="Xbmc" image="xbmc.png" />
+  <channel id="youtube" name="Youtube" image="youtube.png" />
+  <channel id="zune" name="Zune" image="zune.png" />
+</theme>

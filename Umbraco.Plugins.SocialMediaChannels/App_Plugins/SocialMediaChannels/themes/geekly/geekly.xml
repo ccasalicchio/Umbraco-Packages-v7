@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Geekly" description="Geekly - 40 Flat Icons" created-date="2013-09-13" created-by="ABDULRAHIM BAJABER" url-reference="https://www.behance.net/gallery/Geekly-40-Flat-Icons/10357351" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="Behance" name="Behance" image="Behance.png" />
+  <channel id="Blogger" name="Blogger" image="Blogger.png" />
+  <channel id="Deliciou" name="Deliciou" image="Deliciou.png" />
+  <channel id="DeviantART" name="DeviantART" image="DeviantART.png" />
+  <channel id="Digg" name="Digg" image="Digg.png" />
+  <channel id="Dribbble" name="Dribbble" image="Dribbble.png" />
+  <channel id="Evernote" name="Evernote" image="Evernote.png" />
+  <channel id="Facebook" name="Facebook" image="Facebook.png" />
+  <channel id="Flickr" name="Flickr" image="Flickr.png" />
+  <channel id="Formspring" name="Formspring" image="Formspring.png" />
+  <channel id="Google+" name="Google+" image="GooglePlus.png" />
+  <channel id="Instgram" name="Instgram" image="Instgram.png" />
+  <channel id="Linked-in" name="Linked-in" image="Linked-in.png" />
+  <channel id="MySpace" name="MySpace" image="MySpace.png" />
+  <channel id="Picasa" name="Picasa" image="Picasa.png" />
+  <channel id="Pinterest" name="Pinterest" image="Pinterest.png" />
+  <channel id="Pocket" name="Pocket" image="Pocket.png" />
+  <channel id="Skype" name="Skype" image="Skype.png" />
+  <channel id="SoundCloud" name="SoundCloud" image="SoundCloud.png" />
+  <channel id="Tumblr" name="Tumblr" image="Tumblr.png" />
+  <channel id="Twitter" name="Twitter" image="Twitter.png" />
+  <channel id="Vimeo" name="Vimeo" image="Vimeo.png" />
+  <channel id="Wordpress" name="Wordpress" image="Wordpress.png" />
+  <channel id="Yahoo!" name="Yahoo!" image="Yahoo!.png" />
+  <channel id="YouTube" name="YouTube" image="YouTube.png" />
+</theme>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Flat" description="Flat Social Media Icons" created-date="2013-05-13" created-by="BEST PSD FREEBIES" url-reference="http://www.bestpsdfreebies.com/freebie/flat-social-media-icons/" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="google-plus" name="Google-plus" image="google-plus.png" />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png" />
+  <channel id="rss" name="Rss" image="rss.png" />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="zerply" name="Zerply" image="zerply.png" />
+</theme>

@@ -1,0 +1,92 @@
+﻿.social-media-channels select {
+  width: 100%; }
+
+.social-media-channels img.screenshot {
+  width: 250px;
+  height: auto; }
+
+.social-media-channels a {
+  word-break: break-all; }
+
+.social-media-channels table {
+  width: 100%;
+  min-width: 100%; }
+  .social-media-channels table tbody, .social-media-channels table tr {
+    width: 100%; }
+
+.social-media-channels th {
+  width: 30%;
+  padding-right: 10px;
+  vertical-align: top; }
+  .social-media-channels th .theme-details-wrapper {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 5px;
+    min-height: 200px;
+    height: 200px;
+    max-height: 200px; }
+    .social-media-channels th .theme-details-wrapper img {
+      width: 100%;
+      height: 100%; }
+  .social-media-channels th .theme-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    height: 100%;
+    max-height: 200px;
+    background-color: rgba(255, 255, 255, 0.6); }
+
+.social-media-channels td.screenshot {
+  width: 65%; }
+
+.social-media-channels td img {
+  min-width: 48px;
+  background-color: #fff; }
+  .social-media-channels td img.inverted {
+    background-color: #000; }
+
+.social-media-channels td.bg {
+  display: flex;
+  flex-wrap: wrap; }
+  .social-media-channels td.bg label {
+    border: 1px solid #000;
+    padding: 5px;
+    margin-right: 2px; }
+    .social-media-channels td.bg label span {
+      border: 2px solid transparent;
+      width: 10px;
+      height: 10px;
+      display: block; }
+      .social-media-channels td.bg label span.white {
+        background: #fff; }
+      .social-media-channels td.bg label span.lightgrey {
+        background: #f2f2f2; }
+      .social-media-channels td.bg label span.black {
+        background: #000; }
+    .social-media-channels td.bg label input[type='radio'] {
+      display: none; }
+    .social-media-channels td.bg label > input:checked + span {
+      outline: 2px solid #35A5ED;
+      border: 2px solid #35A5ED; }
+
+.social-media-channels ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.social-media-channels li {
+  padding: 5px 10px; }
+  .social-media-channels li .channel-label, .social-media-channels li img {
+    max-width: 64px; }
+  .social-media-channels li .channel-input {
+    height: 64px;
+    vertical-align: sub;
+    display: inline-block; }
+    .social-media-channels li .channel-input input {
+      height: 32px; }
+  .social-media-channels li i {
+    font-size: 2em;
+    cursor: url(https://ssl.gstatic.com/ui/v1/icons/mail/images/2/openhand.cur), default !important; }
+    .social-media-channels li i:active {
+      color: #090909; }

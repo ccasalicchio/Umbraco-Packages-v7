@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Flat Shadow" description="40 Social Media Flat Icons" created-date="2013-06-10" created-by="GRAPHIC BURGER" url-reference="http://graphicburger.com/40-social-media-flat-icons/" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="AddThis" name="AddThis" image="AddThis.png" />
+  <channel id="Amazon" name="Amazon" image="Amazon.png" />
+  <channel id="Bebo" name="Bebo" image="Bebo.png" />
+  <channel id="Behance" name="Behance" image="Behance.png" />
+  <channel id="Blogger" name="Blogger" image="Blogger.png" />
+  <channel id="Delicious" name="Delicious" image="Delicious.png" />
+  <channel id="DeviantArt" name="DeviantArt" image="DeviantArt.png" />
+  <channel id="Digg" name="Digg" image="Digg.png" />
+  <channel id="Dribbble" name="Dribbble" image="Dribbble.png" />
+  <channel id="Dropbox" name="Dropbox" image="Dropbox.png" />
+  <channel id="Evernote" name="Evernote" image="Evernote.png" />
+  <channel id="Facebook" name="Facebook" image="Facebook.png" />
+  <channel id="Flickr" name="Flickr" image="Flickr.png" />
+  <channel id="Forrst" name="Forrst" image="Forrst.png" />
+  <channel id="GitHub" name="GitHub" image="GitHub.png" />
+  <channel id="GooglePlus" name="GooglePlus" image="GooglePlus.png" />
+  <channel id="Grooveshark" name="Grooveshark" image="Grooveshark.png" />
+  <channel id="Instagram" name="Instagram" image="Instagram.png" />
+  <channel id="Kickstarter" name="Kickstarter" image="Kickstarter.png" />
+  <channel id="Last.fm" name="Last.fm" image="Last.fm.png" />
+  <channel id="LinkedIn" name="LinkedIn" image="LinkedIn.png" />
+  <channel id="Myspace" name="Myspace" image="Myspace.png" />
+  <channel id="Picasa" name="Picasa" image="Picasa.png" />
+  <channel id="Pinterest" name="Pinterest" image="Pinterest.png" />
+  <channel id="Quora" name="Quora" image="Quora.png" />
+  <channel id="Rss" name="Rss" image="Rss.png" />
+  <channel id="ShareThis" name="ShareThis" image="ShareThis.png" />
+  <channel id="Skype" name="Skype" image="Skype.png" />
+  <channel id="SoundCloud" name="SoundCloud" image="SoundCloud.png" />
+  <channel id="StumbleUpon" name="StumbleUpon" image="StumbleUpon.png" />
+  <channel id="Technorati" name="Technorati" image="Technorati.png" />
+  <channel id="Tumblr" name="Tumblr" image="Tumblr.png" />
+  <channel id="Twitter" name="Twitter" image="Twitter.png" />
+  <channel id="Vimeo" name="Vimeo" image="Vimeo.png" />
+  <channel id="Wikipedia" name="Wikipedia" image="Wikipedia.png" />
+  <channel id="WordPress" name="WordPress" image="WordPress.png" />
+  <channel id="Xing" name="Xing" image="Xing.png" />
+  <channel id="Yahoo" name="Yahoo" image="Yahoo.png" />
+  <channel id="YouTube" name="YouTube" image="YouTube.png" />
+  <channel id="Zerply" name="Zerply" image="Zerply.png" />
+</theme>

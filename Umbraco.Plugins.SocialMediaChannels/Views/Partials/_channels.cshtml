@@ -1,0 +1,35 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Newtonsoft.Json
+@{
+    Umbraco.Plugins.SocialMediaChannels.Models.SocialMediaChannelPackage theme = JsonConvert.DeserializeObject<Umbraco.Plugins.SocialMediaChannels.Models.SocialMediaChannelPackage>(Model.Content.GetPropertyValue<string>("socialMediaChannelTheme"));
+}
+
+<div class="social-media-channels">
+    <ul>
+        @if (theme != null)
+        {
+
+            foreach (var channel in theme.Theme.Channels)
+            {
+                if (!string.IsNullOrEmpty(channel.Url))
+                {
+
+                    <li>
+                        <a href="@channel.Url" target="_blank" title="@channel.Name">
+                            <img src="~/App_Plugins/SocialMediaChannels/themes/@theme.Folder/@channel.Image" alt="@channel.Name" />
+                        </a>
+                        @if (theme.Theme.ShowLabels)
+                        {
+                            <label><a href="@channel.Url" target="_blank" title="@channel.Name">@channel.Name</a></label>
+                        }
+                    </li>
+                }
+            }
+        }
+        else
+        {
+            <li>@Umbraco.GetDictionaryValue("[SocialMediaChannels]None", "No Channels Configured")</li>
+
+        }
+    </ul>
+</div>

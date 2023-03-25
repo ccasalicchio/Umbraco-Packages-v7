@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="Outline" description="20 outline social icons" created-date="2014-06-04" created-by="GRAPHICS BAY TEAM" url-reference="https://dribbble.com/shots/1582009-20-outline-social-icons" xmlns="http://zueuz.com/Theme-Schema.xsd">
+  <channel id="aim" name="Aim" image="aim.png" />
+  <channel id="android" name="Android" image="android.png" />
+  <channel id="apple" name="Apple" image="apple.png" />
+  <channel id="behance" name="Behance" image="behance.png" />
+  <channel id="blogger" name="Blogger" image="blogger.png" />
+  <channel id="delicious" name="Delicious" image="delicious.png" />
+  <channel id="deviantart" name="Deviantart" image="deviantart.png" />
+  <channel id="dribbble" name="Dribbble" image="dribbble.png" />
+  <channel id="facebook" name="Facebook" image="facebook.png" />
+  <channel id="flickr" name="Flickr" image="flickr.png" />
+  <channel id="forrst" name="Forrst" image="forrst.png" />
+  <channel id="gdrive" name="Gdrive" image="gdrive.png" />
+  <channel id="googleplus" name="Googleplus" image="googleplus.png" />
+  <channel id="instagram" name="Instagram" image="instagram.png" />
+  <channel id="linkedin" name="Linkedin" image="linkedin.png" />
+  <channel id="paypal" name="Paypal" image="paypal.png" />
+  <channel id="picassa" name="Picassa" image="picassa.png" />
+  <channel id="pinterest" name="Pinterest" image="pinterest.png" />
+  <channel id="sharethis" name="Sharethis" image="sharethis.png" />
+  <channel id="skype" name="Skype" image="skype.png" />
+  <channel id="soundcloud" name="Soundcloud" image="soundcloud.png" />
+  <channel id="tumblr" name="Tumblr" image="tumblr.png" />
+  <channel id="twitter" name="Twitter" image="twitter.png" />
+  <channel id="vimeo" name="Vimeo" image="vimeo.png" />
+  <channel id="windows" name="Windows" image="windows.png" />
+  <channel id="xbox" name="Xbox" image="xbox.png" />
+  <channel id="youtube" name="Youtube" image="youtube.png" />
+  <channel id="zerply" name="Zerply" image="zerply.png" />
+</theme>

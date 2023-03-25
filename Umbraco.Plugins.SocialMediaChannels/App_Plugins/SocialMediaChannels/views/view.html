@@ -1,0 +1,65 @@
+﻿<div ng-controller="splatDev.SocialMediaChannels.Controller as vm" class="social-media-channels">
+    <h5><localize key="socialchannels_title">Choose Theme</localize></h5>
+    <table>
+        <tbody>
+
+            <tr>
+                <td colspan="2">
+                    <select ng-model="vm.model.selectedTheme" ng-options="package.Name for package in vm.model.packages" ng-change="vm.updateSelection()">
+                        <option value="" ng-selected="vm.model.selectedTheme===null" localize="label" label="@socialchannels_defaultoption">------</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td ng-show="vm.model.selectedTheme">
+                    <localize key="socialchannels_showlabels">Show Labels</localize>&nbsp;<input type="checkbox" ng-model="vm.model.showLabels">
+                </td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td class="bg">
+                    <localize key="socialchannels_invertcolors">Invert</localize>&nbsp;
+                    <label title="clear"><input type="radio" name="bgcolor" value="#fff" ng-model="vm.model.bg" checked><span class="white"></span></label>
+                    <label title="twilight"><input type="radio" name="bgcolor" value="#f2f2f2" ng-model="vm.model.bg" checked><span class="lightgrey"></span></label>
+                    <label title="dark"><input type="radio" name="bgcolor" value="#000" ng-model="vm.model.bg"><span class="black"></span></label>
+                </td>
+            </tr>
+
+            <tr>
+                <th ng-show="vm.model.selectedTheme">
+                    <div class="theme-details-wrapper">
+                        <div class="theme-details">
+                            <h4>{{vm.model.selectedTheme.Theme.Id}}</h4>
+                            <h5>{{vm.model.selectedTheme.Theme.CreatedBy}}</h5>
+                            <h6><a href='{{vm.model.selectedTheme.Theme.Reference}}' target='_blank'>{{vm.model.selectedTheme.Theme.Reference}}</a></h6>
+                            <h6>{{vm.model.selectedTheme.Theme.CreateDate  | date:'yyyy-MM-dd'}}</h6>
+                        </div>
+                        <img class="screenshot" ng-src="{{vm.model.selectedTheme.Thumbnail}}" />
+                    </div>
+                </th>
+
+                <td ng-show="vm.model.selectedTheme" class="channels">
+                    <ul ui-sortable="sortableOptions" ng-model="vm.model.selectedTheme.Theme.Channels">
+                        <li class="channel" ng-repeat="channel in vm.model.selectedTheme.Theme.Channels">
+                            <span class="channel-label"><img ng-src="{{vm.model.path + vm.model.selectedTheme.Folder + '/' + channel.Image}}" title="{{channel.Name}}" ng-style="{ background: vm.model.bg }"></span> &nbsp;
+                            <span class="channel-input">
+                                <input type="text" placeholder="{{channel.Name + ' profile url'}}" ng-model="channel.Url">
+                                <i class="icon icon-navigation handle"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

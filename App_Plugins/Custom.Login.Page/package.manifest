@@ -1,6 +1,0 @@
-{
-	propertyEditors: [],
-    parameterEditors:[],
-    javascript: ['~/App_Plugins/Custom.Login.Page/js/login.js'],
-    css: ['~/App_Plugins/Custom.Login.Page/css/style.css']
-}
