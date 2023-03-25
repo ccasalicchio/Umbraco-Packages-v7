@@ -18,4 +18,4 @@ The available packages are:
 - Copy To Button
 - [Ad Preview](https://our.umbraco.com/packages/backoffice-extensions/ad-preview/)
 	
-		Install-Package SplatDev.Umbraco.Plugins.AdPreview -Version 0.0.3.3
+		Install-Package SplatDev.Umbraco.Plugins.AdPreview -Version 0.0.3.4
