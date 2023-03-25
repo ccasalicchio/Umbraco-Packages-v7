@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>AdPreview</id>
-    <version>0.0.3.1</version>
+    <id>SplatDev.Umbraco.Plugins.AdPreview</id>
+    <version>0.0.3.4</version>
     <title>Ad Preview</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://our.umbraco.com/projects/</projectUrl>
-    <description>Image Ad previewer for Umbraco v7.4.3+</description>
-    <releaseNotes>Added working functionality</releaseNotes>
-    <copyright>SplatDev 2023</copyright>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/ad-preview/</projectUrl>
+    <description>Image Ad previewer for Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality for ad preview in front-end and backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
     <tags>umbraco ad preview</tags>
     <icon>\icon.png</icon>
+    <readme>\README.md</readme>
     <dependencies>
-      <group targetFramework=".NETFramework4.7.2" />
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
     </dependencies>
   </metadata>
-    <files>
-      <file src=".\icon.png" target="\" />
-    </files>
+  <files>
+    <file src=".\icon.png" target="\" />
+    <file src=".\README.md" target="\" />
+    <file src=".\readme.txt" target="\" />
+  </files>
 </package>

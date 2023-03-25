@@ -1,10 +1,10 @@
 # Ad Display for Umbraco 7.4.3+
 
 - Creates a Data Type to display a preview of an image ad in the backoffice
-	![Screenshot #1](../../../assets/imagead-1.png)
-	![Screenshot #2](../../../assets/imagead-2.png)
+	![Imgur](https://i.imgur.com/xyDIfYY.png)
+	![Imgur](https://i.imgur.com/VIxIxsK.png)
 - It also comes with a basic front-end example and css for styling
-	![Screenshot #3](../../../assets/imagead-3.png)
+	![Imgur](https://i.imgur.com/TzUfu4z.png)
 
 ##### Specs
 - Value Type: JSON

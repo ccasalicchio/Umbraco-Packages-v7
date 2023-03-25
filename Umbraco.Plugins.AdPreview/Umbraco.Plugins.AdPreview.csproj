@@ -97,9 +97,8 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
-    <Content Include="App_Plugins\AdPreview\README.md" />
-    <Content Include="App_Plugins\AdPreview\LICENSE" />
     <None Include="packages.config" />
+    <Content Include="readme.txt" />
     <Content Include="Views\Partials\_Ad.cshtml" />
     <Content Include="Views\Example.cshtml" />
     <None Include="Umbraco.Plugins.AdPreview.nuspec" />
