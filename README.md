@@ -1,4 +1,6 @@
-#Umbraco Packages by Carlos Casalicchio for Umbraco 7.4.3+
+# Umbraco Packages for Umbraco 7.4.3+
+
+##### Created by [SplatDev Ltda](https://splatdev.com) on March 2023
 
 Each package has been created to meet specific needs for client projects.
 
@@ -14,4 +16,6 @@ The available packages are:
 - Hide Page Button
 - Restrict Page Button
 - Copy To Button
-- Ad Preview
+- [Ad Preview](https://our.umbraco.com/projects)
+	
+		Install-package AdPreview -Version 0.0.3

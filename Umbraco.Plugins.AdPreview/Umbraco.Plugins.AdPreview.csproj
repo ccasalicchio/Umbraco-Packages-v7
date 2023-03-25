@@ -81,7 +81,7 @@
     <Content Include="App_Plugins\AdPreview\LICENSE" />
     <Content Include="App_Plugins\AdPreview\package.manifest" />
     <Content Include="App_Plugins\AdPreview\README.md" />
-    <Content Include="css\styles.css" />
+    <Content Include="css\image-ad.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\AdPreview\css\style.css">
