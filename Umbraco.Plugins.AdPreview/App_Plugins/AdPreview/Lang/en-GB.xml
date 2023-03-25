@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>SplatDev Ltda</name>
+    <link>https://splatdev.com</link>
+  </creator>
+  <area alias="local">
+    <key alias="instructions">Configure your Add Details</key>
+    <key alias="adimage">Ad Image</key>
+    <key alias="addetails">Ad Details</key>
+    <key alias="clicktoedit">Click to edit</key>
+    <key alias="remove">Remove</key>
+  </area>
+  <area alias="labels">
+    <key alias="adtitle">Title</key>
+    <key alias="addescription">Description</key>
+    <key alias="adurl">Url</key>
+    <key alias="adtooltip">Tooltip</key>
+    <key alias="adreferrer">Referrer</key>
+    <key alias="adcss">Custom css class</key>
+    <key alias="adoverlay">Overlay content</key>
+  </area>
+</language>

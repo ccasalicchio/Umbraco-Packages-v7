@@ -1,0 +1,17 @@
+﻿<div ng-controller="AdPreview.Controller as vm" class="editor-adpreview" localize="title" title="@local_clicktoedit">
+    <div ng-if="vm.model.img" class="ad-wrapper">
+        <a href="{{vm.model.url}}" target="_blank" title="{{vm.model.tooltip}}">
+            <div class="image-ad">
+                <img ng-src="{{vm.model.img}}" alt="{{vm.model.title + ' ' + vm.model.description}}" />
+            </div>
+            <div class="ad-text {{vm.model.css}}" ng-if="vm.model.overlay">
+                <h3>{{vm.model.title}}</h3>
+                <p>{{vm.model.description}}</p>
+            </div>
+        </a>
+    </div>
+    <div class="action_controls">
+        <a ng-click="vm.edit()" class="btn btn-default"><localize key="local_clicktoedit"></localize></a>
+        <a ng-click="vm.remove()" class="btn btn-remove" ng-if="vm.model!=='' && vm.model.img"><localize key="local_remove"></localize></a>
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿.editor-adpreview {
+  transition: all 0.4s ease-in-out; }
+  .editor-adpreview .ad-wrapper {
+    position: relative;
+    padding: 5px;
+    background: #f2f2f2;
+    border: 1px solid #ccc; }
+  .editor-adpreview .ad-text {
+    font-weight: 800;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.6);
+    display: block;
+    padding: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+    overflow: hidden; }
+    .editor-adpreview .ad-text h3 {
+      color: #222;
+      font-size: 1.6rem;
+      font-weight: 900; }
+  .editor-adpreview .caption {
+    clear: both;
+    display: block; }
+  .editor-adpreview .action_controls {
+    width: 100%;
+    text-align: right;
+    margin-top: 10px; }
+    .editor-adpreview .action_controls a {
+      cursor: pointer; }
+  .editor-adpreview .image-ad img {
+    width: 100%;
+    max-width: 100%; }
+  .editor-adpreview .btn-remove {
+    background: #ff0000;
+    color: #fff; }
+  .editor-adpreview.edit .image-ad {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-height: 64px;
+    background: #f2f2f2; }
+  .editor-adpreview.edit .controls {
+    width: 100%; }
+    .editor-adpreview.edit .controls input, .editor-adpreview.edit .controls textarea {
+      width: 100%; }
+  .editor-adpreview.edit .umb-panel-header {
+    padding: 20px 20px 0 20px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    height: auto; }
+  .editor-adpreview.edit .flex-control {
+    display: flex; }
+    .editor-adpreview.edit .flex-control input[type=checkbox] {
+      margin-right: 5px;
+      height: 16px;
+      width: 16px; }

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.AdPreview", "Umbraco.Plugins.AdPreview\Umbraco.Plugins.AdPreview.csproj", "{52B8DFAE-D462-48E3-8C62-F4DC93F04306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{F67258F8-E2CF-463D-8A39-9A838F000B1F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		info.txt = info.txt
+		LICENSE = LICENSE
+		README.md = README.md
+		Umbraco.ico = Umbraco.ico
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Cms.Web.v7.15.10", "Umbraco.Cms.Web\Umbraco.Cms.Web.v7.15.10.csproj", "{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52B8DFAE-D462-48E3-8C62-F4DC93F04306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B8DFAE-D462-48E3-8C62-F4DC93F04306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B8DFAE-D462-48E3-8C62-F4DC93F04306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B8DFAE-D462-48E3-8C62-F4DC93F04306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C41024B4-5F61-440F-8E21-F72A80D20FF8}
+	EndGlobalSection
+EndGlobal

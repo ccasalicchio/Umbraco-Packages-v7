@@ -1,0 +1,22 @@
+﻿@model string
+@using Newtonsoft.Json;
+@{
+    Umbraco.Plugins.AdPreview.Models.AdViewModel ad = !string.IsNullOrEmpty(Model) ? JsonConvert.DeserializeObject<Umbraco.Plugins.AdPreview.Models.AdViewModel>(Model) : null;
+}
+@if (ad != null && !string.IsNullOrEmpty(ad.Img))
+{
+    <div class="ad-wrapper">
+        <a href="@ad.Url" target="_blank" title="@ad.Tooltip">
+            <div class="image-ad">
+                <img src="@ad.Img" alt="@(ad.Title + " - " + ad.Description)" />
+            </div>
+            @if (ad.Overlay)
+            {
+                <div class="ad-text @ad.Css">
+                    <h3>@ad.Title</h3>
+                    <p>@ad.Description</p>
+                </div>
+            }
+        </a>
+    </div>
+}
