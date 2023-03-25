@@ -16,6 +16,6 @@ The available packages are:
 - Hide Page Button
 - Restrict Page Button
 - Copy To Button
-- [Ad Preview](https://our.umbraco.com/projects)
+- [Ad Preview](https://our.umbraco.com/packages/backoffice-extensions/ad-preview/)
 	
-		Install-package AdPreview -Version 0.0.3
+		Install-package AdPreview -Version 0.0.3.1

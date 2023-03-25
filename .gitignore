@@ -244,3 +244,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /Umbraco.Cms.Web
+/Umbraco.Plugins.AdPreview/Ad_Preview_0.0.3.1.zip

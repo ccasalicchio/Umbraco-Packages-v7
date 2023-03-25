@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>AdPreview</id>
-    <version>0.0.3</version>
+    <version>0.0.3.1</version>
     <title>Ad Preview</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

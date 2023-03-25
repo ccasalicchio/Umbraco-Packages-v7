@@ -78,9 +78,9 @@
       <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="App_Plugins\AdPreview\css\style.scss" />
-    <Content Include="App_Plugins\AdPreview\LICENSE" />
+    <Content Include="LICENSE" />
     <Content Include="App_Plugins\AdPreview\package.manifest" />
-    <Content Include="App_Plugins\AdPreview\README.md" />
+    <Content Include="README.md" />
     <Content Include="css\image-ad.css" />
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +97,8 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
+    <Content Include="App_Plugins\AdPreview\README.md" />
+    <Content Include="App_Plugins\AdPreview\LICENSE" />
     <None Include="packages.config" />
     <Content Include="Views\Partials\_Ad.cshtml" />
     <Content Include="Views\Example.cshtml" />
