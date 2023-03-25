@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Package</id>
+    <version>0.0.1</version>
+    <title>Ad Preview</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <icon>icon.png</icon>
+    <projectUrl>https://our.umbraco.com/projects/</projectUrl>
+    <description>Image Ad previewer for Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality</releaseNotes>
+    <copyright>SplatDev 2023</copyright>
+    <tags>umbraco ad preview</tags>
+  </metadata>
+</package>

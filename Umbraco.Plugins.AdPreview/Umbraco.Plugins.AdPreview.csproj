@@ -73,6 +73,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon.png" />
     <Content Include="App_Plugins\AdPreview\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
@@ -99,6 +100,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Partials\_Ad.cshtml" />
     <Content Include="Views\Example.cshtml" />
+    <None Include="Umbraco.Plugins.AdPreview.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
