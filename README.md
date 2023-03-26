@@ -7,7 +7,10 @@ Each package has been created to meet specific needs for client projects.
 The available packages are:
 
 - Custom Login Page
-- Social Media Channels
+- [Social Media Channels](https://our.umbraco.com/packages/website-utilities/social-media-channels/)
+
+		Install-Package SplatDev.Umbraco.Plugins.SocialMediaChannels -Version 3.0.8.4
+		
 - Visit Counter
 - On-Off Button
 - YouTube Video
