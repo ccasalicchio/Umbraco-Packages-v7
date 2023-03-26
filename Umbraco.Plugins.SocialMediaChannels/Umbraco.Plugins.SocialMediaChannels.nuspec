@@ -29,9 +29,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src=".\App_Plugins\SocialMediaChannels\icon.png"   target=".\App_Plugins\SocialMediaChannels\" />
-    <file src=".\App_Plugins\SocialMediaChannels\README.md"  target=".\App_Plugins\SocialMediaChannels\" />
-    <file src=".\App_Plugins\SocialMediaChannels\readme.txt" target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\icon.png"   target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\README.md"  target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\readme.txt" target=".\App_Plugins\SocialMediaChannels\" />
     <file src=".\App_Plugins\SocialMediaChannels\package.manifest" target="\App_Plugins\SocialMediaChannels\" />
   </files>
 </package>

@@ -757,14 +757,14 @@
     <Content Include="App_Plugins\SocialMediaChannels\views\view.html" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\SocialMediaChannels\readme.txt" />
-    <Content Include="App_Plugins\SocialMediaChannels\icon.png" />
+    <Content Include="readme.txt" />
+    <Content Include="icon.png" />
     <Content Include="Views\Partials\_channels.cshtml" />
     <None Include="app.config" />
     <Content Include="App_Plugins\SocialMediaChannels\package.manifest" />
     <Content Include="Views\Example.cshtml" />
-    <Content Include="App_Plugins\SocialMediaChannels\README.md" />
-    <Content Include="App_Plugins\SocialMediaChannels\LICENSE" />
+    <Content Include="README.md" />
+    <Content Include="LICENSE" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\Web.config" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\Web.config" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\Web.config" />

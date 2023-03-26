@@ -8,10 +8,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{F67258F8-E2CF-463D-8A39-9A838F000B1F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		tools\createdPackages.config = tools\createdPackages.config
 		info.txt = info.txt
 		LICENSE = LICENSE
 		README.md = README.md
 		Umbraco.ico = Umbraco.ico
+		Umbraco.Plugins.SocialMediaChannels\Umbraco.Plugins.SocialMediaChannels.nuspec = Umbraco.Plugins.SocialMediaChannels\Umbraco.Plugins.SocialMediaChannels.nuspec
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Cms.Web.v7.15.10", "Umbraco.Cms.Web\Umbraco.Cms.Web.v7.15.10.csproj", "{80656B1F-313A-4A7F-93BE-AA3DFEC73C15}"
