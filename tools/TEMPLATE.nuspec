@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>SplatDev.Umbraco.Plugins.AdPreview</id>
-    <version>0.0.3.5</version>
-    <title>Ad Preview</title>
+    <id>SplatDev.Umbraco.Plugins.SocialMediaChannels</id>
+    <version>3.0.8.4</version>
+    <title>Social Media Channels</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/ad-preview/</projectUrl>
-    <description>Image Ad previewer for Umbraco v7.15.10</description>
-    <releaseNotes>Added working functionality for ad preview in front-end and backOffice</releaseNotes>
+    <projectUrl>https://our.umbraco.com/packages/website-utilities/social-media-channels/</projectUrl>
+    <description>Social Media Channels Theme Pack Data Type for Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality for social media channels in front-end and backOffice</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>
-    <tags>umbraco ad preview</tags>
-    <icon>\App_Plugins\AdPreview\icon.png</icon>
-    <readme>\App_Plugins\AdPreview\README.md</readme>
+    <tags>umbraco social media channels</tags>
+    <icon>\App_Plugins\SocialMediaChannels\icon.png</icon>
+    <readme>\App_Plugins\SocialMediaChannels\README.md</readme>
     <dependencies>
       <group targetFramework=".NETFramework4.7.2">
         <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
@@ -29,9 +29,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src=".\icon.png" target="\App_Plugins\AdPreview\" />
-    <file src=".\README.md" target="\App_Plugins\AdPreview\" />
-    <file src=".\readme.txt" target="\App_Plugins\AdPreview\" />
-    <file src=".\App_Plugins\AdPreview\package.manifest" target="\App_Plugins\AdPreview\" />
+    <file src=".\icon.png"   target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\README.md"  target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\readme.txt" target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\App_Plugins\SocialMediaChannels\package.manifest" target="\App_Plugins\SocialMediaChannels\" />
   </files>
 </package>
