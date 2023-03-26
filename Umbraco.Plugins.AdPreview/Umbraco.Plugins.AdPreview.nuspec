@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SplatDev.Umbraco.Plugins.AdPreview</id>
-    <version>0.0.3.4</version>
+    <version>0.0.3.5</version>
     <title>Ad Preview</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,8 +12,8 @@
     <releaseNotes>Added working functionality for ad preview in front-end and backOffice</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>
     <tags>umbraco ad preview</tags>
-    <icon>\icon.png</icon>
-    <readme>\README.md</readme>
+    <icon>\App_Plugins\AdPreview\icon.png</icon>
+    <readme>\App_Plugins\AdPreview\README.md</readme>
     <dependencies>
       <group targetFramework=".NETFramework4.7.2">
         <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
@@ -29,8 +29,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src=".\icon.png" target="\" />
-    <file src=".\README.md" target="\" />
-    <file src=".\readme.txt" target="\" />
+    <file src=".\App_Plugins\AdPreview\icon.png" target="\App_Plugins\AdPreview\" />
+    <file src=".\App_Plugins\AdPreview\README.md" target="\App_Plugins\AdPreview\" />
+    <file src=".\App_Plugins\AdPreview\readme.txt" target="\App_Plugins\AdPreview\" />
+    <file src=".\App_Plugins\AdPreview\package.manifest" target="\App_Plugins\AdPreview\" />
   </files>
 </package>

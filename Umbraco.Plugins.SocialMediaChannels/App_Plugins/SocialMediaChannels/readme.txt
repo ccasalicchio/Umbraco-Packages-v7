@@ -1,16 +1,10 @@
-# Social Media Channels
+﻿---------------------------------------------------------------------------
 
-##### Umbraco v7.15.10
+Social Media Channels for Umbraco 7.15.10
 
+---------------------------------------------------------------------------
 - Creates a Data Type/Property Editor to set and configure social media channel icons
-	![Imgur](https://i.imgur.com/eSpxds6.png)
-	![Imgur](https://i.imgur.com/vGRrZZn.png)
-	![Imgur](https://i.imgur.com/gHHbEBQ.png)
-	![Imgur](https://i.imgur.com/VZDVdnr.png)
 - It also comes with a basic front-end example and css for styling
-	![Imgur](https://i.imgur.com/TUfK8Kd.png)
-	![Imgur](https://i.imgur.com/HXdG877.png)
-
 
 ##### Specs
 - Value Type: JSON
@@ -776,4 +770,4 @@
 - App_Plugins\SocialMediaChannels\themes\web-social\youtube.png
 - App_Plugins\SocialMediaChannels\views\view.html
 
-[Feedback](mailto:feedback@splatdev.com) is appreciated
+feedback@splatdev.com is appreciated

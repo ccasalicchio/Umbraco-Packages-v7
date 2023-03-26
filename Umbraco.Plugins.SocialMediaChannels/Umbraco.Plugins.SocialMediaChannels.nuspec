@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SplatDev.Umbraco.Plugins.SocialMediaChannels</id>
+    <version>3.0.8.4</version>
+    <title>Social Media Channels</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://our.umbraco.com/packages/website-utilities/social-media-channels/</projectUrl>
+    <description>Social Media Channels Theme Pack Data Type for Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality for social media channels in front-end and backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
+    <tags>umbraco social media channels</tags>
+    <icon>\App_Plugins\SocialMediaChannels\icon.png</icon>
+    <readme>\App_Plugins\SocialMediaChannels\README.md</readme>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\App_Plugins\SocialMediaChannels\icon.png"   target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\App_Plugins\SocialMediaChannels\README.md"  target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\App_Plugins\SocialMediaChannels\readme.txt" target=".\App_Plugins\SocialMediaChannels\" />
+    <file src=".\App_Plugins\SocialMediaChannels\package.manifest" target="\App_Plugins\SocialMediaChannels\" />
+  </files>
+</package>

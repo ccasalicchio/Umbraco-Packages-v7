@@ -96,14 +96,13 @@
     <Content Include="App_Plugins\SocialMediaChannels\screenshots\Screenshot_5.png" />
     <Content Include="App_Plugins\SocialMediaChannels\screenshots\Screenshot_6.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social.jpg" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\Circle.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\circle-social.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\digg.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\dribbble.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\forrst.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\skype.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\twitter.png" />
@@ -113,9 +112,9 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\behance.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\dribbble.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\facebook.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\flat\flat.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\google-plus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\flat\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\pinterest.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\flat\tumblr.png" />
@@ -129,11 +128,10 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\digg.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\flickr.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\freesocial.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\furl.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\google.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\mixx.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\pinkmoustache.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\reddit.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\technorati.png" />
@@ -151,8 +149,8 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Formspring.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Google+.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\info.txt" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\geekly.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\GooglePlus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Instgram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Linked-in.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\MySpace.png" />
@@ -173,9 +171,8 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\dribbble.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\freiendfeed.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\Glossy.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\glossy.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\pintrest.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\stumbleupon.png" />
@@ -271,6 +268,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\google.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\guardian.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\hangouts.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\hex\hex.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\html5.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\hulu.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\icq.png" />
@@ -278,7 +276,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\imdb.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\imo.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\InDesign.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\hex\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\ingress.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\hex\instagram2.png" />
@@ -362,11 +359,10 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\linkedin.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\minimal.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\pinterest.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\rss.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\Softarea.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\vimeo.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\wordpress.png" />
@@ -380,10 +376,9 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\forrst.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\github.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\mini\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\last-fm.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\linkedin.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\mini\Mini.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\mini\mini.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\skype.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\mini\tumbler.png" />
@@ -404,9 +399,9 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\forrst.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\gdrive.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\outline\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\linkedin.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\outline\outline.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\paypal.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\picassa.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\pinterest.png" />
@@ -420,7 +415,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\xbox.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\youtube.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\outline\zerply.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\Preview Urls.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina.jpg" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\behance.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\blogger.png" />
@@ -431,13 +425,13 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\forrst.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\retina\google+.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\retina\info.txt" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\retina\googleplus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\insta.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\linkedin.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\myspace.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\orkut.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\pinterest.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\retina\retina.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\share this.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\retina\skype.png" />
@@ -453,8 +447,8 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\dribbble.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\dropbox.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\facebook.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\last-fm.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\rounded.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\vimeo.png" />
@@ -477,7 +471,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\GitHub.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\GooglePlus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Grooveshark.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Kickstarter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Last.fm.png" />
@@ -487,6 +480,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Pinterest.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Quora.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Rss.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\shadow-flat.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\ShareThis.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Skype.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\SoundCloud.png" />
@@ -507,11 +501,10 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\evernote.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\linkedin.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\pintrest.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\rss.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\SimpleSquared.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\simple-squared.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\stumbleupon.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\vimeo.png" />
@@ -549,7 +542,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\github.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\imdb.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\imgur.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\social\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\kickstarter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\lastfm.png" />
@@ -575,10 +567,10 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\quora.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\reddit.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\rss.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\social\sawb.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\scribd.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\skype.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\slideshare.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\social\social.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\soundcloud.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\soup.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\social\stumbleupon.png" />
@@ -612,7 +604,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\googleplus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\googleplusred.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\indiegogo.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\kickstarter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\lastfm.png" />
@@ -628,7 +619,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\sharethis.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\skype.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\Somacro.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\somacro.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\soundcloud.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\spotify.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\stackoverflow.png" />
@@ -656,7 +647,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\googleplus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\gplus.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\indiegogo.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\kickstarter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\lastfm.png" />
@@ -674,7 +664,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\sharethis.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\skype.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\Somicro.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\somicro.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\soundcloud.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\spotify.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\stackoverflow.png" />
@@ -694,7 +684,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\linkedin.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\pinterest.png" />
@@ -703,7 +692,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\tumblr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\vimeo.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\Vintage.xml" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\vintage-retro.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\wordpress.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\youtube.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round.jpg" />
@@ -714,16 +703,15 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\facebook.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\flickr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\googleplus.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\instagram.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\linkedin.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\pinterest.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\Round.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\rss.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\skype.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\tumblr.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\vimeo.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\vintage-round.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\wordpress.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\youtube.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social.jpg" />
@@ -741,7 +729,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\friendster.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\google.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\google2.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\info.txt" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\last.fm.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\last.fm2.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\linkedin.png" />
@@ -749,7 +736,6 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\mail.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\mixx.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\myspace.png" />
-    <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\narjsnaqvi.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\netvibes.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\newsvine.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\newsvine2.png" />
@@ -763,6 +749,7 @@
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\twitter.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\twitter2.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\vimeo.png" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\web-social.xml" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\wordpress.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\yahoo.png" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\yelp.png" />
@@ -770,11 +757,34 @@
     <Content Include="App_Plugins\SocialMediaChannels\views\view.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Plugins\SocialMediaChannels\LICENSE" />
+    <Content Include="App_Plugins\SocialMediaChannels\readme.txt" />
+    <Content Include="App_Plugins\SocialMediaChannels\icon.png" />
     <Content Include="Views\Partials\_channels.cshtml" />
-    <None Include="App_Plugins\SocialMediaChannels\package.manifest" />
-    <None Include="App_Plugins\SocialMediaChannels\README.md" />
+    <None Include="app.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\package.manifest" />
     <Content Include="Views\Example.cshtml" />
+    <Content Include="App_Plugins\SocialMediaChannels\README.md" />
+    <Content Include="App_Plugins\SocialMediaChannels\LICENSE" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\flat\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\freesocial\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\geekly\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\glossy\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\hex\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\minimal\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\mini\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\outline\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\retina\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\rounded\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\shadow-flat\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\simple-squared\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\social\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\somacro\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\somicro\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-retro\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\vintage-round\Web.config" />
+    <Content Include="App_Plugins\SocialMediaChannels\themes\web-social\Web.config" />
+    <Content Include="Umbraco.Plugins.SocialMediaChannels.nuspec" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

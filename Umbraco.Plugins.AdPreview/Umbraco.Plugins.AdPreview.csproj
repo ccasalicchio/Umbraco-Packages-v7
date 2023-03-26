@@ -73,14 +73,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon.png" />
+    <Content Include="App_Plugins\AdPreview\icon.png" />
     <Content Include="App_Plugins\AdPreview\css\style.min.css">
       <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="App_Plugins\AdPreview\css\style.scss" />
-    <Content Include="LICENSE" />
+    <Content Include="App_Plugins\AdPreview\LICENSE" />
     <Content Include="App_Plugins\AdPreview\package.manifest" />
-    <Content Include="README.md" />
+    <Content Include="App_Plugins\AdPreview\README.md" />
     <Content Include="css\image-ad.css" />
   </ItemGroup>
   <ItemGroup>
@@ -98,7 +98,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <Content Include="readme.txt" />
+    <Content Include="App_Plugins\AdPreview\readme.txt" />
     <Content Include="Views\Partials\_Ad.cshtml" />
     <Content Include="Views\Example.cshtml" />
     <None Include="Umbraco.Plugins.AdPreview.nuspec" />
