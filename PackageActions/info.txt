@@ -1,6 +1,0 @@
-CREATING PACKAGE ACTIONS
-http://24days.in/umbraco/2013/v7-packages/
-https://our.umbraco.org/documentation/reference/management/models/mediatype
-https://our.umbraco.org/documentation/reference/Management/Services/ContentTypeService
-https://our.umbraco.org/documentation/reference/Management/Models/ContentType
-https://our.umbraco.org/documentation/Reference/Management/Services/DataTypeService

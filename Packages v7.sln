@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.SocialMedia
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.DefaultValue", "Umbraco.Plugins.DefaultValue\Umbraco.Plugins.DefaultValue.csproj", "{53DFA462-28CD-470E-A1C4-45845B62F577}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.SimpleAnalytics", "Umbraco.Plugins.SimpleAnalytics\Umbraco.Plugins.SimpleAnalytics.csproj", "{C8B6A93A-1C0C-41AE-A2E7-8823F9CD6E71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{53DFA462-28CD-470E-A1C4-45845B62F577}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53DFA462-28CD-470E-A1C4-45845B62F577}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53DFA462-28CD-470E-A1C4-45845B62F577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B6A93A-1C0C-41AE-A2E7-8823F9CD6E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B6A93A-1C0C-41AE-A2E7-8823F9CD6E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B6A93A-1C0C-41AE-A2E7-8823F9CD6E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B6A93A-1C0C-41AE-A2E7-8823F9CD6E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

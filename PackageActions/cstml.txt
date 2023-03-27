@@ -1,7 +1,0 @@
-@using SocialMediaChannels.Helpers;
-@{
-
-	//MediaHelper.AddSocialMediaChannelMediaType();
-	//MediaHelper.AddSocialMediaChannelThemes();
-	//MediaHelper.AddSocialMediaChannelTheme("geekly");
-}
