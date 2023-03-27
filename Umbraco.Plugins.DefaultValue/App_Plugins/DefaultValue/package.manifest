@@ -1,0 +1,36 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "DefaultValue",
+      "name": "Default Value",
+      "hideLabel": false,
+      "icon": "icon-info",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/DefaultValue/views/view.html",
+        "valueType": "TEXT"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Default Value",
+            "description": "Default that cannot be changed",
+            "key": "dValue",
+            "view": "requiredfield",
+            "validation": [
+              {
+                "type": "Required"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/DefaultValue/js/controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/DefaultValue/css/style.css"
+  ]
+}

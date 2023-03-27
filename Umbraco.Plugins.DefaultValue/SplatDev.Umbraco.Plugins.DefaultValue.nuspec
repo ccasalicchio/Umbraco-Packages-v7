@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SplatDev.Umbraco.Plugins.DefaultValue</id>
+    <version>1.3.0.0</version>
+    <title>Default Value</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/default-value/</projectUrl>
+    <description>Default value Data Type for Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality for default value for backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
+    <tags>umbraco default value</tags>
+    <icon>\App_Plugins\DefaultValue\icon.png</icon>
+    <readme>\App_Plugins\DefaultValue\README.md</readme>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\icon.png"   target=".\App_Plugins\DefaultValue\" />
+    <file src=".\README.md"  target=".\App_Plugins\DefaultValue\" />
+    <file src=".\readme.txt" target=".\App_Plugins\DefaultValue\" />
+    <file src=".\App_Plugins\DefaultValue\package.manifest" target="\App_Plugins\DefaultValue\" />
+  </files>
+</package>

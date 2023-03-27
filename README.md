@@ -14,7 +14,10 @@ The available packages are:
 - Visit Counter
 - On-Off Button
 - YouTube Video
-- Default Value
+- [Default Value](https://our.umbraco.com/packages/backoffice-extensions/default-value/)
+
+		Install-Package SplatDev.Umbraco.Plugins.DefaultValue -Version 1.3.0.0
+
 - Char Limit
 - Hide Page Button
 - Restrict Page Button
