@@ -479,9 +479,11 @@
     <None Include="packages.config" />
     <Content Include="readme.txt" />
     <Content Include="scripts\analytics.js" />
+    <Content Include="icon.png" />
     <Content Include="Views\Example-Analytics.cshtml" />
     <Content Include="Views\Partials\_analytics.cshtml" />
     <Content Include="Views\Web.config" />
+    <None Include="Umbraco.Plugins.SimpleAnalytics.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\VisitCounterDashboard\css\style.css">

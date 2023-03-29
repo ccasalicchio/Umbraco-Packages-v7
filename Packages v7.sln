@@ -13,6 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution 
 		LICENSE = LICENSE
 		README.md = README.md
 		tools\TEMPLATE.nuspec = tools\TEMPLATE.nuspec
+		assets\umbraco 7.png = assets\umbraco 7.png
 		Umbraco.ico = Umbraco.ico
 	EndProjectSection
 EndProject
