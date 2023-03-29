@@ -134,20 +134,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\SimpleAnalyticsComponent.cs" />
-    <Compile Include="Controllers\AnalyticsApiController.cs" />
-    <Compile Include="Dashboards\AnalyticsDashboard.cs" />
-    <Compile Include="Extensions\BrowserExtensions.cs" />
-    <Compile Include="Extensions\Ip2LocationExtensions.cs" />
-    <Compile Include="Models\AnalyticsVisit.cs" />
-    <Compile Include="Models\AnalyticsVisitModel.cs" />
-    <Compile Include="Models\BrandVersion.cs" />
-    <Compile Include="Models\BrowserInfo.cs" />
-    <Compile Include="Models\IPMapping.cs" />
-    <Compile Include="Models\PagedResults.cs" />
-    <Compile Include="Models\VisitFilter.cs" />
-    <Compile Include="Models\VisitStats.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Plugins\VisitCounterDashboard\assets\browsers\Web.config" />
+    <Content Include="App_Plugins\VisitCounterDashboard\assets\flags\Web.config" />
+    <Content Include="App_Plugins\VisitCounterDashboard\assets\os\Web.config" />
+    <Content Include="App_Plugins\VisitCounterDashboard\css\style.scss" />
+    <Content Include="App_Plugins\VisitCounterDashboard\IP2LOCATION-LITE-DB11.BIN" />
+    <Content Include="App_Plugins\VisitCounterDashboard\js\angular-chart.min.js.map" />
+    <Content Include="App_Plugins\VisitCounterDashboard\package.manifest" />
+    <Content Include="App_Plugins\VisitCounterDashboard\Web.config" />
+    <Content Include="App_Plugins\VisitCounter\package.manifest" />
+    <Content Include="LICENSE" />
+    <Content Include="README.md" />
+    <Content Include="Views\Example-Analytics.cshtml" />
+    <Content Include="Views\Partials\_analytics.cshtml" />
+    <Content Include="Views\Web.config" />
+    <None Include="packages.config" />
+    <None Include="Umbraco.Plugins.SimpleAnalytics.nuspec" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Umbraco.Tools.ConfigurationActions\Umbraco.Tools.ConfigurationActions.csproj">
+      <Project>{a63c376b-66f8-467e-aca4-4a960f3ff97e}</Project>
+      <Name>Umbraco.Tools.ConfigurationActions</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\VisitCounterDashboard\assets\browsers\avant.png" />
@@ -444,63 +452,43 @@
     <Content Include="App_Plugins\VisitCounterDashboard\assets\globe.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\os\android.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\os\chromeos.png" />
+    <Content Include="App_Plugins\VisitCounterDashboard\assets\os\ios.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\os\linux.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\os\mac.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\os\windows.png" />
     <Content Include="App_Plugins\VisitCounterDashboard\assets\pin.png" />
-    <Content Include="App_Plugins\VisitCounterDashboard\css\style.min.css">
-      <DependentUpon>style.css</DependentUpon>
-    </Content>
+    <Content Include="App_Plugins\VisitCounterDashboard\css\style.css" />
+    <Content Include="App_Plugins\VisitCounterDashboard\css\style.min.css" />
     <Content Include="App_Plugins\VisitCounterDashboard\js\angular-chart.js" />
-    <Content Include="App_Plugins\VisitCounterDashboard\js\angular-chart.min.js">
-      <DependentUpon>angular-chart.js</DependentUpon>
-    </Content>
+    <Content Include="App_Plugins\VisitCounterDashboard\js\angular-chart.min.js" />
     <Content Include="App_Plugins\VisitCounterDashboard\js\angular-merge.js" />
     <Content Include="App_Plugins\VisitCounterDashboard\js\chart.js" />
-    <Content Include="App_Plugins\VisitCounterDashboard\js\Chart.min.js">
-      <DependentUpon>chart.js</DependentUpon>
-    </Content>
+    <Content Include="App_Plugins\VisitCounterDashboard\js\Chart.min.js" />
+    <Content Include="App_Plugins\VisitCounterDashboard\js\controller.js" />
     <Content Include="App_Plugins\VisitCounterDashboard\lang\en-US.xml" />
     <Content Include="App_Plugins\VisitCounterDashboard\views\view.html" />
-    <None Include="app.config" />
-    <Content Include="App_Plugins\VisitCounterDashboard\package.manifest" />
-    <Content Include="App_Plugins\VisitCounterDashboard\assets\browsers\Web.config" />
-    <Content Include="App_Plugins\VisitCounterDashboard\assets\flags\Web.config" />
-    <Content Include="App_Plugins\VisitCounterDashboard\assets\os\Web.config" />
-    <Content Include="App_Plugins\VisitCounterDashboard\css\style.scss" />
-    <Content Include="App_Plugins\VisitCounterDashboard\IP2LOCATION-LITE-DB11.BIN" />
-    <Content Include="App_Plugins\VisitCounterDashboard\js\angular-chart.min.js.map">
-      <DependentUpon>angular-chart.js</DependentUpon>
-    </Content>
-    <Content Include="App_Plugins\VisitCounterDashboard\Web.config" />
-    <None Include="LICENSE" />
-    <None Include="App_Plugins\VisitCounter\package.manifest" />
-    <None Include="README.md" />
-    <None Include="packages.config" />
-    <Content Include="readme.txt" />
-    <Content Include="scripts\analytics.js" />
-    <Content Include="icon.png" />
-    <Content Include="Views\Example-Analytics.cshtml" />
-    <Content Include="Views\Partials\_analytics.cshtml" />
-    <Content Include="Views\Web.config" />
-    <None Include="Umbraco.Plugins.SimpleAnalytics.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Plugins\VisitCounterDashboard\css\style.css">
-      <DependentUpon>style.scss</DependentUpon>
-    </Content>
-    <Content Include="App_Plugins\VisitCounterDashboard\js\controller.js" />
     <Content Include="App_Plugins\VisitCounter\css\style.css" />
-    <Content Include="App_Plugins\VisitCounter\js\controller-original.js" />
     <Content Include="App_Plugins\VisitCounter\js\controller.js" />
     <Content Include="App_Plugins\VisitCounter\views\view.html" />
+    <Content Include="icon.png" />
+    <Content Include="readme.txt" />
+    <Content Include="scripts\analytics.js" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\Umbraco.Tools.ConfigurationActions\Umbraco.Tools.ConfigurationActions.csproj">
-      <Project>{a63c376b-66f8-467e-aca4-4a960f3ff97e}</Project>
-      <Name>Umbraco.Tools.ConfigurationActions</Name>
-    </ProjectReference>
+    <Compile Include="Components\SimpleAnalyticsComponent.cs" />
+    <Compile Include="Controllers\AnalyticsApiController.cs" />
+    <Compile Include="Dashboards\AnalyticsDashboard.cs" />
+    <Compile Include="Extensions\BrowserExtensions.cs" />
+    <Compile Include="Extensions\Ip2LocationExtensions.cs" />
+    <Compile Include="Models\AnalyticsVisit.cs" />
+    <Compile Include="Models\AnalyticsVisitModel.cs" />
+    <Compile Include="Models\BrandVersion.cs" />
+    <Compile Include="Models\BrowserInfo.cs" />
+    <Compile Include="Models\IPMapping.cs" />
+    <Compile Include="Models\PagedResults.cs" />
+    <Compile Include="Models\VisitFilter.cs" />
+    <Compile Include="Models\VisitStats.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

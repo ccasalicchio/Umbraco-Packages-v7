@@ -2,14 +2,14 @@
 <package >
   <metadata>
     <id>SplatDev.Umbraco.Plugins.SimpleAnalytics</id>
-    <version>2.0.0.5</version>
+    <version>2.0.0.6</version>
     <title>Simple Analytics</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/visit-counter/</projectUrl>
     <description>Analytics script and dashboard for Umbraco v7.15.10</description>
-    <releaseNotes>Added working functionality for dashboard</releaseNotes>
+    <releaseNotes>Added package.manifest for Visit Counter</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>
     <tags>umbraco simple analytics</tags>
     <icon>\App_Plugins\VisitCounterDashboard\icon.png</icon>
@@ -32,6 +32,7 @@
     <file src=".\icon.png"   target=".\App_Plugins\VisitCounterDashboard\" />
     <file src=".\README.md"  target=".\App_Plugins\VisitCounterDashboard\" />
     <file src=".\readme.txt" target=".\App_Plugins\VisitCounterDashboard\" />
-    <file src=".\App_Plugins\VisitCounterDashboard\package.manifest" target="\App_Plugins\VisitCounterDashboard\" />
+    <file src=".\App_Plugins\VisitCounterDashboard\package.manifest" target=".\App_Plugins\VisitCounterDashboard\" />
+    <file src=".\App_Plugins\VisitCounter\package.manifest" target=".\App_Plugins\VisitCounter\" />
   </files>
 </package>

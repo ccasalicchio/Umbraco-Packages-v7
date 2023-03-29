@@ -3,7 +3,7 @@
     {
       "alias": "VisitCounter",
       "name": "Visit Counter",
-      isReadOnly: true, 
+      "isReadOnly": true, 
       "hideLabel": false,
       "icon": "icon-readonly",
       "editor": {
