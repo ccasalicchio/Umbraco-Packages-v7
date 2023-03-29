@@ -1,7 +1,9 @@
 ﻿using Umbraco.Core;
 using Umbraco.Core.Logging;
 using Umbraco.Core.Persistence;
+using Umbraco.Plugins.SimpleAnalytics.Dashboards;
 using Umbraco.Plugins.SimpleAnalytics.Models;
+using Umbraco.Tools.ConfigurationActions.Extensions;
 
 namespace Umbraco.Plugins.SimpleAnalytics.Components
 {
@@ -19,6 +21,9 @@ namespace Umbraco.Plugins.SimpleAnalytics.Components
             {
                 db.CreateTable<AnalyticsVisit>(false);
             }
+
+            var simpleAnalyticsDahboard = new AnalyticsDashboard();
+            simpleAnalyticsDahboard.InstallDashboard();
         }
     }
 }

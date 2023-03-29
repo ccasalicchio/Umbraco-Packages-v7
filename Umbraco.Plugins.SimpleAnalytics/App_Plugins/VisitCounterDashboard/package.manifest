@@ -1,0 +1,9 @@
+{
+  "javascript": [
+    "~/App_Plugins/VisitCounterDashboard/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/VisitCounterDashboard/css/style.css"
+  ]
+}

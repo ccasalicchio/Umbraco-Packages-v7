@@ -1,0 +1,18 @@
+﻿<div ng-controller="splatDev.SimpleAnalytics.Controller as vm" class="analytics-wrapper">
+    <umb-load-indicator ng-if="loading">
+    </umb-load-indicator>
+    <h5>Estatísticas para esta página</h5>
+    <div>Esta página foi visitada <span class="visit-count">{{visits}}</span> vezes</div>
+    <h5>Log</h5>
+    <table>
+        <tr><th>IP</th><th>Navegador</th><th>Resolução</th><th>Data</th></tr>
+        <tr ng-repeat="visit in visitLog">
+            <td>{{visit.IPAddress}}</td>
+            <td class="browser"><details><summary>Detalhes do Navegador</summary>{{visit.Browser}}</details></td>
+            <td>{{visit.Resolution}}</td>
+            <td>{{visit.VisitedOn | date:'dd/MM/yyyy HH:mm:ss Z'}}</td>
+        </tr>
+    </table>
+
+    This site or product includes IP2Location LITE data available from <a href="https://lite.ip2location.com">https://lite.ip2location.com</a>.
+</div>
