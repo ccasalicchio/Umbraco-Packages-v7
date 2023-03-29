@@ -9,14 +9,17 @@ The available packages are:
 - Custom Login Page
 - [Social Media Channels](https://our.umbraco.com/packages/website-utilities/social-media-channels/)
 
-		Install-Package SplatDev.Umbraco.Plugins.SocialMediaChannels -Version 3.0.8.4
+		Install-Package SplatDev.Umbraco.Plugins.SocialMediaChannels
 		
-- Visit Counter
+- [Simple Analytics](https://our.umbraco.com/packages/backoffice-extensions/visit-counter/) (former Visit Counter)
+
+		Install-Package SplatDev.Umbraco.Plugins.SimpleAnalytics
+
 - On-Off Button
 - YouTube Video
 - [Default Value](https://our.umbraco.com/packages/backoffice-extensions/default-value/)
 
-		Install-Package SplatDev.Umbraco.Plugins.DefaultValue -Version 1.3.0.0
+		Install-Package SplatDev.Umbraco.Plugins.DefaultValue
 
 - Char Limit
 - Hide Page Button
@@ -24,4 +27,4 @@ The available packages are:
 - Copy To Button
 - [Ad Preview](https://our.umbraco.com/packages/backoffice-extensions/ad-preview/)
 	
-		Install-Package SplatDev.Umbraco.Plugins.AdPreview -Version 0.0.3.4
+		Install-Package SplatDev.Umbraco.Plugins.AdPreview
