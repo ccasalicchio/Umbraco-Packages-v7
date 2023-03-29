@@ -1,8 +1,10 @@
 {
   "javascript": [
+    "~/App_Plugins/VisitCounterDashboard/js/angular-merge.js",
+    "~/App_Plugins/VisitCounterDashboard/js/chart.js",
+    "~/App_Plugins/VisitCounterDashboard/js/angular-chart.js",
     "~/App_Plugins/VisitCounterDashboard/js/controller.js"
   ],
-
   "css": [
     "~/App_Plugins/VisitCounterDashboard/css/style.css"
   ]

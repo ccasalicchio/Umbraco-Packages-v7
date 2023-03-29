@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="en_us" intName="English (US)" localName="English (US)" lcid="" culture="en-US">
+  <creator>
+    <name>SplatDev Ltda</name>
+    <link>https://splatdev.com</link>
+  </creator>
+  <area alias="table">
+    <key alias="ipAddress">IP Address</key>
+    <key alias="browser">Browser/OS</key>
+    <key alias="resolution">Screen Size</key>
+    <key alias="summary">Summary</key>
+    <key alias="city">City</key>
+    <key alias="state">State</key>
+    <key alias="postal">Zip Code</key>
+    <key alias="isp">Internet provider</key>
+    <key alias="latitude">Latitude</key>
+    <key alias="longitude">Longitude</key>
+    <key alias="page">Page</key>
+    <key alias="url">Url</key>
+    <key alias="visitStarted">Started</key>
+    <key alias="visitEnded">Ended</key>
+    <key alias="exitUrl">Exit Url</key>
+    <key alias="entryUrl">Entry Urls</key>
+    <key alias="recurring">Recurring</key>
+    <key alias="countryFlag">Flag</key>
+    <key alias="countryCode">Code</key>
+    <key alias="countryName">Country</key>
+    <key alias="netSpeed">Speed</key>
+    <key alias="region">Region</key>
+    <key alias="timeZone">Time Zone</key>
+    <key alias="duration">Duration</key>
+  </area>
+  <area alias="gauges">
+    <key alias="ip">IP Address</key>
+    <key alias="country">Country</key>
+    <key alias="region">Region</key>
+    <key alias="browser">Browser</key>
+    <key alias="url">Url</key>
+    <key alias="resolution">Resolution</key>
+    <key alias="visitStarted">Visited</key>
+    <key alias="realtime">Real Time</key>
+    <key alias="new">New Visitors</key>
+    <key alias="recurring">Recurring</key>
+    <key alias="total">Total Visits</key>
+    <key alias="exits">Total Exits</key>
+    <key alias="days">days</key>
+    <key alias="last">last</key>
+    <key alias="ended">End</key>
+    <key alias="start">Start</key>
+    <key alias="geo">Location</key>
+  </area>
+  <area alias="placeholders">
+    <key alias="searchip">Search by IP</key>
+  </area>
+  <area alias="content">
+    <key alias="title">Website Analytics</key>
+    <key alias="instructions">See the statistics for your website</key>
+    <key alias="search">Search</key>
+    <key alias="next">next</key>
+    <key alias="previous">prevous</key>
+    <key alias="filter">Filter</key>
+    <key alias="pages">Pages</key>
+    <key alias="page">Page</key>
+    <key alias="pageSize">Page size</key>
+    <key alias="results">results found</key>
+  </area>
+</language>

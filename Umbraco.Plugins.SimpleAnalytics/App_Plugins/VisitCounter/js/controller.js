@@ -1,10 +1,13 @@
-﻿angular.module("umbraco").controller("splatDev.VisitCounter.Controller", function ($scope) {
+﻿angular.module("umbraco").controller("splatDev.VisitCounter.Controller", function ($http, $routeParams) {
     'use strict';
     const vm = this;
     vm.visitCounter = 0;
 
-    if ($scope.model.value !== "") {
-        vm.visitCounter = $scope.model.value;
+    function init() {
+        $http.get(`/Umbraco/Analytics/AnalyticsApi/GetVisitCount?nodeId=${$routeParams.id}`).then(result => {
+            vm.visitCounter = +result.data;
+        });
     }
 
+    init();
 });

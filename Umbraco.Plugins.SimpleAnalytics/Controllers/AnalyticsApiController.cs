@@ -2,8 +2,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 using Umbraco.Core.Persistence;
@@ -20,6 +22,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
         private static Database db = null;
         private const string IP_DATABASE = "IP2LOCATION-LITE-DB11.BIN";
         private const string PLUGIN_PATH = "~/App_Plugins/VisitCounterDashboard";
+        private const string PUBLIC_IP_ENDPOINT = "https://api.ipify.org?format=text";
 
         private IEnumerable<AnalyticsVisit> GetVisitsByNodeId(int nodeId)
         {
@@ -143,7 +146,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
         [HttpGet]
         public List<VisitFilter> GetVisitsByExitUrl()
         {
-            string sqlExitUrl = string.Format("SELECT [ExitUrl] AS Filter, COUNT(*) AS COUNT FROM {0} GROUP BY [ExitUrl]", AnalyticsVisit.TABLENAME);
+            string sqlExitUrl = string.Format("SELECT [ExitUrl] AS Filter, COUNT(*) AS COUNT FROM {0} WHERE [ExitUrl] <> '' GROUP BY [ExitUrl]", AnalyticsVisit.TABLENAME);
             db = ApplicationContext.DatabaseContext.Database;
 
             var results = db.Query<VisitFilter>(sqlExitUrl).ToList();
@@ -173,7 +176,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
             if (!string.IsNullOrEmpty(ipAddress))
             {
                 var sqlWhere = " WHERE 1 = 1";
-                var sqlIp = !string.IsNullOrEmpty(ipAddress) ? " AND [IPAddress] = " + ipAddress : "";
+                var sqlIp = !string.IsNullOrEmpty(ipAddress) ? " AND [IPAddress] = '" + ipAddress + "'" : "";
                 sqlBase += sqlWhere + sqlIp;
                 sqlBaseCount += sqlWhere + sqlIp;
             }
@@ -183,7 +186,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
             foreach (var result in results)
             {
                 var node = Umbraco.Content(result.NodeId);
-                pagedResults.Results.Add(new AnalyticsVisitModel
+                var info = new AnalyticsVisitModel
                 {
                     Browser = JsonConvert.DeserializeObject<BrowserInfo>(result.BrowserInfo),
                     BrowserInfo = result.BrowserInfo,
@@ -197,8 +200,17 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
                     RecurringVisit = result.RecurringVisit,
                     Resolution = result.Resolution,
                     VisitedStarted = result.VisitedStarted,
-                    VisitFinished = result.VisitFinished
-                });
+                    VisitFinished = result.VisitFinished,
+                    TotalVisits = count,
+                    VisitLength = result.VisitedStarted != null && result.VisitFinished != null ? (result.VisitFinished - result.VisitedStarted).Value.ToString(@"hh\:mm\:ss") : "",
+                    UserAgent = BrowserExtensions.GetBrowserInfo(result.BrowserInfo),
+                };
+
+                info.Browser.LanguageName = !string.IsNullOrEmpty(info.Browser.Language) ? new CultureInfo(info.Browser.Language).DisplayName : "";
+                info.Browser.LanguageFlag = !string.IsNullOrEmpty(info.Browser.Language) ? info.Browser.Language.Substring(3) + ".png" : "";
+                info.Browser.OS = BrowserExtensions.ParseOS(info.UserAgent.Platform);
+
+                pagedResults.Results.Add(info);
                 pagedResults.Found = count;
                 pagedResults.PageNumber = page;
                 pagedResults.PageSize = pageSize;
@@ -217,7 +229,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
         }
 
         [HttpGet]
-        public IHttpActionResult LogVisit(string jsonData)
+        public async Task<IHttpActionResult> LogVisit(string jsonData)
         {
             db = ApplicationContext.DatabaseContext.Database;
 
@@ -248,7 +260,7 @@ namespace Umbraco.Plugins.SimpleAnalytics.Controllers.Controllers
                     db.Update(visit);
                 }
             }
-
+            await Task.FromResult(0);
             return Ok(visit);
         }
 

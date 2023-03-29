@@ -762,7 +762,7 @@
     <Content Include="Views\Partials\_channels.cshtml" />
     <None Include="app.config" />
     <Content Include="App_Plugins\SocialMediaChannels\package.manifest" />
-    <Content Include="Views\Example.cshtml" />
+    <Content Include="Views\Example-SocialMediaChannels.cshtml" />
     <Content Include="README.md" />
     <Content Include="LICENSE" />
     <Content Include="App_Plugins\SocialMediaChannels\themes\circle-social\Web.config" />

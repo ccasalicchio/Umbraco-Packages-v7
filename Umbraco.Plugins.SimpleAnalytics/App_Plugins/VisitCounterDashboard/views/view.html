@@ -1,18 +1,114 @@
 ﻿<div ng-controller="splatDev.SimpleAnalytics.Controller as vm" class="analytics-wrapper">
-    <umb-load-indicator ng-if="loading">
-    </umb-load-indicator>
-    <h5>Estatísticas para esta página</h5>
-    <div>Esta página foi visitada <span class="visit-count">{{visits}}</span> vezes</div>
-    <h5>Log</h5>
-    <table>
-        <tr><th>IP</th><th>Navegador</th><th>Resolução</th><th>Data</th></tr>
-        <tr ng-repeat="visit in visitLog">
-            <td>{{visit.IPAddress}}</td>
-            <td class="browser"><details><summary>Detalhes do Navegador</summary>{{visit.Browser}}</details></td>
-            <td>{{visit.Resolution}}</td>
-            <td>{{visit.VisitedOn | date:'dd/MM/yyyy HH:mm:ss Z'}}</td>
-        </tr>
-    </table>
+    <div class="header-info">
+        <h5><localize key="content_title"></localize></h5>
+        <p><localize key="content_instructions"></localize></p>
+        <umb-load-indicator ng-if="vm.loading">
+        </umb-load-indicator>
+    </div>
 
-    This site or product includes IP2Location LITE data available from <a href="https://lite.ip2location.com">https://lite.ip2location.com</a>.
+    <div class="widgets-wrapper">
+        <div class="widgets">
+            <div class="widget_cards">
+
+                <div class="widget widget__card">
+                    <div class="widget__card-title"><localize key="gauges_realtime" /></div>
+                    <div class="widget__card-stat">{{vm.stats.realTime}}</div>
+                </div>
+
+                <div class="widget widget__card">
+                    <div class="widget__card-title"><localize key="gauges_total" /></div>
+                    <div class="widget__card-stat">{{vm.stats.total}}</div>
+                </div>
+
+                <div class="widget widget__card">
+                    <div class="widget__card-title"><localize key="gauges_recurring" /></div>
+                    <div class="widget__card-stat">{{vm.stats.recurring}}</div>
+                </div>
+
+                <div class="widget widget__table">
+                    <ul class="list-group">
+                        <li class="list-group-item title"><span class="url"><localize key="table_entryUrl" /></span><span class="visit-count"><localize key="gauges_total" /></span></li>
+                        <li class="list-group-item list-group-item-row" ng-repeat="visit in vm.stats.entryUrls track by $index"><span class="url"><a ng-href="{{visit.Filter}}" target="_blank">{{visit.Filter}}</a></span><span class="visit-count">{{visit.Count}}</span></li>
+                    </ul>
+                </div>
+
+                <div class="widget widget__table">
+                    <ul class="list-group">
+                        <li class="list-group-item title"><span class="url"><localize key="table_exitUrl" /></span><span class="visit-count"><localize key="gauges_exits" /></span></li>
+                        <li class="list-group-item list-group-item-row" ng-repeat="visit in vm.stats.exitUrls track by $index"><span class="url"><a ng-href="{{visit.Filter}}" target="_blank">{{visit.Filter}}</a></span><span class="visit-count">{{visit.Count}}</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="widget_graphs">
+
+                <div class="widget widget__graph">
+                    <div class="widget__graph-title"><localize key="gauges_last" /> {{vm.stats.daysCount}} <localize key="gauges_days" /></div>
+                    <div class="widget__graph-stats">
+                        <div ng-if="vm.stats.graph.data.length > 0">
+                            <canvas id="line" class="chart chart-line" chart-data="vm.stats.graph.data"
+                                    chart-labels="vm.stats.graph.labels">
+                            </canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="widget widget__filters">
+                <input type="search" ng-model="vm.filter.query" localize="placeholder" placeholder="@placeholders_searchip" /><button type="submit" ng-click="vm.getPagedResults()"><localize key="content_search" /></button>
+            </div>
+            <div class="widget_full-table">
+                <div class="widget widget__table">
+                    <ul class="list-group">
+                        <li class="list-group-item title large">
+                            <span class="url"><localize key="gauges_ip" /></span>
+                            <span class="resolution"><localize key="table_resolution" /></span>
+                            <span class="browser"><localize key="table_browser" /></span>
+                            <span class="visit-location"><localize key="gauges_geo" /></span>
+                            <span class="visit-duration"><localize key="table_duration" /></span>
+                            <span class="visit-date"><localize key="gauges_start" /></span>
+                            <span class="visit-ended"><localize key="gauges_ended" /></span>
+                        </li>
+                        <li class="list-group-item list-group-item-row large" ng-repeat="visit in vm.stats.log.Results track by $index">
+                            <span class="ip" ng-click="vm.filter.query=visit.IPAddress"><a title="Postal Code: {{visit.IPMapping.PostalCode}}">{{visit.IPAddress}}</a></span>
+                            <span class="resolution"><a>{{visit.Resolution}}</a></span>
+                            <!--<span class="browser"><a>{{visit.Browser}}</a></span>-->
+                            <span class="browser">
+                                <a>
+                                    <img ng-src="{{'/App_Plugins/VisitCounterDashboard/assets/browsers/'+visit.UserAgent.Browser+'.png'}}" title="{{visit.UserAgent.Browser}} {{visit.UserAgent.BrowserVersion}}, {{visit.Browser.AppVersion}}" />
+                                    <img ng-src="{{'/App_Plugins/VisitCounterDashboard/assets/flags/'+visit.Browser.LanguageFlag}}" title="{{visit.Browser.LanguageName}}, {{visit.Browser.Language}}" />
+                                    <img ng-src="{{'/App_Plugins/VisitCounterDashboard/assets/os/'+visit.Browser.OS}}" title="{{visit.UserAgent.Platform}} ({{visit.Browser.Platform}})" />
+                                </a>
+                            </span>
+                            <span class="visit-location">
+                                <img ng-src="{{'/App_Plugins/VisitCounterDashboard/assets/flags/'+visit.IPMapping.CountryFlag}}" title="{{visit.IPMapping.City}}, {{visit.IPMapping.Region}} - {{visit.IPMapping.Country}} ({{visit.IPMapping.TimeZone}} GMT)" />
+                                <a ng-href="{{'https://www.google.com/maps/search/?api=1&query='+visit.IPMapping.Latitude+','+visit.IPMapping.Longitude}}" target="_blank">
+                                    <img src="/App_Plugins/VisitCounterDashboard/assets/pin.png" title="{{visit.IPMapping.Latitude}}, {{visit.IPMapping.Longitude}}" />
+                                </a>
+                                {{visit.IPMapping.City}}
+                            </span>
+                            <span class="visit-duration"><a>{{visit.VisitLength}}</a></span>
+                            <span class="visit-date"><a>{{visit.VisitedStarted | date:'MM/dd/yyyy HH:mm'}}</a></span>
+                            <span class="visit-ended"><a>{{visit.VisitFinished | date:'MM/dd/yyyy HH:mm'}}</a></span>
+                        </li>
+                    </ul>
+                    <div class="widget widget__pagination">
+                        <umb-pagination page-number="vm.filter.page"
+                                        total-pages="vm.filter.pages"
+                                        on-next="vm.nextPage"
+                                        on-prev="vm.prevPage"
+                                        on-change="vm.changePage"
+                                        on-go-to-page="vm.goToPage">
+                        </umb-pagination>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-info">
+        This plugin includes IP2Location LITE data available from <a href="https://lite.ip2location.com">https://lite.ip2location.com</a>.
+    </div>
 </div>

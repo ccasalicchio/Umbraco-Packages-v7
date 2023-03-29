@@ -1,10 +1,7 @@
 ﻿.visit-counter .counter {
-    font-size: 1.3em;
-    text-shadow: -1px -1px 1px #ccc;
-    color: #000;
-    transition: all 0.6s ease-in-out;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #444;
+    font-weight: 900;
+    text-shadow: 0 0 3px 3px #ccc;
 }
-
-    .visit-counter .counter:hover {
-        text-shadow: 0 0 5px #000;
-    }

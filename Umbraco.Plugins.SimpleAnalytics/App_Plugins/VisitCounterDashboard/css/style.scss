@@ -1,0 +1,199 @@
+﻿.analytics-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    input[type=search]::-ms-clear {
+        display: block;
+        position: relative;
+        z-index: 999;
+    }
+
+    input[type=search]::-webkit-search-cancel-button,
+    input[type=search]::-webkit-search-decoration {
+        -webkit-appearance: searchfield-cancel-button !important;
+    }
+
+    .widgets-wrapper {
+        display: block;
+    }
+
+    .widgets {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100vh;
+        width: 100%;
+        justify-content: space-between;
+        align-content: flex-start;
+
+        .widget__filters {
+            margin: 5px;
+            display: flex;
+
+            button {
+                border: 1px solid #3F3357;
+                color: #fff;
+                background: #3F3357;
+                height: 32px;
+                padding: 5px 10px;
+
+
+                &:hover {
+                    background-color: rgba(63, 51, 87,0.6);
+                }
+            }
+        }
+
+        .widget_cards, .widget_graphs {
+            width: 50%;
+            min-height: 300px;
+            box-sizing: border-box;
+        }
+
+        .widget_full-table {
+            width: 100%;
+        }
+
+        .widget_cards {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: flex-start;
+        }
+
+        .widget {
+            box-sizing: border-box;
+            margin: 5px;
+
+            &.widget__card, &.widget__graph {
+                padding: 20px;
+                border-radius: 8px;
+                border: 1px solid #f2f2f2;
+                box-shadow: 0 1px 6px -3px #333;
+            }
+
+            &.widget__card {
+                width: 126px;
+                height: 126px;
+                margin: 0 10px;
+            }
+
+            &.widget__graph {
+
+                .widget__graph-title {
+                    color: #3F3357;
+                    font-size: 1.2rem;
+                    font-weight: 800;
+                    text-transform: capitalize;
+                }
+            }
+
+            &.widget__pagination {
+                margin: 5px;
+            }
+
+            &.widget__table {
+                width: 100%;
+
+                .list-group {
+                    list-style: none;
+                    padding: 0;
+                    margin: 4px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+
+                    .list-group-item {
+                        position: relative;
+                        padding: 6px 15px;
+                        color: #3F3357;
+                        min-height: 18px;
+
+                        &.title {
+                            background: #3F3357 !important;
+                            color: #fff;
+                            border: 1px solid #3F3357;
+                        }
+
+                        &:nth-child(odd) {
+                            background: #f2f2f2;
+                        }
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #ccc;
+                        }
+
+                        &.list-group-item-row {
+                            .visit-count {
+                                color: #65ADA1;
+                            }
+
+                            .visit-date, .visit-ended {
+                                font-size: 0.85rem;
+                            }
+
+                            .visit-location, .browser {
+                                font-size: 0.7rem;
+
+                                img {
+                                    width: 16px;
+                                }
+                            }
+                        }
+
+                        &.large {
+                            span {
+                                display: inline-block;
+                                width: calc(100% / 7.3);
+                            }
+                        }
+
+                        .ip {
+                            a {
+                                cursor: pointer;
+                                color: #65ADA1;
+                            }
+                        }
+
+                        .url {
+                            a {
+                                color: #65ADA1;
+                            }
+                        }
+
+
+                        .visit-count {
+                            position: absolute;
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .widget__card-title {
+                font-size: 0.85rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .widget__card-stat {
+                font-size: 3rem;
+                text-align: center;
+                vertical-align: bottom;
+                margin: 25px 0 0 0;
+                color: #3F3357;
+            }
+        }
+    }
+
+    input[type=text] {
+        width: 40px;
+    }
+
+    .footer-info {
+        display: block;
+    }
+}

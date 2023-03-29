@@ -100,7 +100,7 @@
     <None Include="packages.config" />
     <Content Include="readme.txt" />
     <Content Include="Views\Partials\_Ad.cshtml" />
-    <Content Include="Views\Example.cshtml" />
+    <Content Include="Views\Example-AdPreview.cshtml" />
     <None Include="Umbraco.Plugins.AdPreview.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
