@@ -477,6 +477,7 @@
     <None Include="App_Plugins\VisitCounter\package.manifest" />
     <None Include="README.md" />
     <None Include="packages.config" />
+    <Content Include="readme.txt" />
     <Content Include="scripts\analytics.js" />
     <Content Include="Views\Example-Analytics.cshtml" />
     <Content Include="Views\Partials\_analytics.cshtml" />
