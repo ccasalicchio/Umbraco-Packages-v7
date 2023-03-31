@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "hideContent",
+      "name": "Hide Content",
+      "icon": "icon-document-dashed-line",
+      "group": "Common",
+      "editor": {
+        "hideLabel": true,
+        "view": "~/App_Plugins/HideContent/views/view.html",
+        "valueType": "INT"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/HideContent/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/HideContent/css/styles.css"
+  ]
+}

@@ -3,9 +3,9 @@
     {
       "alias": "VisitCounter",
       "name": "Visit Counter",
-      "isReadOnly": true, 
+      "isReadOnly": true,
       "hideLabel": false,
-      "icon": "icon-readonly",
+      "icon": "icon-speed-gauge",
       "editor": {
         "view": "~/App_Plugins/VisitCounter/views/view.html",
         "valueType": "INT"

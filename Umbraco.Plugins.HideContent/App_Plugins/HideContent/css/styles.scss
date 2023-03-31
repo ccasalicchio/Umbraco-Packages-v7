@@ -1,0 +1,54 @@
+﻿.hide-content-wrapper {
+    position: relative;
+
+    .hidden-label {
+        transition: all 0.2s ease-in-out;
+        padding: 12px 24px;
+        font-size: 1.3rem;
+        color: #fff;
+        width: 100%;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+
+
+        &.true {
+            background: #ff6a00;
+            color: #f2f2f2;
+
+            i {
+                color: #f3f3f3;
+            }
+        }
+
+        &.false {
+            background: #65ADA1;
+            color: #fff;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    .hiddenswitch {
+        position: relative;
+        width: 90px;
+        user-select: none;
+    }
+
+    .hiddenswitch-checkbox {
+        display: none !important;
+    }
+
+    .instructions {
+        text-align: right;
+        font-size: 0.7rem;
+        position: absolute;
+        top: 28px;
+        right: 10px;
+        color: #fff;
+        font-weight: 300;
+    }
+}

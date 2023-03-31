@@ -1,0 +1,15 @@
+﻿<div ng-controller="splatdev.HideContent.Controller as vm" class="hide-content-wrapper">
+    <div class="hidden">
+        <input type="checkbox" name="hiddenswitch" class="hiddenswitch-checkbox" id="idhiddenswitch" ng-model="vm.config.checked" ng-change="vm.config.change()">
+        <label class="hidden-label {{vm.config.checked}}" for="idhiddenswitch">
+            <i class="icon icon-{{vm.config.icon}}"></i>
+            <span ng-show="vm.config.checked">
+                <localize key="hiddenswitch_isHidden">Is Currently hidden</localize>
+            </span>
+            <span ng-show="!vm.config.checked" class="notification">
+                <localize key="hiddenswitch_notHidden">Not Currently hidden</localize>
+            </span>
+        </label>
+    </div>
+    <div class="instructions"><localize key='hiddenswitch_clickToChange'>Click to change</localize></div>
+</div>
