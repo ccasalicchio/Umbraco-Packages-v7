@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SplatDev.Umbraco.Plugins.RestrictPage</id>
+    <version>3.0.8.4</version>
+    <title>Restrict Page</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://our.umbraco.com/packages/website-utilities/social-media-channels/</projectUrl>
+    <description>A simple visual representation of a restricted page (for members navigation for example)</description>
+    <releaseNotes>Added working functionality for  backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
+    <tags>umbraco restrict content</tags>
+    <icon>\App_Plugins\RestrictPage\icon.png</icon>
+    <readme>\App_Plugins\RestrictPage\README.md</readme>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\icon.png"   target=".\App_Plugins\RestrictPage\" />
+    <file src=".\README.md"  target=".\App_Plugins\RestrictPage\" />
+    <file src=".\readme.txt" target=".\App_Plugins\RestrictPage\" />
+    <file src=".\App_Plugins\RestrictPage\package.manifest" target="\App_Plugins\RestrictPage\" />
+  </files>
+</package>

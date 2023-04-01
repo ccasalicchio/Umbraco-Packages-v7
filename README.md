@@ -29,7 +29,10 @@ The available packages are:
 
 		Install-Package SplatDev.Umbraco.Plugins.HideContent
 
-- Restrict Page Button
+- [Restricted Page](https://our.umbraco.com/packages/backoffice-extensions/restricted-page/)
+
+		Install-Package SplatDev.Umbraco.Plugins.RestrictedPage
+
 - [Copy Value](https://our.umbraco.com/packages/backoffice-extensions/copy-value/)
 
 		Install-Package SplatDev.Umbraco.Plugins.CopyValue

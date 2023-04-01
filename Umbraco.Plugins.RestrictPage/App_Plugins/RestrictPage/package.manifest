@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "RestrictPage",
+      "name": "Restrict Page",
+      "icon": "icon-lock",
+      "group": "Common",
+      "editor": {
+        "hideLabel": true,
+        "view": "~/App_Plugins/RestrictPage/views/view.html",
+        "valueType": "INT"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/RestrictPage/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/RestrictPage/css/style.css"
+  ]
+}

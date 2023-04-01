@@ -1,0 +1,15 @@
+﻿<div ng-controller="splatDev.RestrictPage.Controller as vm" class="restrict-page">
+    <div class="restricted">
+        <input type="checkbox" name="restrictedswitch" class="restrictedswitch-checkbox" id="idrestrictedswitch" ng-model="vm.config.checked" ng-change="vm.change()">
+        <label class="restricted-label {{vm.config.checked}}" for="idrestrictedswitch">
+            <i class="icon icon-{{vm.config.icon}}"></i>
+            <span ng-show="vm.config.checked">
+                <localize key="restrictedswitch_isRestricted">Is Currently Restricted</localize>
+            </span>
+            <span ng-show="!vm.config.checked" class="notification">
+                <localize key="restrictedswitch_notRestricted">Not Currently Restricted</localize>
+            </span>
+        </label>
+    </div>
+    <div class="instructions"><localize key='restrictedswitch_clickToChange'>Click to change</localize></div>
+</div>
