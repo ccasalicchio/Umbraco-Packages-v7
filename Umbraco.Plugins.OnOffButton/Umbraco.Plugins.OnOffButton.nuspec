@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SplatDev.Umbraco.Plugins.OnOffButton</id>
+    <version>2.0.1.0</version>
+    <title>On-Off Button</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/on-off-button/</projectUrl>
+    <description>A simple visual representation of a restricted page (for members navigation for example)</description>
+    <releaseNotes>Added working functionality on-off button in backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
+    <tags>umbraco on-off button</tags>
+    <icon>\App_Plugins\OnOffButton\icon.png</icon>
+    <readme>\App_Plugins\OnOffButton\README.md</readme>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\icon.png"   target=".\App_Plugins\OnOffButton\" />
+    <file src=".\README.md"  target=".\App_Plugins\OnOffButton\" />
+    <file src=".\readme.txt" target=".\App_Plugins\OnOffButton\" />
+    <file src=".\App_Plugins\OnOffButton\package.manifest" target="\App_Plugins\OnOffButton\" />
+  </files>
+</package>

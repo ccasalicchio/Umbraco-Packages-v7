@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.RestrictPag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.YouTubePreview", "Umbraco.Plugins.YouTubePreview\Umbraco.Plugins.YouTubePreview.csproj", "{A43C5254-3CCC-4EE7-8C60-029F87732754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.OnOffButton", "Umbraco.Plugins.OnOffButton\Umbraco.Plugins.OnOffButton.csproj", "{F760D57D-B70C-42D6-B00C-60C9D252E0C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F760D57D-B70C-42D6-B00C-60C9D252E0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F760D57D-B70C-42D6-B00C-60C9D252E0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F760D57D-B70C-42D6-B00C-60C9D252E0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F760D57D-B70C-42D6-B00C-60C9D252E0C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

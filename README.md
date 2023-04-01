@@ -11,11 +11,14 @@ The available packages are:
 
 		Install-Package SplatDev.Umbraco.Plugins.SocialMediaChannels
 		
-- [Simple Analytics](https://our.umbraco.com/packages/backoffice-extensions/visit-counter/) (former Visit Counter)
+- [Simple Analytics](https://our.umbraco.com/packages/backoffice-extensions/visit-counter/)
 
 		Install-Package SplatDev.Umbraco.Plugins.SimpleAnalytics
 
-- On-Off Button
+- [On-Off Button](https://our.umbraco.com/packages/backoffice-extensions/on-off-button/)
+
+		Install-Package SplatDev.Umbraco.Plugins.OnOffButton
+
 - [YouTube Preview](https://our.umbraco.com/packages/backoffice-extensions/youtube-video-property-editor/)
 
 		Install-Package SplatDev.Umbraco.Plugins.YouTubePreview
