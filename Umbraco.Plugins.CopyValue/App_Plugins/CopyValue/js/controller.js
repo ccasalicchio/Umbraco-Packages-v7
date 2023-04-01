@@ -1,22 +1,22 @@
-angular.module("umbraco")
-.controller("Copy.Value",
-	function ($scope, contentEditingHelper, editorState) {
-		var from = $scope.model.config.from.split(",");
-		var to = $scope.model.config.to.split(",");
+angular.module("umbraco").controller("splatDev.CopyValue.Controller", function ($scope, contentEditingHelper, editorState) {
+    'use strict';
+    const vm = this;
+    vm.from = $scope.model.config.from.split(",");
+    vm.to = $scope.model.config.to.split(",")
 
-		var content = editorState.current;
-		var properties = contentEditingHelper.getAllProps(content);
-		$scope.done = false;
+    let content = editorState.current;
+    let properties = contentEditingHelper.getAllProps(content);
+    vm.done = false;
 
-		$scope.copy = function(){
-			for(var i = 0; i < from.length; i++)
-				_.findWhere(properties, { alias: to[i] }).value = _.findWhere(properties, { alias: from[i] }).value;
-			
-			
-			$scope.done = true;
-			setTimeout(function(){
-				$scope.done=false;
-			},3*1000);
-		};
+    vm.copy = function () {
+        for (var i = 0; i < vm.from.length; i++) {
+            _.findWhere(properties, { alias: vm.to[i] }).value = _.findWhere(properties, { alias: vm.from[i] }).value;
+        }
 
-	});
+        vm.done = true;
+        setTimeout(function () {
+            vm.done = false;
+        }, 3 * 1000);
+    };
+
+});

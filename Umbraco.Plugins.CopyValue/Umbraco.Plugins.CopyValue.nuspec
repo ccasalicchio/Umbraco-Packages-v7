@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SplatDev.Umbraco.Plugins.CopyValue</id>
+    <version>2.0.1.0</version>
+    <title>Copy Value</title>
+    <authors>SplatDev Ltda</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://our.umbraco.com/packages/website-utilities/copy-value/</projectUrl>
+    <description>This Property Editor is a simple copy button that copies one or many values from a property into another property. Useful when you have more than one property with the same purpose, but that may or may not be the same value. Minimizes duplication of work. Ex. When you want an article title to replicate into the meta title. Umbraco v7.15.10</description>
+    <releaseNotes>Added working functionality for copy value and backOffice</releaseNotes>
+    <copyright>Copyright ©2023 SplatDev</copyright>
+    <tags>umbraco copy value</tags>
+    <icon>\App_Plugins\CopyValue\icon.png</icon>
+    <readme>\App_Plugins\CopyValue\README.md</readme>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
+        <dependency id="System.Buffers" version="4.5.1" />
+        <dependency id="System.Memory" version="4.5.5" />
+        <dependency id="System.Numerics.Vectors" version="4.5.0" />
+        <dependency id="System.Runtime.CompilerServices.Unsafe" version="6.0.0" />
+        <dependency id="System.Text.Encodings.Web" version="7.0.0" />
+        <dependency id="System.Text.Json" version="7.0.2" />
+        <dependency id="System.Threading.Tasks.Extensions" version="4.5.4" />
+        <dependency id="System.ValueTuple" version="4.5.0" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".\icon.png"   target=".\App_Plugins\CopyValue\" />
+    <file src=".\README.md"  target=".\App_Plugins\CopyValue\" />
+    <file src=".\readme.txt" target=".\App_Plugins\CopyValue\" />
+    <file src=".\App_Plugins\CopyValue\package.manifest" target="\App_Plugins\CopyValue\" />
+  </files>
+</package>

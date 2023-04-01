@@ -44,17 +44,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LICENSE" />
-    <None Include="App_Plugins\CopyValue\package.manifest" />
-    <None Include="README.md" />
+    <Content Include="App_Plugins\CopyValue\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="icon.png" />
+    <Content Include="LICENSE" />
+    <Content Include="App_Plugins\CopyValue\package.manifest" />
+    <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\CopyValue\css\style.css" />
+    <Content Include="App_Plugins\CopyValue\css\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
     <Content Include="App_Plugins\CopyValue\js\controller.js" />
     <Content Include="App_Plugins\CopyValue\lang\en-US.xml" />
     <Content Include="App_Plugins\CopyValue\lang\pt-BR.xml" />
     <Content Include="App_Plugins\CopyValue\views\view.html" />
     <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Plugins\CopyValue\css\style.scss" />
+    <None Include="Umbraco.Plugins.CopyValue.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
