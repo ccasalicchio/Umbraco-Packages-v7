@@ -22,7 +22,10 @@ The available packages are:
 		Install-Package SplatDev.Umbraco.Plugins.DefaultValue
 
 - Char Limit
-- Hide Page Button
+- [Hide Content](https://our.umbraco.com/packages/backoffice-extensions/hide-content/)
+
+		Install-Package SplatDev.Umbraco.Plugins.HideContent
+
 - Restrict Page Button
 - Copy To Button
 - [Ad Preview](https://our.umbraco.com/packages/backoffice-extensions/ad-preview/)

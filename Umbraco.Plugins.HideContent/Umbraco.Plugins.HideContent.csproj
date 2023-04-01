@@ -53,9 +53,9 @@
     <Content Include="App_Plugins\HideContent\css\styles.scss" />
     <Content Include="icon.png" />
     <Content Include="readme.txt" />
-    <None Include="LICENSE" />
-    <None Include="App_Plugins\HideContent\package.manifest" />
-    <None Include="README.md" />
+    <Content Include="LICENSE" />
+    <Content Include="App_Plugins\HideContent\package.manifest" />
+    <Content Include="README.md" />
     <None Include="Umbraco.Plugins.HideContent.nuspec" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SplatDev.Umbraco.Plugins.HideContent</id>
-    <version>3.0.8.4</version>
+    <version>1.0.1.0</version>
     <title>Hide Content</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
