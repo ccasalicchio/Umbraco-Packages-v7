@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.CharLimit",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.RestrictPage", "Umbraco.Plugins.RestrictPage\Umbraco.Plugins.RestrictPage.csproj", "{894ABB9E-7ED2-4A72-AC74-C0E02486A979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.YouTubePreview", "Umbraco.Plugins.YouTubePreview\Umbraco.Plugins.YouTubePreview.csproj", "{A43C5254-3CCC-4EE7-8C60-029F87732754}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{894ABB9E-7ED2-4A72-AC74-C0E02486A979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{894ABB9E-7ED2-4A72-AC74-C0E02486A979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{894ABB9E-7ED2-4A72-AC74-C0E02486A979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43C5254-3CCC-4EE7-8C60-029F87732754}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,7 +16,10 @@ The available packages are:
 		Install-Package SplatDev.Umbraco.Plugins.SimpleAnalytics
 
 - On-Off Button
-- YouTube Video
+- [YouTube Preview](https://our.umbraco.com/packages/backoffice-extensions/youtube-video-property-editor/)
+
+		Install-Package SplatDev.Umbraco.Plugins.YouTubePreview
+
 - [Default Value](https://our.umbraco.com/packages/backoffice-extensions/default-value/)
 
 		Install-Package SplatDev.Umbraco.Plugins.DefaultValue

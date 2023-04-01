@@ -7,7 +7,7 @@
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://our.umbraco.com/packages/website-utilities/social-media-channels/</projectUrl>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/hide-content/</projectUrl>
     <description>Implements a visual representation (hidden/visible) for the umbracoNaviHide property</description>
     <releaseNotes>Added working functionality for  backOffice</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>

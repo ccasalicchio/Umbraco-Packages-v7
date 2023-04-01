@@ -7,7 +7,7 @@
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://our.umbraco.com/packages/website-utilities/social-media-channels/</projectUrl>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/char-limit-restrict/</projectUrl>
     <description>This Property Editor is a simple copy button that copies one or many values from a property into another property. Useful when you have more than one property with the same purpose, but that may or may not be the same value. Minimizes duplication of work. Ex. When you want an article title to replicate into the meta title.</description>
     <releaseNotes>Added working functionality for char limit restrict and backOffice</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>

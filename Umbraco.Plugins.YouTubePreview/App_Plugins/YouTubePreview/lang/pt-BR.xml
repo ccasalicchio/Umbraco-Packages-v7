@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <language alias="pt_br" intName="Portuguese Brazil" localName="Portuguese Brazil" lcid="" culture="pt-BR">
   <creator>
-    <name>Carlos Casalicchio</name>
-    <link>http://www.ccasalicchio.com</link>
+    <name>SplatDev Ltda</name>
+    <link>https://splatdev.com</link>
   </creator>
   <area alias="youtubeeditor">
     <key alias="title">Insira o Id do vídeo</key>

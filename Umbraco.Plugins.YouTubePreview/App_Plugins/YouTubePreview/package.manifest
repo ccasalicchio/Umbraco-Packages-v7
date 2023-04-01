@@ -1,0 +1,23 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "YouTubePreview",
+      "name": "YouTube Preview",
+      "icon": "icon-movie",
+      "group": "Rich Content",
+      "editor": {
+        "hideLabel": true,
+        "view": "~/App_Plugins/YouTubePreview/views/view.html",
+        "valueType": "STRING"
+      }
+    }
+  ],
+
+  "javascript": [
+    "~/App_Plugins/YouTubePreview/js/controller.js"
+  ],
+
+  "css": [
+    "~/App_Plugins/YouTubePreview/css/style.css"
+  ]
+}

@@ -1,0 +1,17 @@
+﻿<div ng-controller="splatDev.YouTubePreview.Controller as vm" class="youtube-preview">
+
+    <span><input type="text" ng-model="vm.videoId" ng-change="vm.update()" placeholder="@youtubeeditor_title" localize="placeholder" /></span>
+
+    <div class="preview-block">
+        <h5>
+            <localize key="youtubeeditor_preview">Preview</localize>
+        </h5>
+        <div ng-if="vm.videoId">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{vm.videoId}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div ng-if="!vm.videoId">
+            <img src="/App_Plugins/YouTubePreview/views/preview.png" alt="preview" />
+        </div>
+    </div>
+
+</div>

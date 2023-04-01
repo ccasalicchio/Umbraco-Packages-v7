@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
   <metadata>
-    <id>SplatDev.Umbraco.Plugins.RestrictPage</id>
+    <id>SplatDev.Umbraco.Plugins.YouTubePreview</id>
     <version>2.0.1.0</version>
-    <title>Restrict Page</title>
+    <title>YouTube Preview</title>
     <authors>SplatDev Ltda</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/restrict-page/</projectUrl>
-    <description>A simple visual representation of a restricted page (for members navigation for example)</description>
-    <releaseNotes>Added working functionality for  backOffice</releaseNotes>
+    <projectUrl>https://our.umbraco.com/packages/backoffice-extensions/youtube-video-property-editor/</projectUrl>
+    <description>A simple YouTube property editor that has a preview box for the video.</description>
+    <releaseNotes>Added working functionality for video preview in backOffice</releaseNotes>
     <copyright>Copyright ©2023 SplatDev</copyright>
-    <tags>umbraco restrict content</tags>
-    <icon>\App_Plugins\RestrictPage\icon.png</icon>
-    <readme>\App_Plugins\RestrictPage\README.md</readme>
+    <tags>umbraco youtube preview</tags>
+    <icon>\App_Plugins\YouTubePreview\icon.png</icon>
+    <readme>\App_Plugins\YouTubePreview\README.md</readme>
     <dependencies>
       <group targetFramework=".NETFramework4.7.2">
         <dependency id="Microsoft.Bcl.AsyncInterfaces" version="7.0.0" />
@@ -29,9 +29,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src=".\icon.png"   target=".\App_Plugins\RestrictPage\" />
-    <file src=".\README.md"  target=".\App_Plugins\RestrictPage\" />
-    <file src=".\readme.txt" target=".\App_Plugins\RestrictPage\" />
-    <file src=".\App_Plugins\RestrictPage\package.manifest" target="\App_Plugins\RestrictPage\" />
+    <file src=".\icon.png"   target=".\App_Plugins\YouTubePreview\" />
+    <file src=".\README.md"  target=".\App_Plugins\YouTubePreview\" />
+    <file src=".\readme.txt" target=".\App_Plugins\YouTubePreview\" />
+    <file src=".\App_Plugins\YouTubePreview\package.manifest" target="\App_Plugins\YouTubePreview\" />
   </files>
 </package>
