@@ -6,7 +6,9 @@ Each package has been created to meet specific needs for client projects.
 
 The available packages are:
 
-- Custom Login Page
+- [Custom Login](https://our.umbraco.com/packages/backoffice-extensions/custom-login-page/)
+
+
 - [Social Media Channels](https://our.umbraco.com/packages/website-utilities/social-media-channels/)
 
 		Install-Package SplatDev.Umbraco.Plugins.SocialMediaChannels
