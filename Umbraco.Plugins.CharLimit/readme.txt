@@ -11,6 +11,7 @@ Umbraco v7.15.10
 Visit the Project Page in the Community
 
 Install via Nuget
+
 	Install-Package SplatDev.Umbraco.Plugins.CharLimitRestrict
 
 
