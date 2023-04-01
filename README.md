@@ -21,7 +21,10 @@ The available packages are:
 
 		Install-Package SplatDev.Umbraco.Plugins.DefaultValue
 
-- Char Limit
+- [Char Limit](https://our.umbraco.com/packages/backoffice-extensions/input-character-limit/)
+
+		Install-Package SplatDev.Umbraco.Plugins.CharLimitRestrict
+
 - [Hide Content](https://our.umbraco.com/packages/backoffice-extensions/hide-content/)
 
 		Install-Package SplatDev.Umbraco.Plugins.HideContent

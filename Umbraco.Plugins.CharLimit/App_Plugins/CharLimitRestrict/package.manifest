@@ -1,0 +1,35 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "CharLimit",
+      "name": "Char Limit Restrict",
+      "icon": "icon-stop-hand",
+      "group": "Common",
+      "editor": {
+        "hideLabel": false,
+        "view": "~/App_Plugins/CharLimitRestrict/views/view.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Number of Characters",
+            "description": "Enter the max number of characters allowed",
+            "key": "limit",
+            "view": "requiredfield",
+            "validation": [
+              {
+                "type": "Required"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/CharLimitRestrict/js/controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/CharLimitRestrict/css/style.css"
+  ]
+}
