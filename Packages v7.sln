@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Tools.Configuration
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.HideContent", "Umbraco.Plugins.HideContent\Umbraco.Plugins.HideContent.csproj", "{B16D403E-F11B-4915-909C-D6F740FF1D79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Plugins.CopyValue", "Umbraco.Plugins.CopyValue\Umbraco.Plugins.CopyValue.csproj", "{A1F5F511-1773-4CFE-920C-DD7D93220920}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B16D403E-F11B-4915-909C-D6F740FF1D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B16D403E-F11B-4915-909C-D6F740FF1D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B16D403E-F11B-4915-909C-D6F740FF1D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F5F511-1773-4CFE-920C-DD7D93220920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F5F511-1773-4CFE-920C-DD7D93220920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F5F511-1773-4CFE-920C-DD7D93220920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F5F511-1773-4CFE-920C-DD7D93220920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

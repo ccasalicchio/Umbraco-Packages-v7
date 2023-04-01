@@ -1,0 +1,46 @@
+{
+  "propertyEditors": [
+    {
+      "alias": "CopyValue",
+      "name": "Copy Value From A To B",
+      "icon": "icon-layers",
+      "group": "Common",
+      "editor": {
+        "view": "~/App_Plugins/CopyValue/views/view.html",
+        "hideLabel": false
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Copy From",
+            "description": "Alias of the controls to copy from (comma separated)",
+            "key": "from",
+            "view": "requiredfield",
+            "validation": [
+              {
+                "type": "Required"
+              }
+            ]
+          },
+          {
+            "label": "Copy To",
+            "description": "Alias of the controls to copy into (comma separated)",
+            "key": "to",
+            "view": "requiredfield",
+            "validation": [
+              {
+                "type": "Required"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/CopyValue/js/controller.js"
+  ],
+  "css": [
+    "~/App_Plugins/CopyValue/css/style.css"
+  ]
+}

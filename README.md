@@ -27,7 +27,10 @@ The available packages are:
 		Install-Package SplatDev.Umbraco.Plugins.HideContent
 
 - Restrict Page Button
-- Copy To Button
+- [Copy Value](https://our.umbraco.com/packages/backoffice-extensions/copy-value/)
+
+		Install-Package SplatDev.Umbraco.Plugins.CopyValue
+
 - [Ad Preview](https://our.umbraco.com/packages/backoffice-extensions/ad-preview/)
 	
 		Install-Package SplatDev.Umbraco.Plugins.AdPreview
