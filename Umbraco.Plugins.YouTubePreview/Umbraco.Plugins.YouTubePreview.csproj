@@ -48,6 +48,7 @@
     <Content Include="LICENSE" />
     <Content Include="App_Plugins\YouTubePreview\package.manifest" />
     <Content Include="README.md" />
+    <Content Include="icon.png" />
     <None Include="Umbraco.Plugins.YouTubePreview.nuspec" />
   </ItemGroup>
   <ItemGroup>

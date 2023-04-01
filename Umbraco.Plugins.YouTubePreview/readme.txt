@@ -7,8 +7,6 @@ You may insert the Id of any YouTube video and below the video box will display 
 Umbraco v7.15.10
 •Creates a Data Type 'YoutubePreview'
 
-Imgur Imgur
-
 Visit the Project Page in the Umbraco Community
 
 Install via Nuget
